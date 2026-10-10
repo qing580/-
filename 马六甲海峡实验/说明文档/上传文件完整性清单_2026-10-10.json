@@ -1,7 +1,7 @@
 {
   "snapshotDate": "2026-10-10",
   "excludedSelf": "马六甲海峡实验/说明文档/上传文件完整性清单_2026-10-10.json",
-  "count": 1022,
+  "count": 1023,
   "files": [
     {
       "path": ".gitattributes",
@@ -3316,6 +3316,12 @@
       "gitBlob": "e1d89f019751fb1befc0d765941ee023653d4a28"
     },
     {
+      "path": "马六甲海峡实验/说明文档/GitHub上传回执_2026-10-10.md",
+      "bytes": 1496,
+      "sha256": "5e414653534bebdddfc0b615c780b032c836d61620bbe5118fbf071ff17a5477",
+      "gitBlob": "2f9aef2fdcc6c9e83435e44193378d5fbffdc4b2"
+    },
+    {
       "path": "马六甲海峡实验/说明文档/GitHub资料上传说明_2026-10-10.md",
       "bytes": 2281,
       "sha256": "5486c4d5ad4e1458d8009ae697f114903eafbbf35f717d0de4470d4b25bbcde1",
@@ -6131,9 +6137,9 @@
     },
     {
       "path": "马六甲海峡实验/马六甲海峡实验资料说明.md",
-      "bytes": 48998,
-      "sha256": "18b6c6c3e63b0de55ed5293d55f61bad945f276741df947de110c1b633890af5",
-      "gitBlob": "6fc2a85cac018599f75a7479927a601f43895b2c"
+      "bytes": 49508,
+      "sha256": "7f04b86b6aaa57c6ca963b77fdbe5d3a34aa0c1e62aa5a18706481374a7164ac",
+      "gitBlob": "112ec691bc08dd741c621d79e7ee723adb67fc27"
     }
   ]
 }
