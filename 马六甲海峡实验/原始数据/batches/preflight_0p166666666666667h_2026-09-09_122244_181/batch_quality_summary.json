@@ -1,0 +1,132 @@
+{
+  "verdict": "PASS",
+  "mode": "preflight",
+  "batch_id": "preflight_0p166666666666667h_2026-09-09_122244_181",
+  "region_id": "malacca_southeast_singapore_strait",
+  "bbox": [
+    [
+      1.0,
+      103.0
+    ],
+    [
+      3.5,
+      104.5
+    ]
+  ],
+  "rows": 204,
+  "data_rows": 203,
+  "dynamic_rows": 175,
+  "unique_mmsi": 77,
+  "message_counts": {
+    "SubscriptionConfirmation": 1,
+    "PositionReport": 174,
+    "ShipStaticData": 27,
+    "StaticDataReport": 1,
+    "StandardClassBPositionReport": 1
+  },
+  "parse_success_rate": 1.0,
+  "dynamic_coverage": {
+    "mmsi": 1.0,
+    "lat": 1.0,
+    "lon": 1.0,
+    "sog": 1.0,
+    "cog": 1.0,
+    "true_heading": 1.0,
+    "rate_of_turn": 0.9942857142857143,
+    "navigational_status": 0.9942857142857143
+  },
+  "unique_mmsi_static_coverage": {
+    "vessel_name": {
+      "count": 74,
+      "rate": 0.961038961038961
+    },
+    "call_sign": {
+      "count": 24,
+      "rate": 0.3116883116883117
+    },
+    "imo": {
+      "count": 24,
+      "rate": 0.3116883116883117
+    },
+    "vessel_type": {
+      "count": 25,
+      "rate": 0.3246753246753247
+    },
+    "destination": {
+      "count": 24,
+      "rate": 0.3116883116883117
+    },
+    "draught": {
+      "count": 24,
+      "rate": 0.3116883116883117
+    },
+    "ship_length": {
+      "count": 25,
+      "rate": 0.3246753246753247
+    },
+    "ship_width": {
+      "count": 25,
+      "rate": 0.3246753246753247
+    }
+  },
+  "classification_eligible": 0,
+  "classification_eligible_by_type": {},
+  "received_data_start_utc": "2026-09-09T04:22:54.160842+00:00",
+  "received_data_end_utc": "2026-09-09T04:32:40.504294+00:00",
+  "reconnect_count": 0,
+  "connection_event_counts": {
+    "collector_started": 1,
+    "connected": 1,
+    "subscription_sent": 1,
+    "collector_finished": 1
+  },
+  "missing_required_columns": [],
+  "checks": {
+    "required_columns_present": true,
+    "raw_json_in_csv_complete": true,
+    "raw_jsonl_complete_and_valid": true,
+    "dynamic_message_received": true,
+    "static_message_received": true,
+    "parse_success_ge_99pct": true,
+    "dynamic_mmsi_ge_99pct": true,
+    "dynamic_lat_ge_99pct": true,
+    "dynamic_lon_ge_99pct": true,
+    "dynamic_absolute_time_ge_99pct": true,
+    "dynamic_sog_ge_95pct": true,
+    "dynamic_cog_ge_95pct": true,
+    "at_least_one_mmsi_with_type": true,
+    "at_least_one_mmsi_with_size": true
+  },
+  "files": {
+    "normalized_events.csv": {
+      "path": "C:\\Users\\卿之ya\\Desktop\\马六甲海峡实验\\原始数据\\batches\\preflight_0p166666666666667h_2026-09-09_122244_181\\normalized_events.csv",
+      "sha256": "E9F856599B2B48013A500CD82D9EED244F8005F1FA055831A62C0B9A831C1B70",
+      "bytes": 215935
+    },
+    "raw_events.jsonl": {
+      "path": "C:\\Users\\卿之ya\\Desktop\\马六甲海峡实验\\原始数据\\batches\\preflight_0p166666666666667h_2026-09-09_122244_181\\raw_events.jsonl",
+      "sha256": "B6207BE5E9E376EF1085394601F73F087A84C1A3E820DAEE6F05AD29A83F5120",
+      "bytes": 180906
+    },
+    "connection_events.csv": {
+      "path": "C:\\Users\\卿之ya\\Desktop\\马六甲海峡实验\\原始数据\\batches\\preflight_0p166666666666667h_2026-09-09_122244_181\\connection_events.csv",
+      "sha256": "5828DF1DEA2C9274867E0444EE3B51D0E55600D10D10993FC321FE8CDB67D2A4",
+      "bytes": 500
+    },
+    "batch_runtime.json": {
+      "path": "C:\\Users\\卿之ya\\Desktop\\马六甲海峡实验\\原始数据\\batches\\preflight_0p166666666666667h_2026-09-09_122244_181\\batch_runtime.json",
+      "sha256": "3D3A08E7E3ADB4B295DA8B5FC79EBB947F8DE54F418F44E8ED6C8049B7ED3DC4",
+      "bytes": 1780
+    },
+    "vessel_static_profiles.csv": {
+      "path": "C:\\Users\\卿之ya\\Desktop\\马六甲海峡实验\\原始数据\\batches\\preflight_0p166666666666667h_2026-09-09_122244_181\\vessel_static_profiles.csv",
+      "sha256": "5367158007C5AFE2E911A77535105388DDCEC1B484643382035B90492C9C80D9",
+      "bytes": 15352
+    },
+    "positions_enriched.csv": {
+      "path": "C:\\Users\\卿之ya\\Desktop\\马六甲海峡实验\\原始数据\\batches\\preflight_0p166666666666667h_2026-09-09_122244_181\\positions_enriched.csv",
+      "sha256": "D7D94A19573B6E18F5D2766F73D8BECDFBFFCD79A2BB8DDFD92A93AE5C5B2B01",
+      "bytes": 198856
+    }
+  }
+}

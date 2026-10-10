@@ -1,0 +1,25 @@
+# Secrets and local environments
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.pfx
+*.p12
+id_rsa
+id_ed25519
+.venv/
+venv/
+node_modules/
+__pycache__/
+*.pyc
+.local_ml/
+.local_pydeps*/
+.cache/
+
+# Generated migration archives and operating-system files
+*跨电脑迁移*.zip
+Thumbs.db
+desktop.ini
+.DS_Store

@@ -1,0 +1,1057 @@
+﻿mmsi,label_category,rows,schemas,source_files,vessel_name,imo,ship_length,ship_width,draught
+135439681,,2,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+205278000,cargo,6,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,MINERAL OSTERREICH,9989455,,,
+205493000,cargo,21,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,MINERAL MAURITIUS,9847970,300,49,9.3
+205664000,other,104,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,WINDCAT HAARLEM,1019931,89,20,4.9
+209596000,,13,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,CAPE BREEZE,,,,
+209795000,,1,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,SYNERGY KEELUNG,,,,
+210392000,,4,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+210810000,,1,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+210824000,cargo,27,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,MSC ZAINA III,9334519,,,
+211897760,cargo,3,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,AL MURAYKH,9708863,,,
+212574000,,3,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+212677000,cargo,7,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,PERSEAS,9650638,225,32,8.8
+212939000,,1,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,ANL HEDLAND TRADER,,,,
+215164000,,2,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+215173000,,2,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+215283000,tanker,53,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,SERENO,9437658,,,
+215485000,cargo,23,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,CMA CGM ATTILA,9433793,,,
+215706000,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,BESIKTAS AZERBAIJAN,,,,
+215730000,,20,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,CAPTAIN LYRISTIS,,,,
+215939000,tanker,54,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,DALMACIJA,9528134,183,32,7
+219028423,tanker,3,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,TORM LEADER,9343194,183,32,11.2
+219100000,cargo,6,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,SAN AUGUSTIN MAERSK,9622239,,,
+219130000,,1,old_partial_static,马六甲10分钟AIS采集数据.csv,,,,,
+219394000,tanker,87,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,MAERSK CAYMAN,9786164,182,32,8.2
+219406000,tanker,74,old_partial_static,马六甲10分钟AIS采集数据.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,MAERSK CAPRI,9786140,,,
+219645000,tanker,99,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,TORM DULCE,9682394,183,32,10.6
+219677000,cargo,19,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,A.P. MOLLER,9948803,351,54,11
+219700000,cargo,2,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,AXEL MAERSK,9961831,,,
+219710000,,2,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+219718000,cargo,3,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,BANGKOK MAERSK,9984584,351,56,12.7
+219772000,tanker,69,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,TORM HELGA,9717125,,,
+228423700,tanker,20,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,EAGLE VALENCE,9910234,330,60,11.2
+228479900,,1,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,CMA CGM TAORMINA,,,,
+228481900,,1,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+228482600,tanker,29,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,AL NIGYAN,9981427,,,
+229238000,tanker,1,old_partial_static,马六甲10分钟AIS采集数据.csv,STRESA,9912866,,,
+229270000,cargo,33,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,CMA CGM ST EXUPERY,9776418,399,58,16.2
+229347000,cargo,48,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,NBA MAGRITTE,9512331,,,
+229452000,cargo,2,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,MERKUR FJORD,9620607,,,
+229997000,cargo,54,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,CMA CGM PRIDE,9924429,366,51,14.8
+232007939,tanker,4,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,STENA IMPERATOR,9797383,,,
+232012398,,1,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+232023550,,1,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+232027949,,3,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,HERO,,,,
+232030743,,8,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+232046110,other,164,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲10分钟AIS采集数据.csv;马六甲6小时AIS采集数据_2026-09-05.csv,KAHALA,1040801,40,8,2.1
+232059752,other,27,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,PACIFIC LIBERTY,9648398,,,
+232060236,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,PACIFIC GUILLEMOT,,,,
+235086166,cargo,19,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,NOBLE ACE,9493365,199,32,9.3
+240858000,cargo,3,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,DIONE,9469467,292,45,10.4
+241118000,cargo,8,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,INTUITION,9471276,229,32,8
+241149000,,3,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+241422000,tanker,31,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,DILIGENT WARRIOR,9750050,274,48,9
+241440000,tanker,23,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,MARAN APOLLO,9752993,,,
+241441000,tanker,7,old_partial_static,马六甲10分钟AIS采集数据.csv;马六甲1小时AIS采集数据_实时可见版.csv,MARAN ARTEMIS,9753002,,,
+241476000,cargo,20,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,DESERT CHALLENGER,9699842,,,
+241720000,,8,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+241796000,tanker,38,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,YIANNIS LATSIS,9923487,,,
+241977000,,1,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+244122000,cargo,19,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,PALEISGRACHT,9448346,,,
+244150081,,1,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,BIT HERO,,,,
+245450000,other,10,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,ROTTERDAM,9229582,,,
+245563000,cargo,24,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,CALYPSO,9934840,131,28,6
+246351000,,5,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,VOX MAXIMA,,,,
+246592000,,2,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,FLORIJNGRACHT,,,,
+247408300,,1,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+247437600,cargo,14,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ITAL BONNY,9786970,212,33,9.1
+248128000,,27,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+248201000,cargo,22,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,BOKA VANGUARD,9618783,,,
+248212000,,28,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+248280000,,3,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+248432000,,5,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+248455000,,5,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,CMA CGM EIFFEL,,,,
+249082000,cargo,38,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,CMA CGM ALHAMBRA,9961336,,,
+249221000,cargo,1,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,PHOEBE,9926233,,,
+249235000,cargo,8,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ZORBAS,9689677,292,45,17.7
+249236000,tanker,41,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,DELTA POSEIDON,9468671,274,48,9
+249237000,cargo,4,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,CMA CGM ESCURIAL,9961374,205,30,9.3
+249316000,,3,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+249896000,cargo,4,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,SEA GLORY,1043982,199,32,11.6
+253008000,other,15,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,FILIPPO BRUNELLESCHI,9262778,,,
+255802670,,2,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,GASCHEM RHONE,,,,
+255805573,,1,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+255805956,cargo,14,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,MSC JERSEY,9622007,250,37,10.4
+255806058,tanker,13,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,NORDPENGUIN,9783007,,,
+255806182,cargo,15,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,INDUSTRIAL CONSTANT,9810343,,,
+255806186,,29,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+255915650,cargo,16,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ARKONA,9404443,190,29,8.9
+255915944,,2,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+255916036,tanker,5,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,OLYMPUS,9941661,,,
+255916055,cargo,23,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ATHINA II,9724192,229,32,13.5
+255917248,cargo,17,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,GOLDEN FUTURE,9443607,,,
+256162000,other,301,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲10分钟AIS采集数据.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,SANDPIPER 1,8359043,120,32,5.6
+256196000,tanker,8,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,MRC SEDEF,9335032,183,32,8.9
+256205000,tanker,74,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,PALAMAS,9938042,,,
+256700000,,3,old_partial_static,马六甲10分钟AIS采集数据.csv,,,,,
+256910000,,2,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,CMA CGM AMAZONIA,,,,
+257038470,other,115,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲10分钟AIS采集数据.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,ALEGRIA,9169392,83,19,4.5
+257080210,,24,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+257394000,other,68,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,CYGNUS,9401855,183,32,8.1
+257432630,,1,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,PEAK SKARV 3,,,,
+258628000,cargo,65,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,HOEGH TRACER,9684990,200,36,9.8
+258774000,cargo,3,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,HOEGH TROVE,9186302,200,32,8.1
+268254003,,9,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+268265003,cargo,67,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,CERES,9472701,171,27,5.2
+269308000,,2,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,TZOUMAZ,,,,
+273255610,,6,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+276872000,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,GEOQUIP SILVRETTA,,,,
+304067000,tanker,31,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,TAUGAS,9675080,146,23,6.2
+304443000,cargo,41,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,BBC SWITZERLAND,9433315,,,
+305034400,tanker,218,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,ARAGUA,9258686,184,32,7.5
+305463000,cargo,30,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,BBC VIRGINIA,9501277,138,21,7.4
+305747000,cargo,7,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,JOHN,1056745,,,
+305803000,,1,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+310551000,,2,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+311000968,,1,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+311001423,,2,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,JAGUAR,,,,
+311001580,cargo,37,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,FRIO OCEANIC,8801814,,,
+311001628,cargo,31,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,SAGA TUCANO,9160803,,,
+311001666,,15,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,STAR VOYAGER,,,,
+311002021,tanker,16,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,LXH,9274525,,,
+311002132,,2,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+311002149,,2,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+311002264,,5,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+311073700,,4,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+312000080,cargo,29,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,CALA PIANA,8705656,,,
+312092000,other,71,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲10分钟AIS采集数据.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PENGUIN AMAN,8355621,0,0,0
+312113000,,2,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,SEA SPARROW,,,,
+312686000,,2,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+312871000,,5,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲10分钟AIS采集数据.csv;马六甲1小时AIS采集数据_实时可见版.csv,SEA PELICAN,,,,
+312918000,,12,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+314256000,,2,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+319058500,other,6,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,TRIPLE SEVEN,9374894,68,12,3.5
+319112500,,6,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,STOLT TENACITY,,,,
+319198600,other,145,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲10分钟AIS采集数据.csv;马六甲6小时AIS采集数据_2026-09-05.csv,ANNABELLA,9915648,44,8,2.6
+319288700,,7,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,DANICA,,,,
+319301800,tanker,46,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,TABIT,9994151,,,
+319768000,tanker,40,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,NAVE ARIADNE,9301964,228,30,8.2
+338638000,,1,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,,,,,
+339267000,other,110,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;马六甲10分钟AIS采集数据.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,ELYSIUM,1006702,,,
+341612001,other,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,SUNLIGHT EROS,,0,0,
+341614001,other,2,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,SUNSHINE,,0,0,
+351108000,,6,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+351272000,,1,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,BANGKOK,,,,
+351458000,,9,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,AU LEO,,,,
+351753000,,1,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+351885000,tanker,11,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,GOLDEN ORION,9712333,120,21,5.5
+351916000,cargo,42,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,TREASURE STAR,9461154,229,32,13.6
+352001097,,4,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+352001126,tanker,29,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;马六甲6小时AIS采集数据_2026-09-05.csv,LS VENUS,9332420,126,20,6.2
+352001259,,1,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,EVER ALOT,,,,
+352001272,,2,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+352001445,cargo,11,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,BAY PEACE,9952268,128,20,8.5
+352002048,tanker,6,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,SINGAPORE PIONEER,9478262,119,20,7.8
+352002539,,6,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,MAO GANG GUANG ZHOU,,,,
+352002651,,2,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ORYX I,,,,
+352002842,,4,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+352002866,cargo,4,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,KALIXENOS,9460265,180,30,10.3
+352002967,tanker,418,enhanced_full_static;old_dynamic_only;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲10分钟AIS采集数据.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv;马六甲测试AIS采集数据.csv,LEO MARIS,9381823,183,32,10.2
+352003145,tanker,38,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PVT AVIRA,9414280,,,
+352003176,tanker,59,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,PVT SOLANA,9391531,183,32,8
+352003183,,2,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+352003191,,3,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+352003391,cargo,79,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,HUA XIN 678,1029871,,,
+352003465,cargo,10,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,YONG XIN 16,9988231,138,36,4.9
+352003635,tanker,37,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,GLORY SKY,9517032,,,
+352003997,cargo,4,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,HMM MIRACLE,9981154,172,29,9.3
+352004220,,5,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,YA QING ZHI XING,,,,
+352004318,cargo,2,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,BOOTES,1013652,,,
+352004330,cargo,26,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,TRINITY BLUE,9995791,120,22,8.2
+352004357,tanker,29,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,LS MERCURY,9657507,,,
+352004369,cargo,57,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,LAPIS ACE,9991159,200,38,9.7
+352004436,tanker,58,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,CELESTIAL,9313266,182,32,7
+352004532,,3,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+352004558,tanker,3,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,OCEAN SUNRISE,9292357,180,32,8
+352004662,tanker,86,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,HAWKS MAJESTY,9311268,111,18,4.6
+352004737,tanker,38,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,NORD VIGNALE,9982550,183,32,8.9
+352004750,cargo,31,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,HSC GREEN,9338553,176,30,6.1
+352004778,,27,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+352005017,,5,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,,,,,
+352005046,tanker,62,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,WINTER 89,9416800,,,
+352005076,tanker,4,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,VERA,9292278,,,
+352005321,,21,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,MH NORIKURA,,,,
+352005565,cargo,26,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,GREEN OWL,1113177,,,
+352005768,,3,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+352005775,,1,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+352005913,cargo,67,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,BO RUN JIU ZHOU,1125895,,,
+352006076,tanker,33,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PIS BANGKA,1050935,,,
+352006129,tanker,68,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,DAI VINH,9827970,140,21,5
+352006266,tanker,29,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,GAS VALERIA,9507738,100,18,4.6
+352006338,tanker,27,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,ENERSEA 1,9693018,183,32,10.9
+352006528,cargo,51,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,HOSEI OVATION,9591064,167,26,9.9
+352006691,,9,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+352006702,cargo,1,old_partial_static,马六甲10分钟AIS采集数据.csv,NORSE NAOSHIMA,9999371,,,
+352006784,,2,old_partial_static,马六甲10分钟AIS采集数据.csv,,,,,
+352006797,cargo,47,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,TIGER PATHFINDER,1038236,,,
+352119000,cargo,111,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,HOUEI VENUS,9545431,103,18,4.6
+352148000,cargo,14,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,EVER CHAMPION,9310800,121,18,7.3
+352241000,,7,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,PACIFIC JOURNEY,,,,
+352506000,,15,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+352659000,cargo,74,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,SPLENDOR TAICHUNG,9433858,,,
+352690000,cargo,42,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,H7 PMB2,9301055,229,32,9.2
+352898738,other,165,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,COASTAL SKY,9307138,22,5,0
+352955000,cargo,65,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,PAPORA WISDOM,9508718,,,
+352980780,,1,old_partial_static,马六甲10分钟AIS采集数据.csv,,,,,
+352980796,cargo,37,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,ELEGANT ACE,9561265,,,
+352986168,cargo,15,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,SPIL NISAKA,9232412,207,30,9.9
+353160000,,5,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+353172000,tanker,15,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,AKANE,9547520,,,
+353222000,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ROSEANNE,,,,
+353455000,tanker,23,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;马六甲6小时AIS采集数据_2026-09-05.csv,CETO,9305348,180,32,7
+354252000,,2,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+354299000,,17,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+354501000,cargo,57,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,CENTURION MEVIA,9755854,,,
+354536000,tanker,2,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,STAR ENERGY,9773935,,,
+354977000,cargo,8,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,EVER GLOBE,9786841,399,59,12.3
+355150000,other,25,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,SW ARIA,9667538,60,12,2.2
+355294000,,27,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,OLYMPIA ROAD,,,,
+355464000,tanker,23,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,CASSIA,9806744,115,18,6.7
+356426000,cargo,17,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,LADY OF LUCK,9160401,196,30,10.1
+356499000,,1,old_partial_static,马六甲10分钟AIS采集数据.csv,,,,,
+356688000,cargo,86,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,DENEB LEADER,9738777,199,34,9.4
+356777000,cargo,72,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,BULK GUATEMALA,9642227,,,
+357259000,cargo,23,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ORIENTAL HARBOR,9873979,140,24,9.1
+357387000,,17,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+357395000,,6,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+357420000,cargo,26,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,EVER CANDID,9890898,171,28,8.9
+357490000,cargo,5,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,HOANG ANH 05,9588433,,,
+357573000,,1,old_partial_static,马六甲10分钟AIS采集数据.csv,,,,,
+357875000,cargo,210,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,SE NICKY,9839088,,,
+366846000,tanker,3,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,OVERSEAS MYKONOS,9435894,,,
+368270000,cargo,32,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,SLNC  STAR,9415325,,,
+369150000,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,CS ANTHEM,,,,
+369344000,cargo,85,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,LIBERTY EAGLE,9278753,190,32,7.7
+370087000,,2,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+370096000,cargo,69,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,YM SERENITY,9581758,,,
+370219000,,2,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+370343000,cargo,17,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,ASIAN EXPLORER,9448061,,,
+370364000,cargo,21,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,OSMANTHUS,9298923,200,32,8.2
+370558000,,8,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,SAGAMI,,,,
+370612000,tanker,52,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,K. MUGUNGWHA,9373010,288,43,9.5
+370666000,cargo,71,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,DK APOLLO,9524798,104,20,9.5
+370700000,cargo,53,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,EVER BOOMY,9787015,,,
+370795000,,3,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,VIRGO PHOENIX,,,,
+371108000,cargo,47,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,YU XIAO 2,9227704,225,32,13.5
+371117000,,2,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+371559000,cargo,66,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,TIANJIN HIGHWAY,9294355,,,
+372070000,cargo,9,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,XINDE HONOR,9316866,,,
+372465000,tanker,18,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,DOLPHIN 09,9562829,128,20,6
+372762000,cargo,3,old_partial_static,马六甲10分钟AIS采集数据.csv;马六甲1小时AIS采集数据_实时可见版.csv,D ANGELS,9252357,,,
+372773000,,1,old_partial_static,马六甲10分钟AIS采集数据.csv,,,,,
+373233000,cargo,30,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,MSC CLORINDA,9484429,,,
+373344000,cargo,3,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,DIANTHUS,9615080,,,
+373428000,tanker,26,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,PVT DAWN,9414307,129,20,8.4
+374402000,tanker,1,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,ISLA DE BIOKO,9767235,186,33,10.7
+374890000,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,EAGLE ASIA 10,,,,
+376666000,other,38,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,VB-654,1098341,23,12,0
+376715000,other,29,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;马六甲6小时AIS采集数据_2026-09-05.csv,VB-660,1111313,23,12,0
+377416000,other,77,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,VB-661,1111325,23,12,0
+403096001,tanker,63,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,ISRAA,9325960,101,19,6
+403590001,,1,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+405000197,cargo,45,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,JAHAN MONI,9392731,190,32,6.4
+405000308,,1,old_partial_static,马六甲10分钟AIS采集数据.csv,,,,,
+412016580,tanker,14,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,YOU SHEN 5,1067225,104,17,4.5
+412055000,cargo,29,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,KANG SHENG KOU,9223289,,,
+412085050,tanker,11,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,RUN JIU 68,1118464,,,
+412180000,,3,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,HONG TAI 656,,,,
+412326861,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+412370680,,18,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,YUN XIANG 62,,,,
+412379040,tanker,93,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,YUN XIANG 61,1120912,,,
+412402560,tanker,57,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,HENG HUI 108,1114585,110,16,5
+412408420,tanker,103,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,HUA SHUN YOU 698,1119547,159,27,7
+412415910,,2,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,RUI GAO FEN DOU,,,,
+412438950,,12,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,YUN XIANG 63,,,,
+412439000,,7,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+412491000,,5,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+412552109,other,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ONWASHENZHEN,,0,0,
+413060000,cargo,32,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,XIN PU DONG,9270440,,,
+413073000,cargo,13,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,XIN QIN HUANG DAO,9304784,,,
+413142000,cargo,14,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,XIN HUANG PU,9310044,263,32,8.6
+413334020,,3,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,MA YUE,,,,
+413336320,other,50,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;马六甲6小时AIS采集数据_2026-09-05.csv,ZHONG REN 121,9922938,,,
+413381280,cargo,5,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ZHONG GU XIONG AN,9812901,180,32,9.5
+413458780,cargo,48,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,XIN CHEN HAI YANG,9814492,154,39,6.8
+413556780,,29,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ZHU CHENG XIN ZHOU,,,,
+413574720,tanker,6,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,SHENG HANG 009,9548988,120,18,5
+413607840,,15,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,HONG BO 16,,,,
+413610790,cargo,31,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,DONG FANG 102,1069259,,,
+413613130,tanker,18,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,DINGHENG 33,1097103,,,
+414037000,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+414109000,cargo,59,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,CHANG HANG HAN HAI,9628752,200,32,6.6
+414155000,tanker,66,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,HUA HAI 21,9642071,,,
+414310000,cargo,2,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,TIAN CHANG HE,9300324,279,40,13.4
+414431000,,3,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+414549000,,2,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+414720000,tanker,60,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,FU CHI,9611644,185,32,7.5
+414748000,,5,old_partial_static,马六甲10分钟AIS采集数据.csv,,,,,
+416428000,cargo,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,YM HORIZON,9301263,168,27,8.3
+419001755,tanker,33,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,SANMAR SAROD,9321184,,,
+419002058,tanker,60,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,DUBAI GREEN,9298674,,,
+419756000,tanker,31,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,SWARNA JAYANTI,9467720,244,42,12.9
+431013000,cargo,52,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,CASSIOPEIA LEADER,9182277,200,32,8.9
+432783000,cargo,34,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,ATLAS LEADER,9531739,,,
+440242000,tanker,1,old_partial_static,马六甲10分钟AIS采集数据.csv,SUPER FORTE,9452830,,,
+440489000,,6,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+440494000,,28,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,GLOBAL ENTERPRISE,,,,
+441343000,cargo,6,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,HMM BANGKOK,9323510,,,
+441395000,,8,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ULSAN PIONEER,,,,
+457580000,,9,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,TITANINDO 1,,,,
+457622000,cargo,22,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,TONG CHI 1,1081104,172,26,8
+457676000,cargo,30,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,XIN LI 6,1029120,171,26,7.9
+477009000,tanker,29,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ARTEMIS OCEAN,9221023,180,32,11.5
+477021700,,2,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+477058500,,5,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,CSC AUSPICIOUS,,,,
+477083700,cargo,25,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,MAERSK CHILKA,9525364,,,
+477085400,cargo,93,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,EB TRAWIND,9989352,,,
+477112100,cargo,42,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,PACIFIC ACTIVITY,9731901,199,32,13
+477113100,,10,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,COSCO SHIPPING CHILE,,,,
+477115300,,5,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,SC QINGDAO,,,,
+477116700,,5,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,,,,,
+477134900,cargo,7,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,PACIFIC PROVIDENCE,1047483,,,
+477142700,tanker,15,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PAN AMERICAS,9750232,290,47,11.2
+477149600,cargo,86,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,PACIFIC PURITY,1047495,199,32,8.3
+477155300,tanker,29,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,SEA V,9332535,333,60,21
+477185400,tanker,59,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,SC LIAONING,9428310,123,15,7.7
+477218200,,2,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+477229100,tanker,64,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,SEAMERIDIAN,9462897,183,32,10.6
+477232100,,16,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;马六甲6小时AIS采集数据_2026-09-05.csv,YU HAI,,,,
+477237400,tanker,28,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,NEW HONOR,9799159,333,60,11
+477249300,,2,old_partial_static,马六甲10分钟AIS采集数据.csv,,,,,
+477267600,cargo,1,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,TRANSCENDEN WISDOM,9900083,,,
+477528700,,2,old_partial_static,马六甲10分钟AIS采集数据.csv,,,,,
+477588200,cargo,1,old_partial_static,马六甲10分钟AIS采集数据.csv,XING ZHI HAI,9728356,,,
+477617800,cargo,4,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,COSCO ANSTEEL,9377391,,,
+477685900,tanker,87,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ANGEL NO.1,9470662,118,18,5
+477686100,tanker,49,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,TONG LIN WAN,9652014,,,
+477721900,,6,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+477746900,,8,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+477752100,,14,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,GUO HAI LIAN 168,,,,
+477752400,cargo,46,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,COSCO AQABA,9518359,261,32,12.3
+477797300,tanker,70,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,SC TIANJIN,9378333,127,20,8.6
+477832300,cargo,4,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,COCSO VALENCIA,9484390,,,
+477832900,cargo,55,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;马六甲10分钟AIS采集数据.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,OAK BAY,9652557,,,
+477854500,tanker,54,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,SILVER SAWSAN,9718882,183,32,8.5
+477887800,cargo,61,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,OOCL TURKIYE,9908138,399,61,13.8
+477929200,,3,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+477950900,tanker,16,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,SC CHONGQING,9425045,115,18,5
+503000136,other,31,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,CYAN WARDAN,9784465,,,
+503000183,other,24,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,NUYINA,9797060,,,
+518100291,other,215,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,SSE VALENCIA,0,0,0,0
+518999343,tanker,15,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,ARS ROBERTA,9235476,153,25,6.7
+525001007,,11,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,KN.ADHARA,,,,
+525003595,other,4,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,TB MAJU DAYA 75,,0,0,
+525012370,,6,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+525018039,,3,old_partial_static,马六甲10分钟AIS采集数据.csv,,,,,
+525018167,,6,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+525018330,,2,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,KARYA ABADI 8,,,,
+525018470,,3,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,WTR OCEAN 88,,,,
+525021392,,5,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,TB MEGAMAS STAR,,,,
+525022371,tanker,14,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,EKAPUTRA 1,8706155,290,46,9.5
+525024416,other,169,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,TB CAPRICORN 80,,0,0,
+525100095,other,13,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,MEGAMAS SWEET,,0,0,
+525103010,tanker,26,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,SILVER LOTUS,9251406,,,
+525107002,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,BAUHINIA,,,,
+525108006,tanker,39,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,PARIGI P1030,9755634,157,28,5.4
+525108015,tanker,108,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PANGALENGAN,9793478,157,28,5.7
+525108017,tanker,38,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,MT.PANJANG,9857195,,,
+525109020,cargo,58,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,SINAR PAJAJARAN,1033767,,,
+525109021,,2,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+525109024,tanker,2,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,SINAR TIDORE,9370666,109,21,5.9
+525109025,cargo,3,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,S.PANGKALAN BRANDAN,1043748,,,
+525110555,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+525110824,other,9,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,MTS 123,1153256,,,
+525110875,tanker,9,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;马六甲6小时AIS采集数据_2026-09-05.csv,GOLDEN QUEENA,9331660,295,46,9.2
+525119014,tanker,7,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,SC EXPRESS LV,9228849,183,30,6.7
+525119081,tanker,54,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ROSA DINI,9240718,182,28,7.5
+525119082,tanker,48,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,SEA CHAMPION,9260029,182,28,7.9
+525119101,,5,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+525119148,other,15,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲10分钟AIS采集数据.csv;马六甲1小时AIS采集数据_实时可见版.csv,TB BUANA ALPHA,9892729,21,7,25
+525119191,tanker,11,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,QUEEN CENTURY,9354519,179,32,7.5
+525121031,,43,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,MARITIM INDONESIA,,,,
+525121064,tanker,65,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,JENGGALA BANGO,9394208,154,26,6.7
+525121089,other,155,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,ASEAN CHALLENGER,9652193,99,18,5.8
+525121125,,2,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,STAR RAPTOR,,,,
+525300129,cargo,50,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,PELITA A. PERTIWI,9302798,189,32,12.4
+525301513,,2,old_partial_static,马六甲10分钟AIS采集数据.csv,,,,,
+525301553,tanker,10,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PRIMA CARRIER,9264910,,,
+525401069,tanker,39,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,PANCARAN NUSANTARA,9354492,182,28,8
+525500841,,2,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ATAKA II,,,,
+525601311,other,6,old_partial_static,马六甲10分钟AIS采集数据.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PACIFIC LEGACY,9648374,,,
+525601594,other,219,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲10分钟AIS采集数据.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,TB AMADEUS 1,1031642,23,7,0
+525901612,,4,old_dynamic_only;old_partial_static,马六甲10分钟AIS采集数据.csv;马六甲测试AIS采集数据.csv,,,,,
+529199000,,14,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,GANDAWATI 2,,,,
+533000522,cargo,3,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,DANUM 159,9438080,140,20,5.6
+533000996,cargo,13,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,MALAYSIA STAR,9032331,152,21,5.4
+533042200,tanker,6,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,ORKIM HARMONY,9524671,,,
+533048600,tanker,60,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ORKIM POWER,9546825,106,18,4.8
+533057100,tanker,59,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ORKIM DISCOVERY,9564396,120,20,5.3
+533110592,other,3,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,LUNA,,0,0,
+533110714,tanker,16,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,HERA,1075375,,,
+533130128,cargo,29,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,STRAITS CHALLENGER,9186950,180,32,9
+533130597,,1,old_partial_static,马六甲10分钟AIS采集数据.csv,,,,,
+533130753,tanker,12,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,SERI CEMARA,9756389,,,
+533130968,other,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,31,7,
+533132152,tanker,9,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,NAUTICA KLUANG 2,9921087,120,19,5.7
+533132217,tanker,74,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,JM SUTERA 9,9892468,118,20,5.2
+533132533,,12,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+533132541,other,6,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,SY FOREVER YANG,,0,0,
+533132786,,1,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,DANUM  179,,,,
+533133663,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+533134002,,2,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ORKIM GARNET,,,,
+533134255,,2,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,DECORUM,,,,
+533150117,,3,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+533170531,cargo,42,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,DANUM 171,9159086,146,25,7.7
+533180021,,2,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+533180188,,9,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+533283000,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,DANUM 3,,,,
+538003651,,2,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+538004033,tanker,38,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,SEAWAYS SABINE,9594755,274,48,9.2
+538004331,cargo,7,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,XIN HAI TONG 36,9594626,189,32,11.5
+538004619,,3,old_partial_static,马六甲10分钟AIS采集数据.csv,,,,,
+538005016,tanker,14,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,THE PROSPECTOR,9492323,134,23,5.7
+538005166,tanker,1,old_partial_static,马六甲10分钟AIS采集数据.csv,ZONDAR,9351634,,,
+538005319,tanker,1,old_partial_static,马六甲10分钟AIS采集数据.csv,DAS,9439802,,,
+538005416,tanker,4,old_partial_static,马六甲10分钟AIS采集数据.csv,STI QUEENS,9707273,,,
+538005747,cargo,75,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,EUPHRATES,9694567,255,37,12.3
+538005822,,1,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+538006349,cargo,25,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ALPHA ETHOS,9723617,229,33,13
+538006371,,10,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,LAVRAKI,,,,
+538006503,tanker,39,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;马六甲6小时AIS采集数据_2026-09-05.csv,YANKUL SILVER,9718791,,,
+538006687,cargo,20,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,XIN HAI TONG 21,9493688,190,32,11.1
+538007305,cargo,44,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,SAMJOHN ARGONAUT,9745938,300,50,18.3
+538007364,,11,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,PACIFIC MARTINA,,,,
+538007386,cargo,4,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,INTEGRA,9730854,,,
+538007582,cargo,56,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,CLIPPER TARPON,9406099,178,28,6
+538007893,cargo,52,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,AMILLA,9498561,196,32,12.8
+538008043,tanker,85,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,CHEMOCEAN LEO,9777424,185,29,11.2
+538008097,,3,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,IDI,,,,
+538008152,cargo,79,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,NAVIOS SUMMER,9308003,,,
+538008171,,2,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+538008205,,5,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,FLEX CONSTELLATION,,,,
+538008346,cargo,5,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,XI LONG 19,9699440,,,
+538008389,cargo,22,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,SAO JOY,9824069,340,62,11.3
+538008428,tanker,28,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,DALE,9353084,185,28,8
+538008525,,2,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+538008590,cargo,11,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,LEM MARIGOLD,9845805,,,
+538008596,cargo,4,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,KEY OHANA,9478585,,,
+538008604,,5,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+538008673,,3,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+538008811,cargo,71,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,INCRES,9833371,172,28,8.5
+538008833,tanker,8,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,COSMIC GLORY,9877822,183,32,11.8
+538008946,cargo,61,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;马六甲6小时AIS采集数据_2026-09-05.csv,INFERRO,9825415,,,
+538008976,,1,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+538009205,,3,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,PACIFIC TOPAZ,,,,
+538009222,tanker,28,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;马六甲6小时AIS采集数据_2026-09-05.csv,CL ZHAOGE,9718090,183,33,8.6
+538009419,,3,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+538009501,tanker,49,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,FRONT FAVOUR,9903968,250,44,8.8
+538009611,other,82,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,OCEANXPLORER,9533373,87,18,7.5
+538009638,tanker,48,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,FRONT ALTA,9920772,,,
+538009746,tanker,123,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,ALDER EXPRESS,9934163,183,32,7.2
+538009905,,1,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+538010028,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,RENA P,,,,
+538010121,,1,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,TENDER SOUL,,,,
+538010468,tanker,37,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,STI MODEST,9833577,183,32,10.7
+538010772,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,PETROBRAS 80,,,,
+538010780,,20,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,PETROBRAS 83,,,,
+538010855,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,HG ANTWERP,,,,
+538010979,cargo,9,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,CHL APOLLO,9318943,,,
+538011000,cargo,66,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,TWIN DELIGHT,9984481,,,
+538011027,,2,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+538011035,,2,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+538011241,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,AM PANTHER,,,,
+538011431,tanker,42,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,ARCHY VANGUARD,9970674,,,
+538011471,tanker,33,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,GEM SAPPHIRE,1015870,183,32,8
+538011498,cargo,1,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,FORTUNE LEGACY,1051434,,,
+538011520,,11,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;马六甲1小时AIS采集数据_实时可见版.csv,POLYAIGOS,,,,
+538011648,tanker,19,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,CAPE BILBAO,1035052,183,32,8.4
+538011719,tanker,3,old_partial_static,马六甲10分钟AIS采集数据.csv,YASA NORTH SEA,1043164,,,
+538011737,tanker,4,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,DHT ADDAX,1055181,331,60,11
+538011753,cargo,3,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,UGR ZAKHER,9980411,199,38,9.4
+538011809,,3,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,,,,,
+538011841,cargo,22,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ROSANNA,9999797,200,32,11.6
+538012211,cargo,3,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,PEACE SAPPHIRE,1114731,179,30,9.8
+538012301,tanker,97,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,GREAT FORTUNE,9293961,,,
+538012638,cargo,25,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,DAIWAN WISDOM,9427134,175,29,6.2
+538012767,,1,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+538012825,cargo,58,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,JIMMY T,9782118,228,32,13.7
+538012897,cargo,36,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,KATAGALAN WISDOM III,9599145,240,38,7
+538012937,cargo,9,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,MV TRAMONTANA,9498834,,,
+538013054,tanker,79,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,JAG PARTH,9418638,183,32,8.8
+538090571,,1,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+548110000,cargo,50,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,LEMONA,1062512,120,21,8
+548263500,,18,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲10分钟AIS采集数据.csv,IRIS PAOAY,,,,
+548687000,cargo,42,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,KANOA,9965485,120,21,9.3
+548789000,,2,old_partial_static,马六甲10分钟AIS采集数据.csv,,,,,
+548843000,,3,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+548951000,cargo,43,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ASIAN MARVELOUS,9973793,120,21,9.2
+548956000,cargo,18,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,PERLAS,9900291,,,
+548977000,cargo,3,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,WESTERN DONCASTER,9831505,,,
+563001270,tanker,115,old_partial_static,马六甲10分钟AIS采集数据.csv;马六甲6小时AIS采集数据_2026-09-05.csv,AYER MANIS,8898879,,,
+563001322,,3,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+563002840,other,17,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,WAVEMASTER 5,9257888,,,
+563003730,,1,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,,,,,
+563004120,other,14,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,MARINA PRINCESS 3,,0,0,
+563008450,,10,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,SINDO 10,,,,
+563009210,other,74,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,NOBLE ORION TG46,9386110,30,10,4.1
+563009220,other,19,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,NOBLE VEGA,9386093,0,0,4.8
+563009240,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,NOBLE PEARL TG 42,,,,
+563009290,other,59,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,SD EMERALD,9447512,,,
+563009840,,2,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+563010320,tanker,18,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,OIGAWA,9434242,102,18,6.7
+563010620,,2,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,GP30,,,,
+563010650,,6,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,PILOT GP33,,,,
+563011000,,4,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+563012600,other,78,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,QUEEN STAR 6,400500,35,7,1.5
+563012720,,9,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲10分钟AIS采集数据.csv,CLEANSEAS UNITED,,,,
+563013850,,57,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,GP44,,,,
+563014650,tanker,17,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv,LUBQUEST,9239719,,,
+563015500,tanker,14,old_partial_static,马六甲10分钟AIS采集数据.csv;马六甲1小时AIS采集数据_实时可见版.csv,EAGLE ASIA 07,9687447,,,
+563015540,other,24,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,MARINA MEGA,,0,0,
+563015970,other,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,0,0,
+563016040,other,7,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,FAIR WINDS,,0,0,
+563017700,tanker,33,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,ROSTELLA,9803247,,,
+563019440,other,45,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,MARINA ZANITE,9637662,30,9,4
+563019670,other,29,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,CLEANSEAS FERRY 2,0,15,5,0.9
+563021070,,33,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,PILOT GP53,,,,
+563021100,tanker,30,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,KAI EI MARU 15,9812353,106,17,6.8
+563021430,other,34,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PILOT GP54,0,,,
+563021460,,12,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PILOT GP57,,,,
+563022310,,4,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+563022400,other,87,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,TIONG WOON OCEAN 19,9554999,0,0,25.5
+563022700,tanker,51,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,ORIENT CHALLENGE,9793375,,,
+563022820,,34,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,MARINA ZIRCON,,,,
+563023490,,20,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,EVER JOYCE,,,,
+563024100,tanker,3,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,CAPELLA,9809057,,,
+563024220,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+563024400,,15,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,TICO CAPRICORN,,,,
+563024500,,6,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,MARINE QUEENIE,,,,
+563026590,,28,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,PANDUAN,,,,
+563026600,,25,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,WAVEMASTER 8,,,,
+563028460,,1,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+563029230,tanker,94,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv,SYNERGY,9703954,48,10,2.8
+563029610,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,FLOR DE LA MAR,,,,
+563029950,,5,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,GP 58,,,,
+563029960,,25,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,GP59,,,,
+563030060,other,11,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PILOT GP61,0,27,9,0
+563030300,tanker,87,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,CAMELIA,9343742,,,
+563030850,,33,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,MERLION 30,,,,
+563031300,,12,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,CLEANSEAS EQUALITY,,,,
+563033240,,5,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,UNI SUPPLY 1,,,,
+563034300,tanker,14,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲10分钟AIS采集数据.csv;马六甲6小时AIS采集数据_2026-09-05.csv,MARINE ROSE,9812676,,,
+563034430,tanker,11,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,MERLION 31,9703930,38,10,2.2
+563034500,other,87,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,QUEEN STAR 8,9797125,35,8,1.2
+563036620,other,10,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PILOT GP01,0,0,0,0
+563036640,,12,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PILOT GP03,,,,
+563036650,other,20,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PILOT GP04,0,0,0,2
+563037440,,2,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+563038700,,18,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+563038800,tanker,36,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,MARINE TINA,9813424,,,
+563040345,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,KHH II,,,,
+563040382,other,3,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,SC1494C,,0,0,
+563040539,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+563041170,,3,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+563042900,,2,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+563052200,cargo,59,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,MAERSK RIO DELTA,9357951,287,40,11.5
+563056400,tanker,34,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,MARINE TERRACE,9825049,,,
+563057500,,41,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,ASIANFAST 1,,,,
+563057800,tanker,28,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,COMMITMENT,9834882,46,12,3
+563058100,,1,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+563060200,,2,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+563062780,other,36,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,STRAITS ETERNITY,9817341,45,11,3.3
+563064600,cargo,60,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,CEMTEX SINCERITY,9820661,,,
+563065060,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+563066180,,1,old_dynamic_only,马六甲测试AIS采集数据.csv,,,,,
+563067950,,4,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+563068300,cargo,14,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,SCHUYLER TRADER,9638408,180,30,9.7
+563069100,tanker,249,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲10分钟AIS采集数据.csv;马六甲6小时AIS采集数据_2026-09-05.csv,SALAMAH,9836799,78,13,4.5
+563069110,other,13,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,LOOPHOLE,,0,0,
+563069200,,2,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,HAFNIA THALASSA,,,,
+563069950,tanker,24,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,EVER BRIGHT,9742376,45,10,3
+563070140,other,22,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PSA TAURUS YS52,9868417,,,
+563070820,,9,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,MPA 2,,,,
+563070950,,26,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,MPA 5,,,,
+563071620,,1,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+563071960,,1,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,PENGUIN KILAT,,,,
+563073090,other,11,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,GC 21,,20,6,
+563073120,,2,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,GC 23,,,,
+563073130,,3,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,GC 24,,,,
+563073220,,15,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,SEA FORTITUDE,,,,
+563073340,other,2,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,KST STELLAR,9548081,28,10,3.8
+563073570,other,24,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,MAJU MERCURY,9423097,30,11,4.2
+563073580,,8,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,VB MAX,,,,
+563074570,other,318,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,VISION 225,9903308,,,
+563074580,,28,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+563075510,cargo,11,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,PSA AGILITY,9085596,130,22,8.4
+563076280,,2,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+563077750,,6,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,VB SUNSHINE,,,,
+563078420,other,170,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,ENG HUP MARIN,9968633,30,12,2
+563078430,tanker,34,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,BOONTEK,9948889,,,
+563078670,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+563078860,,16,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,INVESTIGATOR,,,,
+563079190,,53,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,STL PS1,,,,
+563079380,,5,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+563079390,,7,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+563079600,tanker,24,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,STRAITS GRACIOUS,9644940,97,17,6.2
+563079610,,1,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+563079960,other,58,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,MATA IKAN,9920796,36,8,0
+563080160,other,58,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲10分钟AIS采集数据.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,MPA GUARDIAN,0,,,
+563080350,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,BENGKALIS JAYA,,,,
+563081020,other,8,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,PENGUIN RECHARGE,,0,0,
+563081110,other,30,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,PENGUIN RENEWABLE,,28,9,
+563082690,,3,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;马六甲6小时AIS采集数据_2026-09-05.csv,ARUNDINA,,,,
+563083360,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+563083550,,2,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv,CLEANSEAS JOY,,,,
+563083790,tanker,28,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,GLORIA,1055260,104,19,0
+563083810,,30,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+563084060,,20,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,CLEANSEAS FRIENDLY,,,,
+563084440,,1,old_partial_static,马六甲10分钟AIS采集数据.csv,,,,,
+563085090,,18,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PILOT 07,,,,
+563085100,tanker,35,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,OCEANA RIVER,9800738,,,
+563085320,,53,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,ETERNITY,,,,
+563085570,,2,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+563085680,other,17,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PILOT 13,0,17,5,0
+563085710,,16,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PSA UNITY,,,,
+563085720,,17,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PSA ACHIEVE,,,,
+563085870,tanker,44,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,CSM VIPER,1092385,60,14,4
+563085890,tanker,37,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,MT ROIELLA,1074022,90,16,5.8
+563086090,other,42,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PILOT 16,0,17,5,0
+563086150,,1,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+563086270,tanker,44,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,SEVERN,9738430,,,
+563086370,,8,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+563086380,cargo,3,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,15,5,
+563086450,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,EON,,,,
+563086580,other,35,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PSA LYRA (NN76),1060332,30,12,4.7
+563086590,other,39,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PSA SUCCESS CS10,1040239,,,
+563086610,tanker,14,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,CSM HYDRA,1114884,60,14,4.8
+563086920,tanker,54,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,RIKKA,1105792,90,16,5
+563086930,,8,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,PSA PISCES,,,,
+563087040,,10,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,PILOT 18,,,,
+563087090,,5,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+563087130,cargo,370,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲10分钟AIS采集数据.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,STL T6,1105546,108,21,3
+563087150,,1,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+563087310,other,81,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PSA VELA (NN79),1060370,30,12,5
+563087460,,3,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,PLUTO,,,,
+563087590,,20,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,PSA VOLANS,,,,
+563087720,other,21,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PSA NEBULA,1060394,,,
+563088360,other,9,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,PUTRI MAYANG SARI,1125596,44,12,1.5
+563088700,,8,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,CNC NEPTUNE,,,,
+563089300,,35,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+563092000,tanker,10,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,COMO,9532329,89,15,5
+563096800,tanker,48,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,EONIA,9407031,144,23,5.5
+563097000,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,REGALITY,,,,
+563098800,tanker,60,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;马六甲10分钟AIS采集数据.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,MARINE VICKY,9880520,103,19,6.1
+563100400,,1,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+563105900,other,267,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,PSA MARVEL CS05,9869605,32,12,5.4
+5631101,other,389,enhanced_full_static;old_dynamic_only;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲10分钟AIS采集数据.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv;马六甲测试AIS采集数据.csv,PSAB,0,0,0,0
+563111600,tanker,4,old_partial_static,马六甲10分钟AIS采集数据.csv;马六甲6小时AIS采集数据_2026-09-05.csv,FUELNG BELLINA,9859636,,,
+563120700,tanker,48,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,MAESTRO,9908554,115,19,6.9
+563129100,tanker,15,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,BRASSAVOLA,9880764,116,22,7.1
+563129900,cargo,20,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,WAN HAI 286,9871335,175,28,9.4
+563130300,tanker,14,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,EPITOME,9910973,,,
+563131800,cargo,6,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,WAN HAI 523,9400198,269,33,12.5
+563132700,tanker,144,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,CSM TAURUS,9672246,91,14,5.4
+563132900,,3,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ESSENCE,,,,
+563133400,,1,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+563138900,tanker,23,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;马六甲6小时AIS采集数据_2026-09-05.csv,EAGLE GARNET,9923657,,,
+563141500,,22,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PSA FALCON CS07,,,,
+563142000,other,204,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PENGUIN REDEEM,9778741,25,8,1.8
+563146600,cargo,9,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,BREMEN BELLE,9367188,,,
+563147700,other,37,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲10分钟AIS采集数据.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PSA VISION (NN27),9813709,32,12,4.4
+563149700,cargo,25,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,MATER,9841184,,,
+563152800,,8,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,SHUI YUN,,,,
+563155900,,16,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+563158000,tanker,6,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;马六甲6小时AIS采集数据_2026-09-05.csv,UNITY,9337767,42,10,2.5
+563158900,,10,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,MAERSK VERACRUZ,,,,
+563162900,tanker,53,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,PROTEUS REBECCA,9914682,,,
+563164600,tanker,132,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,VOLTA,9667277,160,28,5.4
+563167200,tanker,38,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,SRIWANGI,9313101,,,
+563168100,cargo,20,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,X-PRESS ANTARES,9875367,,,
+563172300,,11,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+563180300,tanker,75,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv,BOW LION,9952177,156,25,9.9
+563180600,,2,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+563180900,,4,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+563182900,tanker,48,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,FUELNG VENOSA,9937115,166,24,6.8
+563184200,other,69,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,RUBICON NN22,9678446,,,
+563186100,tanker,2,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,HAFNIA AXINITE,9719771,184,27,7.7
+563186900,,1,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+563187800,,13,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PSA PHOENIX CS09,,,,
+563190800,tanker,21,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,PRABHU PARVATI,9423621,144,24,5.8
+563190900,tanker,4,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,GOODTRANS 1,9854260,119,18,6.3
+563192500,other,27,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,SOL RELIANCE,9412854,170,28,8.3
+563196200,,1,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+563197600,,1,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+563204400,,20,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,DILIGENCE,,,,
+563206600,tanker,66,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,STOLT RINDO,9314765,122,20,4.8
+563208100,,23,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,MAPLE,,,,
+563209300,,3,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,X-PRESS PISCES,,,,
+563212400,cargo,19,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,KALIMANTAN EXPRESS,9650432,216,37,7
+563215600,,9,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,ZALE,,,,
+563221200,tanker,56,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,MARTA COSULICH,1013315,103,19,6.9
+563224400,cargo,2,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,EVER VOW,9950947,210,35,10.8
+563226900,tanker,41,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,AMALTHEA,9987457,,,
+563228600,tanker,32,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,MARINE GINZA,1013327,,,
+563229700,cargo,89,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,USSAMA BHUM,9969601,333,48,13.6
+563230100,,63,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,UNITY OF MAJESTIC,,,,
+563231600,cargo,39,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,SINAR SULAWESI,1015363,172,28,10.3
+563233400,tanker,60,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PEARL  LEGACY,1015662,104,19,6.9
+563233500,tanker,76,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,ENERGY LUMINA,9948360,,,
+563234000,cargo,4,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,APL FULLERTON,9632026,,,
+563235700,tanker,18,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,TITANIA,9987469,,,
+563240600,cargo,83,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,KOTA JOHAN,9641003,172,30,8.5
+563246900,tanker,82,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,ZOEY,1059395,,,
+563247600,cargo,52,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,EVER WILL,9950832,172,32,8.7
+563247900,other,160,enhanced_full_static;old_dynamic_only;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲10分钟AIS采集数据.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv;马六甲测试AIS采集数据.csv,MAJESTIC PASSION,1073119,39,10,0
+563248400,tanker,105,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PEARL LEGO,1015703,104,19,7
+563248800,,29,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,EM NATASHA,,,,
+563250100,tanker,19,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,PEARL LAVENDER,1015715,104,19,6.7
+563250600,other,100,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,MAJESTIC HARMONY,1073121,39,10,0
+563253500,,28,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,MARINE AZURE,,,,
+563257300,cargo,9,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,KOTA NEKAD,9390252,180,28,10.8
+563258400,other,181,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,MAJESTIC BOLD,1073133,39,10,0
+563258600,tanker,44,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲10分钟AIS采集数据.csv,MARINE BLUE,1032969,103,19,5.3
+563260500,tanker,39,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,OXALIS DAISY,1031355,109,19,4.5
+563264600,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,JAZEEL,,,,
+563265800,cargo,54,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,EVER VERVE,9951018,,,
+563267100,tanker,20,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,SHOREA,1074450,,,
+563267400,cargo,2,old_partial_static,马六甲10分钟AIS采集数据.csv,KOTA ODYSSEY,9977878,,,
+563267500,other,41,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,PEARL LEGEND,1052517,,,
+563269100,other,85,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,STELLAR OF MAJESTIC,1103512,42,10,0
+563273700,tanker,5,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,GOLDEN SIRIUS,105116100,,,
+563274400,cargo,78,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,EVER ECO,1025203,,,
+563276300,,16,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,SEASPAN OSAKA,,,,
+563281100,cargo,84,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,HAZIRA EXPRESS,9301809,260,32,11.6
+563283000,,1,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,CLEANSEAS PROGRESS,,,,
+563286400,cargo,45,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,YM WONDROUS,9684677,368,51,14
+563292300,cargo,49,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,ZIM MOUNT BLANC,9931111,,,
+563294700,tanker,99,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,EM SHONA,1072660,115,19,6.7
+563295000,,1,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+563295600,cargo,119,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,COSCO EXCELLENCE,9472189,,,
+563301800,,1,old_partial_static,马六甲10分钟AIS采集数据.csv,,,,,
+563302000,,10,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+563306500,,2,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,MOUNT SEYMOUR,,,,
+563312500,other,71,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲10分钟AIS采集数据.csv,MAJESTIC ETERNITY,1114640,39,10,0
+563312700,,2,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,POGONIA,,,,
+563314700,,3,old_partial_static,马六甲10分钟AIS采集数据.csv,,,,,
+563315800,,17,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,PINNACLE OF MAJESTIC,,,,
+563315900,tanker,53,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv,PACIFIC WISE,1096197,98,17,3
+563319900,,4,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+563320800,tanker,9,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,IGAN,1129396,,,
+563322500,tanker,84,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,BTS ECLIPSE,1055909,150,23,6.5
+563323700,,53,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;马六甲6小时AIS采集数据_2026-09-05.csv,MAJESTIC SERENITY,,,,
+563324800,,4,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ONE FUTURE,,,,
+563325200,tanker,71,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,MARINE HERO,1090648,,,
+563325500,tanker,72,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,BTS EQUINOX,1055911,,,
+563328300,tanker,26,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv,STRAITS WISDOM,1095777,114,19,5.5
+563328600,tanker,29,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv,PEARL OASIS,1113270,,,
+563332200,cargo,41,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,ONE SUCCESS,1023061,,,
+563332600,tanker,22,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,PAOLINA COSULICH,9956836,113,20,6.3
+563333100,,15,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+563335300,cargo,43,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,KOTA ELAN,1081843,,,
+563336000,tanker,34,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,HY JADE,9678654,43,12,3.5
+563336400,,4,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PEARL OKINAWA,,,,
+563338400,tanker,76,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ACS SP NEREUS,1076288,229,37,8.8
+563341900,,108,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,MAJESTIC ENCORE,,,,
+563406000,tanker,72,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,BTS CALYPSO,9512123,144,23,6
+563413000,,14,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv,RAINA,,,,
+563442000,other,18,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,VB BENAR,9683609,16,23,4.5
+563444000,cargo,24,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,JMS BERANI,9683594,,,
+563451000,tanker,42,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ENTHRAL,9671888,60,11,4.3
+563459000,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,VB GAMMA,,,,
+563480000,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,EVER BRAVE,,,,
+563542000,,35,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,CHLOE,,,,
+563562000,,49,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,MERLION 27,,,,
+563623000,tanker,16,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,OXALIS JASMINE,9310824,110,18,5.9
+563632000,cargo,36,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,GLORY CHALLENGER,9675042,117,20,7.7
+563679000,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,TIONG WOON OCEAN 6,,,,
+563708000,tanker,72,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,VALIANT III,9587881,54,13,3.2
+563750000,cargo,13,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PSA SUSTAINABILITY,9182631,189,26,6.6
+563751000,other,54,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,OCEAN RAIDER,9060651,36,7,1.5
+563780000,other,162,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,SINDO 12,9140839,32,7,1.5
+563781000,other,55,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,SINDO 31,8888173,32,6,1.3
+563793000,other,7,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ASIAN HERCULES II,8639297,91,43,4.2
+563846000,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,MARINE PROTECTOR,,,,
+563848000,,7,old_partial_static,马六甲10分钟AIS采集数据.csv;马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+563869000,,26,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;马六甲6小时AIS采集数据_2026-09-05.csv,SINDO PRINCESS,,,,
+563882000,,3,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲10分钟AIS采集数据.csv,MARLIN DUA,,,,
+563886000,cargo,9,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,KOTA AZAM,9182033,,,
+563887000,cargo,83,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,KOTA ANGGUN,9175602,182,28,6.6
+563927000,,2,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,STRAITS MUNIFICENT,,,,
+563983000,,7,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+563991000,cargo,35,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,APIA CHIEF,9614529,200,28,9.5
+563993000,other,13,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,BOS CHALLENGE,9749623,65,16,4.7
+564034000,tanker,19,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;马六甲6小时AIS采集数据_2026-09-05.csv,MERLION 8,9315616,,,
+564058426,,2,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,NOBLE VALOUR,,,,
+564167000,,1,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+564189000,tanker,71,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,RAFFLES SAMURAI,9352250,185,33,8.5
+564264000,,1,old_partial_static,马六甲10分钟AIS采集数据.csv,,,,,
+564275000,other,106,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,SEA LOYALTY,9672313,92,30,5.2
+564287000,tanker,31,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,RUTH,9695872,90,15,5
+564298000,other,20,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,JET FLYTE II,9149615,,,
+564330000,,9,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ASEAN RAIDER 1,,,,
+564331000,,13,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,ASEAN RAIDER II,,,,
+564334000,tanker,13,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PUFFIN THREE,9548811,94,18,5.2
+564346000,,51,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,HORIZON 6,,,,
+564375000,tanker,74,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲10分钟AIS采集数据.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,MARLIN TIGA,9675133,90,16,5
+564406000,,2,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲10分钟AIS采集数据.csv,ELBE,,,,
+564412000,,7,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+564420000,tanker,22,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,SHAN YING ZUO,9538440,,,
+564442000,,1,old_dynamic_only,马六甲测试AIS采集数据.csv,,,,,
+564462000,tanker,72,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,ALPHA,9515163,,,
+564474000,other,56,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,VB TANGKAS,9731078,,,
+564526000,tanker,40,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲10分钟AIS采集数据.csv;马六甲6小时AIS采集数据_2026-09-05.csv,EVER BEST,9704893,45,10,3
+564590000,tanker,35,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PACIFIC PRIDE,9447940,40,10,0
+564611000,other,49,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,HERON SPIRIT,9289702,,,
+564616000,tanker,58,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,ARTEMIS,9589580,,,
+564639000,cargo,6,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,KOTA SABAS,9645451,228,37,12.2
+564654000,other,31,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PIL0T GP43,0,15,4,1.4
+564659000,,1,old_partial_static,马六甲10分钟AIS采集数据.csv,,,,,
+564681000,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+564688000,tanker,35,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,DESNA,9730191,90,16,5
+564759000,,9,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,I MOLA,,,,
+564852000,,11,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,TOLL JADE,,,,
+564855000,cargo,72,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,TOLL EMPEROR,9355927,54,18,2
+564884000,other,23,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,JET RAIDER,9035735,30,7,1
+564885000,other,159,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,OCEAN FLYTE,9122162,0,0,1
+564886000,tanker,19,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv,GRAZIA COSULICH,9673109,,,
+564890000,other,92,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,GO MATILDA,9418755,75,16,5.2
+564892000,tanker,41,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,SEA UNITY,9561411,,,
+564938000,cargo,29,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,NYK ISABEL,9387437,210,30,11.4
+564968000,,19,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ORACLE,,,,
+565021000,cargo,66,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,KOTA SAHABAT,9645463,,,
+565102000,tanker,207,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,AYER CHERDAS,9698745,,,
+565173000,tanker,99,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲10分钟AIS采集数据.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,AYER CHERDEK,9698812,45,10,3
+565175000,,6,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,PILOT GP45,,,,
+565186000,tanker,1,old_partial_static,马六甲10分钟AIS采集数据.csv,NURA KARA,9374428,,,
+565209000,,2,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PARMELIA 1,,,,
+565235000,,6,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+565237000,other,212,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,POSH CHAMPION,9514274,,,
+565243000,cargo,63,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,AYER CHOMEL,9710921,45,10,0
+565261000,,10,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv,SEA RELIANCE,,,,
+565263000,,1,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+565333000,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,VB MENANG,,,,
+565357000,cargo,97,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,KOTA SEGAR,9681235,228,37,10.8
+565358000,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,STRAITS ABUNDANCE,,,,
+565378000,,1,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+565446000,,10,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,SAVVY,,,,
+565459000,,1,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+565472000,tanker,13,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,CHWNTEK 5,9536674,,,
+565512000,tanker,51,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,SEA DILIGENCE,9760861,90,15,5.8
+565518000,,18,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,HORIZON 8,,,,
+565523000,tanker,17,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,HANTEK 3,9536686,91,19,7
+565574000,tanker,42,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,STRAITS NOMURA,9422811,103,19,6.8
+565602000,,16,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PILOT GP49,,,,
+565643000,,2,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+565660000,tanker,33,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,ISSELIA,9462081,180,20,6.5
+565662000,,2,old_partial_static,马六甲10分钟AIS采集数据.csv,,,,,
+565706000,,5,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+565733000,,9,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,KANTEK 2,,,,
+565780000,cargo,130,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,KOTA DUTA,9483487,,,
+565797000,other,35,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,POSH TEAL,9609794,,,
+565823000,,15,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;马六甲6小时AIS采集数据_2026-09-05.csv,MARINE JEWEL,,,,
+565833000,tanker,4,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,BLOSSOM,9449558,115,19,5.5
+565838000,,12,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,DRINA,,,,
+565894000,,14,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,EMINENCE,,,,
+565897000,tanker,85,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,KIRANA QUINTYA,9400796,160,28,7
+565919000,tanker,56,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,CROWN FORTUNE,9550644,,,
+565923000,,3,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,CLEANSEAS AMITY,,,,
+565925000,,76,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,HORIZON 7,,,,
+565929000,cargo,34,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,THOR ACHIEVER,9424857,190,32,10.2
+565951000,,21,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,RELIANT CS01,,,,
+565957000,tanker,58,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,ISANDA,9493030,,,
+565968000,tanker,52,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,LAUREL,9576911,103,18,5.4
+565981000,,2,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+566000050,,2,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,SCDF RED DOLPHIN,,,,
+566000080,,13,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,SCDF RED SAILFISH,,,,
+566007000,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ENERGETIC,,,,
+566009000,tanker,85,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,SEA PROSPERITY,9717371,90,16,5.7
+566010000,,7,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+566065000,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,GOLDEN ARANDA,,,,
+566082000,,5,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+566096000,,5,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+566116000,,5,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+566127000,,17,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+566133000,other,9,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,RESILIENT NN23,9727675,32,13,0
+566135000,tanker,61,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,KOSMOS LILY,9615834,44,10,2.7
+566156000,,4,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,QUEEN STAR 2,,,,
+566175000,tanker,12,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,KONG QUE ZUO,9538452,228,32,8
+566209000,,6,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,HAI SOON 3,,,,
+566210000,,1,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+566218000,,8,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+566222000,cargo,87,old_partial_static,马六甲10分钟AIS采集数据.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PELAGICA,9453781,,,
+566241000,,5,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv,VANDA SUCCESS,,,,
+566373000,,24,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,CLEANSEAS HARMONY,,,,
+566385000,,1,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+566474000,tanker,33,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,STRAITS ORACLE,9655377,95,14,5
+566480000,tanker,26,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,KOSMOS CITRINE,9650509,105,18,6.8
+566496000,,26,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,MARINE ORACLE,,,,
+566500000,,15,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,BATAMFAST 19,,,,
+566501000,,24,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,MV.BATAMFAST20,,,,
+566511000,,5,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+566513000,other,2,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;马六甲6小时AIS采集数据_2026-09-05.csv,POSH HAWK,9624598,75,18,5.4
+566514000,,1,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+566530000,tanker,19,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PACIFIC HONOUR,9651864,,,
+566532000,tanker,42,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,STRAITS BRILLIANCE,9656876,,,
+566538000,tanker,23,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;马六甲6小时AIS采集数据_2026-09-05.csv,WISDOM,9659505,,,
+566540000,,13,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+566592000,tanker,28,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,AQUA TERRA 7,9648790,,,
+566601000,tanker,106,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,DELPHINE,9654907,87,17,7.5
+566612000,tanker,59,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,SEA ENDURANCE,9588689,90,14,4.5
+566623000,,1,old_partial_static,马六甲10分钟AIS采集数据.csv,,,,,
+566630000,tanker,19,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲10分钟AIS采集数据.csv,FERESA,9649067,67,14,3.9
+566639000,,38,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,TRINITY,,,,
+566664000,other,32,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ENA SAMURAI,9545900,76,18,5.1
+566680000,tanker,21,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,VITALITY,9639373,89,18,5.5
+566685000,tanker,17,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,SEA SOLIDARITY,9647904,,,
+566686000,tanker,36,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;马六甲6小时AIS采集数据_2026-09-05.csv,DEMURE,9654919,,,
+566687000,tanker,49,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,STRAITS HARMONY,9647916,,,
+566701000,,6,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv,MERIT,,,,
+566702000,tanker,25,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,HY TALENT,9664536,43,12,4
+566717000,other,46,old_partial_static,马六甲10分钟AIS采集数据.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,MARINA ARIEL,9667784,,,
+566724000,,17,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,MERLION 25,,,,
+566734000,other,20,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,PW TENANG,9668843,,,
+566751000,tanker,9,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,HY CRYSTAL,9665035,43,12,3.4
+566753000,tanker,48,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,HAI SOON 33,9666340,88,16,4
+566754000,,4,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,HAI SOON 16,,,,
+566759000,tanker,32,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,MARITIME HORIZON,9732046,183,35,11
+566796000,cargo,24,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,APL TEMASEK,9631955,,,
+566800000,other,94,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,POSH ELEGANCE,9770191,,,
+566841000,,30,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+566842000,tanker,11,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,HUMBER,9680279,,,
+566849000,,5,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+566858000,cargo,9,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,KOTA LEMBAH,9622318,266,32,11.2
+566864000,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,KOTA MEGAH,,,,
+566960000,,1,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+566982000,tanker,11,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,HY EMERALD,9676307,,,
+566994000,other,34,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲10分钟AIS采集数据.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,QUEEN STAR 3,9658410,30,7,1.2
+567389000,tanker,9,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,BHUREEMAS,9547568,,,
+567621000,,2,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+567624000,cargo,21,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,NATTHA BHUM,9937775,172,28,9.9
+572382220,cargo,94,enhanced_full_static;old_partial_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,PIONEER FORTUNE,9312315,,,
+572549220,other,99,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,VALLIANZ PRESTIGE,9978846,65,12,4.8
+574005830,tanker,54,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,AULAC MISSION,9421283,,,
+574005940,cargo,65,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,HAIAN ALFA,9967043,,,
+574006350,tanker,7,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,PVT POSEIDON,9457593,244,42,8
+574013228,cargo,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,TAN BINH 136,9254745,170,28,9
+574253000,,1,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+574682000,,16,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+577614000,,1,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+624015000,other,38,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ASSOSA,9617387,166,27,10.4
+631010077,tanker,42,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,DELLA,9227479,332,58,17.2
+636011023,,5,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,WORLD SPIRIT,,,,
+636013854,cargo,11,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,MARCO,9528574,225,32,13.2
+636014591,tanker,46,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,FPMC C INTELLIGENCE,9397779,333,60,19.5
+636014637,,1,old_partial_static,马六甲10分钟AIS采集数据.csv,,,,,
+636014996,cargo,41,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,YM MUTUALITY,9455870,305,40,13.9
+636015142,tanker,2,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,FPMC 26,9433846,,,
+636015233,cargo,47,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,MSC MANYA,9275397,,,
+636015516,cargo,65,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,KOTA PRIMROSE,9475674,,,
+636015818,,17,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,TATRY,,,,
+636015928,,7,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,SEA VIBE,,,,
+636016118,cargo,53,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,JOANNA,9204477,184,25,9.9
+636016151,cargo,14,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;马六甲6小时AIS采集数据_2026-09-05.csv,ODYSSEAS L,9597381,229,32,7.7
+636016653,tanker,31,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,M T VAYU,9531727,0,0,4.3
+636016728,tanker,58,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,BLUE SKY I,9335903,183,28,7.5
+636017062,,6,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+636017344,,2,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+636017383,,7,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,KPS MEHMET BEY,,,,
+636017445,tanker,4,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,MARIA ENERGY,9659725,289,46,9.1
+636017649,cargo,39,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,LILA,9748837,,,
+636017726,cargo,84,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,MSC ERICA,9755191,,,
+636017742,,3,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+636017867,cargo,26,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,MSC TINA,9762340,,,
+636018068,cargo,10,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,MSC AVNI,9756729,314,48,11.5
+636018138,cargo,3,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,AAL SINGAPORE,9498365,194,28,8.2
+636018637,cargo,78,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,DAIWAN LEADER,9796535,,,
+636018725,,5,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,FPMC 33,,,,
+636018739,cargo,22,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,ES TREASURE,9436458,,,
+636018830,tanker,21,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,AREIOS,9826897,250,44,9
+636019700,,1,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+636019929,tanker,2,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,IMPERIAL,9400849,178,32,11
+636019985,,2,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+636020221,cargo,78,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,KMTC SHIMIZU,9893591,196,32,11.2
+636020483,cargo,1,old_partial_static,马六甲10分钟AIS采集数据.csv,STAMATIS B,9280811,,,
+636020594,cargo,15,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,STARDUST,9591959,,,
+636020610,,2,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+636020769,,15,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+636020999,,14,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,A LEOPARD,,,,
+636021007,,6,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+636021197,cargo,73,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,SYMI,9669407,200,32,7.2
+636021654,cargo,44,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,BFAD PACIFIC,9364203,,,
+636021689,tanker,1,old_partial_static,马六甲10分钟AIS采集数据.csv,DING HENG 26,9414046,,,
+636021798,cargo,19,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,EIRINI S,9595369,180,30,10.2
+636021857,,1,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+636021863,,6,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ORIENT U,,,,
+636021904,,1,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+636021991,cargo,46,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,MSC NIMISHA III,9315886,222,30,9.3
+636022117,,4,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+636022412,cargo,9,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,SINAR SANUR,9970428,,,
+636022604,,1,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,MSC MICHELCAPPELLINI,,,,
+636022726,,1,old_partial_static,马六甲10分钟AIS采集数据.csv,,,,,
+636022759,tanker,84,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲6小时AIS采集数据_2026-09-05.csv,MARTINI,9319545,228,32,7.6
+636022829,tanker,5,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,YIDA 8,9936941,160,27,9.3
+636022843,tanker,49,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,CORFU GAS,9984728,230,33,7.1
+636023023,,2,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+636023026,cargo,19,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,MELBOURNE BRIDGE,9967287,,,
+636023028,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,MANZANILLO BRIDGE,,,,
+636023183,,1,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+636023262,,4,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,LCAW QINGDAO,,,,
+636023383,,4,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,ARREBOL,,,,
+636023420,,22,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+636023471,cargo,44,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,EMERALD SHENGSI,9981300,,,
+636023477,other,48,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,SEA COD,9665267,39,11,4
+636023483,,6,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+636023529,,14,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,ANJI FLOURISHMENT,,,,
+636023531,cargo,24,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ANJI LUCK,1038626,228,38,8
+636023790,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+636023826,,1,old_partial_static,马六甲10分钟AIS采集数据.csv,,,,,
+636023851,tanker,40,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ATHOS LNG,9972672,290,46,11.4
+636023886,tanker,60,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,VL PIONEER,968366100,,,
+636023940,cargo,15,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,MSC SIJING,9967017,172,28,9.5
+636024010,,10,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+636024250,cargo,6,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,SMOOTH VENTURE,9550319,,,
+636024603,,1,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+636024729,cargo,18,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,MSC UNITE VI,9116589,285,40,8.5
+636024819,,2,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+636024987,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,LITTLE CONCERT,,,,
+636025047,cargo,1,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,STAR HELSINKI,9699270,,,
+636025053,,9,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+636025279,,1,old_partial_static,马六甲10分钟AIS采集数据.csv,,,,,
+636025368,,9,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+636025369,cargo,5,enhanced_full_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv,BASIC PROGRESS,1083449,229,32,11.7
+636025420,,1,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+636025823,,10,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+636025891,,1,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+636025940,tanker,26,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,HASBAH,9986075,,,
+636026153,,1,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+636026301,,7,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,,,,,
+636026350,other,74,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,CL SPEC PAULINE,1122594,82,18,4
+636026429,cargo,73,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,TAI SUCCESS,9642148,,,
+636026577,,1,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+636026642,cargo,31,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,EVER FAME,9850800,334,48,12.2
+636026677,cargo,71,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,IONIAN PRINCESS,9381213,225,32,7
+636026707,,1,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+636026758,tanker,54,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,SG FRIENDSHIP,9288576,,,
+636091031,cargo,39,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,DAPHNE,9298648,220,32,10.7
+636093094,cargo,38,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,CONTI CRYSTAL,9293820,,,
+636093114,,2,old_partial_static,马六甲6小时AIS采集数据_2026-09-05.csv,,,,,
+636093181,cargo,31,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,AL MASHRAB,9732319,369,51,11.3
+636093357,,16,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,ELBE POINT,,,,
+667001509,,1,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,K0I 1,,,,
+668116289,cargo,258,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;malacca_enhanced_ais_6h_2026-09-08_123520_473.csv;马六甲10分钟AIS采集数据.csv;马六甲1小时AIS采集数据_实时可见版.csv;马六甲6小时AIS采集数据_2026-09-05.csv,SOON LI 28,1135084,,,
+671387100,,3,enhanced_full_static;old_partial_static,malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv;马六甲6小时AIS采集数据_2026-09-05.csv,LONG  PU  16,,,,
+677057200,,22,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,MANTA 8,,,,
+677081700,,3,old_partial_static,马六甲1小时AIS采集数据_实时可见版.csv,,,,,
+710003752,tanker,5,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,OLAVO BILAC,9547697,249,44,14.7
+982320262,other,6,enhanced_full_static,malacca_enhanced_ais_6h_2026-09-08_123520_473.csv,T/T KAHALA,,5,2,

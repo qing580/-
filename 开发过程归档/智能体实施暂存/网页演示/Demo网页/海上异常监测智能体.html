@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>海上异常监测智能体</title>
+  <link rel="stylesheet" href="统一入口/统一入口.css" />
+</head>
+<body>
+  <div class="portal-shell">
+    <header class="portal-header">
+      <div class="portal-brand">
+        <img src="启动资源/maritime_anomaly_agent_icon.png" alt="" />
+        <div>
+          <strong>海上异常监测智能体</strong>
+          <span>马六甲海峡 · AIS 历史实验平台</span>
+        </div>
+      </div>
+
+      <nav class="role-switch" role="tablist" aria-label="演示视角">
+        <button id="userRoleButton" class="role-button is-active" type="button" role="tab" aria-selected="true" aria-controls="userPane" data-role="user">
+          <i data-lucide="navigation" aria-hidden="true"></i>
+          <span>航行助手</span>
+        </button>
+        <button id="adminRoleButton" class="role-button" type="button" role="tab" aria-selected="false" aria-controls="adminPane" data-role="admin" tabindex="-1">
+          <i data-lucide="shield-check" aria-hidden="true"></i>
+          <span>海事业务台</span>
+        </button>
+      </nav>
+
+      <div class="portal-meta" aria-live="polite">
+        <span class="history-label"><i data-lucide="database" aria-hidden="true"></i>历史数据演示</span>
+        <span id="currentRoleLabel" class="current-role">当前：航行助手</span>
+        <span id="loadStatus" class="load-status"><span class="status-dot"></span>正在加载两端</span>
+      </div>
+    </header>
+
+    <main class="portal-stage">
+      <section id="userPane" class="portal-pane is-active" role="tabpanel" aria-labelledby="userRoleButton" data-pane="user">
+        <iframe id="userFrame" title="用户端航行助手" src="用户端航行助手版/用户端航行助手.html" data-expected-title="用户端航行助手"></iframe>
+        <div class="frame-state is-loading" data-frame-state="user" role="status">
+          <div class="loading-copy"><span class="spinner"></span><strong>正在载入航行助手</strong></div>
+          <div class="error-copy">
+            <i data-lucide="triangle-alert" aria-hidden="true"></i>
+            <strong>航行助手加载失败</strong>
+            <span>另一视角仍可继续使用。</span>
+            <button type="button" data-retry="user"><i data-lucide="refresh-cw" aria-hidden="true"></i>重新加载</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="adminPane" class="portal-pane" role="tabpanel" aria-labelledby="adminRoleButton" data-pane="admin" aria-hidden="true">
+        <iframe id="adminFrame" title="管理端海事业务台" src="管理端海事业务台版/管理端海事业务台.html" data-expected-title="管理端"></iframe>
+        <div class="frame-state is-loading" data-frame-state="admin" role="status">
+          <div class="loading-copy"><span class="spinner"></span><strong>正在载入海事业务台</strong></div>
+          <div class="error-copy">
+            <i data-lucide="triangle-alert" aria-hidden="true"></i>
+            <strong>海事业务台加载失败</strong>
+            <span>另一视角仍可继续使用。</span>
+            <button type="button" data-retry="admin"><i data-lucide="refresh-cw" aria-hidden="true"></i>重新加载</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="统一入口/统一入口逻辑.js"></script>
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script src="统一入口/统一入口.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "dataset": "public-global-vessel-identity:latest",
+  "pilot_vessels": 20,
+  "query_priority_counts": {
+    "imo": 15,
+    "mmsi": 5
+  },
+  "ais_rough_category_counts": {
+    "cargo_unspecified": 5,
+    "fishing": 1,
+    "passenger": 4,
+    "tanker": 4,
+    "other": 3,
+    "unknown": 3
+  },
+  "executed": true,
+  "status_counts": {
+    "success": 20
+  },
+  "note": "API results still require source-aware label adjudication."
+}

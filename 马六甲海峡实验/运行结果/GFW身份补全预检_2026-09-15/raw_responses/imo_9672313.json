@@ -1,0 +1,117 @@
+{
+  "limit": 30,
+  "since": null,
+  "total": 1,
+  "entries": [
+    {
+      "dataset": "public-global-vessel-identity:v4.0",
+      "registryInfoTotalRecords": 1,
+      "registryInfo": [
+        {
+          "id": "cd1844ac5bba011acefc96c0d6bf895b",
+          "sourceCode": [
+            "IMO"
+          ],
+          "ssvid": "564275000",
+          "flag": "SGP",
+          "shipname": "URANUS",
+          "nShipname": "URANUS",
+          "callsign": "9V6582",
+          "imo": "9672313",
+          "latestVesselInfo": true,
+          "transmissionDateFrom": "2014-01-03T07:27:54Z",
+          "transmissionDateTo": "2014-08-11T02:17:23Z",
+          "geartypes": [
+            "BUNKER"
+          ],
+          "lengthM": null,
+          "tonnageGt": 2993,
+          "vesselInfoReference": "dc31c8ea438a3a9312c22784293c3427",
+          "extraFields": []
+        }
+      ],
+      "registryOwners": [],
+      "combinedSourcesInfo": [
+        {
+          "vesselId": "134ec4225-5429-5ead-0661-b7a19b18d59f",
+          "geartypes": [
+            {
+              "name": "BUNKER",
+              "source": "GFW_VESSEL_LIST",
+              "yearFrom": 2014,
+              "yearTo": 2026
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "BUNKER",
+              "source": "GFW_VESSEL_LIST",
+              "yearFrom": 2014,
+              "yearTo": 2026
+            }
+          ]
+        }
+      ],
+      "selfReportedInfo": [
+        {
+          "id": "134ec4225-5429-5ead-0661-b7a19b18d59f",
+          "ssvid": "564275000",
+          "shipname": "SEA LOYALTY",
+          "nShipname": "SEALOYALTY",
+          "flag": "SGP",
+          "callsign": "9V6582",
+          "imo": "9672313",
+          "messagesCounter": 29468791,
+          "positionsCounter": 4284833,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "SEVERAL_FIELDS",
+          "transmissionDateFrom": "2014-01-03T07:20:34Z",
+          "transmissionDateTo": "2026-09-13T23:59:54Z"
+        }
+      ],
+      "matchCriteria": [
+        {
+          "reference": "134ec4225-5429-5ead-0661-b7a19b18d59f",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.imo",
+              "value": "9672313"
+            }
+          ],
+          "period": {
+            "dateFrom": "2014-01-03T07:20:34Z",
+            "dateTo": "2026-09-13T23:59:54Z"
+          },
+          "latestVesselInfo": true
+        },
+        {
+          "reference": "dc31c8ea438a3a9312c22784293c3427",
+          "property": "registryInfo.vesselInfoReference",
+          "source": "registryInfo",
+          "matches": [
+            {
+              "property": "registryInfo.imo",
+              "value": "9672313"
+            }
+          ],
+          "period": {
+            "dateFrom": "2014-01-03T07:27:54Z",
+            "dateTo": "2014-08-11T02:17:23Z"
+          },
+          "latestVesselInfo": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "query": "9672313",
+    "normalizedQuery": "9672313",
+    "didYouMean": {
+      "shipname": {}
+    }
+  }
+}

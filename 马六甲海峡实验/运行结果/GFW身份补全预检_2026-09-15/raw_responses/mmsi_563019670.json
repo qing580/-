@@ -1,0 +1,396 @@
+{
+  "limit": 30,
+  "since": null,
+  "total": 6,
+  "entries": [
+    {
+      "dataset": "public-global-vessel-identity:v4.0",
+      "registryInfoTotalRecords": 0,
+      "registryInfo": [],
+      "registryOwners": [],
+      "combinedSourcesInfo": [
+        {
+          "vesselId": "1126f8948-8104-3e6d-a076-1fc19ef46d9c",
+          "geartypes": [
+            {
+              "name": "PASSENGER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2022,
+              "yearTo": 2022
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "PASSENGER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2022,
+              "yearTo": 2022
+            }
+          ]
+        }
+      ],
+      "selfReportedInfo": [
+        {
+          "id": "1126f8948-8104-3e6d-a076-1fc19ef46d9c",
+          "ssvid": "563019670",
+          "shipname": "TSS 57",
+          "nShipname": "TSS57",
+          "flag": "SGP",
+          "callsign": "9V9585",
+          "imo": "4194304",
+          "messagesCounter": 4460,
+          "positionsCounter": 1702,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "NO_MATCH",
+          "transmissionDateFrom": "2022-01-20T02:30:35.35Z",
+          "transmissionDateTo": "2022-03-12T07:35:59.83Z"
+        }
+      ],
+      "matchCriteria": [
+        {
+          "reference": "1126f8948-8104-3e6d-a076-1fc19ef46d9c",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.ssvid",
+              "value": "563019670"
+            }
+          ],
+          "period": {
+            "dateFrom": "2022-01-20T02:30:35.35Z",
+            "dateTo": "2022-03-12T07:35:59.83Z"
+          },
+          "latestVesselInfo": true
+        }
+      ]
+    },
+    {
+      "dataset": "public-global-vessel-identity:v4.0",
+      "registryInfoTotalRecords": 0,
+      "registryInfo": [],
+      "registryOwners": [],
+      "combinedSourcesInfo": [
+        {
+          "vesselId": "7f7a9ef50-0bc3-3d09-76f2-58f02c57b9dd",
+          "geartypes": [
+            {
+              "name": "PASSENGER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2020,
+              "yearTo": 2023
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "PASSENGER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2020,
+              "yearTo": 2023
+            }
+          ]
+        }
+      ],
+      "selfReportedInfo": [
+        {
+          "id": "7f7a9ef50-0bc3-3d09-76f2-58f02c57b9dd",
+          "ssvid": "563019670",
+          "shipname": "TSS 57",
+          "nShipname": "TSS57",
+          "flag": "SGP",
+          "callsign": "9V9585",
+          "imo": null,
+          "messagesCounter": 362718,
+          "positionsCounter": 97108,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "NO_MATCH",
+          "transmissionDateFrom": "2020-05-15T04:23:16Z",
+          "transmissionDateTo": "2023-04-08T13:39:25Z"
+        }
+      ],
+      "matchCriteria": [
+        {
+          "reference": "7f7a9ef50-0bc3-3d09-76f2-58f02c57b9dd",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.ssvid",
+              "value": "563019670"
+            }
+          ],
+          "period": {
+            "dateFrom": "2020-05-15T04:23:16Z",
+            "dateTo": "2023-04-08T13:39:25Z"
+          },
+          "latestVesselInfo": true
+        }
+      ]
+    },
+    {
+      "dataset": "public-global-vessel-identity:v4.0",
+      "registryInfoTotalRecords": 0,
+      "registryInfo": [],
+      "registryOwners": [],
+      "combinedSourcesInfo": [
+        {
+          "vesselId": "709d5e858-82ef-026d-29a9-f7ddc8b75a5c",
+          "geartypes": [
+            {
+              "name": "PASSENGER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2012,
+              "yearTo": 2015
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "PASSENGER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2012,
+              "yearTo": 2015
+            }
+          ]
+        }
+      ],
+      "selfReportedInfo": [
+        {
+          "id": "709d5e858-82ef-026d-29a9-f7ddc8b75a5c",
+          "ssvid": "563019670",
+          "shipname": null,
+          "nShipname": null,
+          "flag": "SGP",
+          "callsign": null,
+          "imo": null,
+          "messagesCounter": 323,
+          "positionsCounter": 323,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "NO_MATCH",
+          "transmissionDateFrom": "2012-02-02T09:01:03Z",
+          "transmissionDateTo": "2015-04-09T08:09:28Z"
+        }
+      ],
+      "matchCriteria": [
+        {
+          "reference": "709d5e858-82ef-026d-29a9-f7ddc8b75a5c",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.ssvid",
+              "value": "563019670"
+            }
+          ],
+          "period": {
+            "dateFrom": "2012-02-02T09:01:03Z",
+            "dateTo": "2015-04-09T08:09:28Z"
+          },
+          "latestVesselInfo": true
+        }
+      ]
+    },
+    {
+      "dataset": "public-global-vessel-identity:v4.0",
+      "registryInfoTotalRecords": 0,
+      "registryInfo": [],
+      "registryOwners": [],
+      "combinedSourcesInfo": [
+        {
+          "vesselId": "ffa0a46e7-707b-f4c2-6928-ffb788165cd9",
+          "geartypes": [
+            {
+              "name": "PASSENGER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2023,
+              "yearTo": 2026
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "PASSENGER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2023,
+              "yearTo": 2026
+            }
+          ]
+        }
+      ],
+      "selfReportedInfo": [
+        {
+          "id": "ffa0a46e7-707b-f4c2-6928-ffb788165cd9",
+          "ssvid": "563019670",
+          "shipname": "CLEANSEAS FERRY 2",
+          "nShipname": "CLEANSEASFERRY2",
+          "flag": "SGP",
+          "callsign": "9V9585",
+          "imo": null,
+          "messagesCounter": 16989194,
+          "positionsCounter": 2975143,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "NO_MATCH",
+          "transmissionDateFrom": "2023-04-11T00:20:59Z",
+          "transmissionDateTo": "2026-09-13T23:59:58Z"
+        }
+      ],
+      "matchCriteria": [
+        {
+          "reference": "ffa0a46e7-707b-f4c2-6928-ffb788165cd9",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.ssvid",
+              "value": "563019670"
+            }
+          ],
+          "period": {
+            "dateFrom": "2023-04-11T00:20:59Z",
+            "dateTo": "2026-09-13T23:59:58Z"
+          },
+          "latestVesselInfo": true
+        }
+      ]
+    },
+    {
+      "dataset": "public-global-vessel-identity:v4.0",
+      "registryInfoTotalRecords": 0,
+      "registryInfo": [],
+      "registryOwners": [],
+      "combinedSourcesInfo": [
+        {
+          "vesselId": "78bd4c7b1-1690-4842-0f9b-964a07fbf0c2",
+          "geartypes": [
+            {
+              "name": "PASSENGER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2013,
+              "yearTo": 2016
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "PASSENGER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2013,
+              "yearTo": 2016
+            }
+          ]
+        }
+      ],
+      "selfReportedInfo": [
+        {
+          "id": "78bd4c7b1-1690-4842-0f9b-964a07fbf0c2",
+          "ssvid": "563019670",
+          "shipname": "MPAVII",
+          "nShipname": "MPAVII",
+          "flag": "SGP",
+          "callsign": "9V9585",
+          "imo": null,
+          "messagesCounter": 21969,
+          "positionsCounter": 8329,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "NO_MATCH",
+          "transmissionDateFrom": "2013-07-16T22:32:12Z",
+          "transmissionDateTo": "2016-05-27T08:05:29Z"
+        }
+      ],
+      "matchCriteria": [
+        {
+          "reference": "78bd4c7b1-1690-4842-0f9b-964a07fbf0c2",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.ssvid",
+              "value": "563019670"
+            }
+          ],
+          "period": {
+            "dateFrom": "2013-07-16T22:32:12Z",
+            "dateTo": "2016-05-27T08:05:29Z"
+          },
+          "latestVesselInfo": true
+        }
+      ]
+    },
+    {
+      "dataset": "public-global-vessel-identity:v4.0",
+      "registryInfoTotalRecords": 0,
+      "registryInfo": [],
+      "registryOwners": [],
+      "combinedSourcesInfo": [
+        {
+          "vesselId": "ab4eb2c32-2af1-3a34-a4cc-2dd570b89cf9",
+          "geartypes": [
+            {
+              "name": "PASSENGER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2012,
+              "yearTo": 2020
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "PASSENGER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2012,
+              "yearTo": 2020
+            }
+          ]
+        }
+      ],
+      "selfReportedInfo": [
+        {
+          "id": "ab4eb2c32-2af1-3a34-a4cc-2dd570b89cf9",
+          "ssvid": "563019670",
+          "shipname": "MPA-VII",
+          "nShipname": "MPA7",
+          "flag": "SGP",
+          "callsign": "9V9585",
+          "imo": null,
+          "messagesCounter": 938011,
+          "positionsCounter": 323920,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "NO_MATCH",
+          "transmissionDateFrom": "2012-03-13T02:37:47Z",
+          "transmissionDateTo": "2020-05-14T03:23:19Z"
+        }
+      ],
+      "matchCriteria": [
+        {
+          "reference": "ab4eb2c32-2af1-3a34-a4cc-2dd570b89cf9",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.ssvid",
+              "value": "563019670"
+            }
+          ],
+          "period": {
+            "dateFrom": "2012-03-13T02:37:47Z",
+            "dateTo": "2020-05-14T03:23:19Z"
+          },
+          "latestVesselInfo": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "query": "563019670",
+    "normalizedQuery": "563019670",
+    "didYouMean": {}
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "1.0",
+  "updatedAt": "2026-09-21",
+  "notice": "候选关系不得参与正式回答，审核通过后才可迁移到approved_graph.json。",
+  "claims": [
+    {
+      "id": "KG-P001",
+      "title": "具体COLREG条款与会遇形态的映射",
+      "reviewStatus": "待获取正式文本",
+      "sourceId": "KB-P001",
+      "reason": "COLREG正式条文尚未取得和逐条审核，不能自动映射避让责任。"
+    },
+    {
+      "id": "KG-P002",
+      "title": "事故案例与AIS失效模式的映射",
+      "reviewStatus": "待获取事故报告",
+      "sourceId": "KB-P002",
+      "reason": "TSIB事故报告尚未取得，不得生成事故结论。"
+    }
+  ]
+}

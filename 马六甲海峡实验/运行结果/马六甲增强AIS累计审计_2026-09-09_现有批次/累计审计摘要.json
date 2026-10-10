@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-09-09T11:19:11",
+  "input_file_count": 2,
+  "rows": 16439,
+  "unique_mmsi": 674,
+  "message_types": {
+    "SubscriptionConfirmation": 47,
+    "PositionReport": 13847,
+    "ShipStaticData": 2185,
+    "StandardClassBPositionReport": 260,
+    "StaticDataReport": 77,
+    "ExtendedClassBPositionReport": 23
+  },
+  "vessel_categories": {
+    "其他编码": 18,
+    "油轮": 160,
+    "货船": 127,
+    "拖带或港口服务": 25,
+    "帆船或娱乐船": 9,
+    "客船": 11,
+    "高速船": 8
+  },
+  "vessel_type_conflicts": 0,
+  "eligible_cargo_tanker": 152,
+  "eligible_by_label": {
+    "油轮": 86,
+    "货船": 66
+  },
+  "estimated_test_20pct": 30,
+  "target_eligible": 500,
+  "remaining_to_target": 348,
+  "combined_csv": "C:\\Users\\卿之ya\\Desktop\\马六甲海峡实验\\运行结果\\马六甲增强AIS累计审计_2026-09-09_现有批次\\马六甲增强AIS累计合并.csv"
+}

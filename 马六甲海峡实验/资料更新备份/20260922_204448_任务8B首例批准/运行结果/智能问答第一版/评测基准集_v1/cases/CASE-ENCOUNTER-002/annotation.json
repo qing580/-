@@ -1,0 +1,88 @@
+{
+  "status": "draft",
+  "reviewedBy": null,
+  "reviewedAt": null,
+  "expectedConclusionBoundary": "只能说明现有AIS与筛查规则形成需要关注或复核的证据，不认定违法、责任或主观意图。",
+  "expectedEvidenceSummary": {
+    "selectedEventId": "ENC-352006129-563024220",
+    "screeningLevel": "高风险",
+    "screeningConfidence": "中",
+    "distanceNm": 0.1819774690791443,
+    "dcpaNm": 0.07899868828784068,
+    "tcpaMinutes": 1.0662947642698866,
+    "relativeSpeedKt": 9.216939738730376,
+    "method": "constant_velocity_linear_extrapolation",
+    "involvedObservations": [
+      {
+        "id": "CASEOBS-352006129-2026-09-08T04:58:44.067Z",
+        "mmsi": "352006129",
+        "vesselName": "DAI VINH",
+        "observedAt": "2026-09-08T04:58:44.067Z",
+        "lat": 1.24737,
+        "lon": 103.79636833333333,
+        "sogKt": 0.2,
+        "cogDeg": 233,
+        "trueHeadingDeg": 168,
+        "sourceType": "AIS_real_observation"
+      },
+      {
+        "id": "CASEOBS-563024220-2026-09-08T04:58:38.207Z",
+        "mmsi": "563024220",
+        "vesselName": "未获取船名",
+        "observedAt": "2026-09-08T04:58:38.207Z",
+        "lat": 1.2471966666666667,
+        "lon": 103.799395,
+        "sogKt": 9.3,
+        "cogDeg": 297.9,
+        "trueHeadingDeg": 511,
+        "sourceType": "AIS_real_observation"
+      }
+    ]
+  },
+  "requiredConclusionTerms": [
+    "会遇",
+    "人工复核"
+  ],
+  "mustMentionEvidenceIds": [
+    "DISTANCE-ENC-352006129-563024220",
+    "CPA-ENC-352006129-563024220",
+    "QUALITY-352006129",
+    "CASEOBS-352006129-2026-09-08T04:58:44.067Z",
+    "CASEOBS-563024220-2026-09-08T04:58:38.207Z"
+  ],
+  "allowedSourceIds": [
+    "KB-0001",
+    "KB-0002"
+  ],
+  "allowedNumericValues": [
+    1.24737,
+    103.796368,
+    0.2,
+    233,
+    1.766217,
+    0.181977,
+    0.078999,
+    1.066295,
+    9.21694,
+    168,
+    1.247197,
+    103.799395,
+    9.3,
+    297.9,
+    511
+  ],
+  "requiresEvidenceRefusal": false,
+  "prohibitedClaims": [
+    "已违法",
+    "违反避碰规则",
+    "应立即转向",
+    "必须立即改向",
+    "碰撞风险分"
+  ],
+  "requiredLimitations": [
+    "仅使用回放时刻及以前的AIS证据",
+    "不替代人工航海判断",
+    "至少一船SOG低于1节，低速时COG与会遇形态解释需谨慎"
+  ],
+  "reviewerNotes": "请逐项核对问题、证据ID、来源、数值、结论边界和拒答要求；确认后再将status改为approved。"
+}

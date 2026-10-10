@@ -1,0 +1,78 @@
+{
+  "limit": 30,
+  "since": null,
+  "total": 1,
+  "entries": [
+    {
+      "dataset": "public-global-vessel-identity:v4.0",
+      "registryInfoTotalRecords": 0,
+      "registryInfo": [],
+      "registryOwners": [],
+      "combinedSourcesInfo": [
+        {
+          "vesselId": "b2bc90f68-8c70-e138-645d-bd2ab75b9455",
+          "geartypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2025,
+              "yearTo": 2026
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2025,
+              "yearTo": 2026
+            }
+          ]
+        }
+      ],
+      "selfReportedInfo": [
+        {
+          "id": "b2bc90f68-8c70-e138-645d-bd2ab75b9455",
+          "ssvid": "563086380",
+          "shipname": "SG FORTUNE",
+          "nShipname": "SGFORTUNE",
+          "flag": "SGP",
+          "callsign": "9V3016",
+          "imo": null,
+          "messagesCounter": 723826,
+          "positionsCounter": 96280,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "NO_MATCH",
+          "transmissionDateFrom": "2025-09-03T07:00:30Z",
+          "transmissionDateTo": "2026-09-10T04:11:00Z"
+        }
+      ],
+      "matchCriteria": [
+        {
+          "reference": "b2bc90f68-8c70-e138-645d-bd2ab75b9455",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.ssvid",
+              "value": "563086380"
+            }
+          ],
+          "period": {
+            "dateFrom": "2025-09-03T07:00:30Z",
+            "dateTo": "2026-09-10T04:11:00Z"
+          },
+          "latestVesselInfo": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "query": "563086380",
+    "normalizedQuery": "563086380",
+    "didYouMean": {
+      "shipname": {}
+    }
+  }
+}

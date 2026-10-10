@@ -1,0 +1,141 @@
+{
+  "limit": 30,
+  "since": null,
+  "total": 1,
+  "entries": [
+    {
+      "dataset": "public-global-vessel-identity:v4.0",
+      "registryInfoTotalRecords": 1,
+      "registryInfo": [
+        {
+          "id": "67eccef013eb76dbc6233f8228606681",
+          "sourceCode": [
+            "IMO"
+          ],
+          "ssvid": "563780000",
+          "flag": "SGP",
+          "shipname": "SINDO12",
+          "nShipname": "SINDO12",
+          "callsign": "9V5175",
+          "imo": "9140839",
+          "latestVesselInfo": true,
+          "transmissionDateFrom": "2012-05-04T14:44:11Z",
+          "transmissionDateTo": "2026-07-31T23:59:40Z",
+          "geartypes": [
+            "PASSENGER"
+          ],
+          "lengthM": null,
+          "tonnageGt": 174,
+          "vesselInfoReference": "01cf912781832b65404e38e2b458881a",
+          "extraFields": []
+        }
+      ],
+      "registryOwners": [],
+      "combinedSourcesInfo": [
+        {
+          "vesselId": "09aa73303-3149-0aae-c81e-139a1f45ff59",
+          "geartypes": [
+            {
+              "name": "PASSENGER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2012,
+              "yearTo": 2020
+            },
+            {
+              "name": "NA",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2021,
+              "yearTo": 2021
+            },
+            {
+              "name": "PASSENGER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2022,
+              "yearTo": 2026
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "PASSENGER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2022,
+              "yearTo": 2026
+            },
+            {
+              "name": "PASSENGER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2012,
+              "yearTo": 2020
+            },
+            {
+              "name": "NA",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2021,
+              "yearTo": 2021
+            }
+          ]
+        }
+      ],
+      "selfReportedInfo": [
+        {
+          "id": "09aa73303-3149-0aae-c81e-139a1f45ff59",
+          "ssvid": "563780000",
+          "shipname": "SINDO 12",
+          "nShipname": "SINDO12",
+          "flag": "SGP",
+          "callsign": "9V5175",
+          "imo": "9140839",
+          "messagesCounter": 22770540,
+          "positionsCounter": 4119202,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "SEVERAL_FIELDS",
+          "transmissionDateFrom": "2012-01-12T13:31:48Z",
+          "transmissionDateTo": "2026-09-13T23:59:45Z"
+        }
+      ],
+      "matchCriteria": [
+        {
+          "reference": "09aa73303-3149-0aae-c81e-139a1f45ff59",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.imo",
+              "value": "9140839"
+            }
+          ],
+          "period": {
+            "dateFrom": "2012-01-12T13:31:48Z",
+            "dateTo": "2026-09-13T23:59:45Z"
+          },
+          "latestVesselInfo": true
+        },
+        {
+          "reference": "01cf912781832b65404e38e2b458881a",
+          "property": "registryInfo.vesselInfoReference",
+          "source": "registryInfo",
+          "matches": [
+            {
+              "property": "registryInfo.imo",
+              "value": "9140839"
+            }
+          ],
+          "period": {
+            "dateFrom": "2012-05-04T14:44:11Z",
+            "dateTo": "2026-07-31T23:59:40Z"
+          },
+          "latestVesselInfo": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "query": "9140839",
+    "normalizedQuery": "9140839",
+    "didYouMean": {
+      "shipname": {}
+    }
+  }
+}

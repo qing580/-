@@ -1,0 +1,142 @@
+{
+  "limit": 30,
+  "since": null,
+  "total": 2,
+  "entries": [
+    {
+      "dataset": "public-global-vessel-identity:v4.0",
+      "registryInfoTotalRecords": 0,
+      "registryInfo": [],
+      "registryOwners": [],
+      "combinedSourcesInfo": [
+        {
+          "vesselId": "436744b58-88d8-5d76-57d1-0d7afa27a894",
+          "geartypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2021,
+              "yearTo": 2023
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2021,
+              "yearTo": 2023
+            }
+          ]
+        }
+      ],
+      "selfReportedInfo": [
+        {
+          "id": "436744b58-88d8-5d76-57d1-0d7afa27a894",
+          "ssvid": "457270000",
+          "shipname": "STLPS1",
+          "nShipname": "STLPS1",
+          "flag": "MNG",
+          "callsign": "JVQU7",
+          "imo": "8572566",
+          "messagesCounter": 57624,
+          "positionsCounter": 38467,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "NO_MATCH",
+          "transmissionDateFrom": "2021-08-08T02:37:34Z",
+          "transmissionDateTo": "2023-04-18T04:06:40Z"
+        }
+      ],
+      "matchCriteria": [
+        {
+          "reference": "436744b58-88d8-5d76-57d1-0d7afa27a894",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.imo",
+              "value": "8572566"
+            }
+          ],
+          "period": {
+            "dateFrom": "2021-08-08T02:37:34Z",
+            "dateTo": "2023-04-18T04:06:40Z"
+          },
+          "latestVesselInfo": true
+        }
+      ]
+    },
+    {
+      "dataset": "public-global-vessel-identity:v4.0",
+      "registryInfoTotalRecords": 0,
+      "registryInfo": [],
+      "registryOwners": [],
+      "combinedSourcesInfo": [
+        {
+          "vesselId": "552ef0237-765e-5e39-441c-f8ffae4e456b",
+          "geartypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2023,
+              "yearTo": 2026
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2023,
+              "yearTo": 2026
+            }
+          ]
+        }
+      ],
+      "selfReportedInfo": [
+        {
+          "id": "552ef0237-765e-5e39-441c-f8ffae4e456b",
+          "ssvid": "563079190",
+          "shipname": "STL PS1",
+          "nShipname": "STLPS1",
+          "flag": "SGP",
+          "callsign": "9V7594",
+          "imo": "8572566",
+          "messagesCounter": 7638016,
+          "positionsCounter": 1506209,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "NO_MATCH",
+          "transmissionDateFrom": "2023-04-18T04:18:26Z",
+          "transmissionDateTo": "2026-09-13T23:59:57Z"
+        }
+      ],
+      "matchCriteria": [
+        {
+          "reference": "552ef0237-765e-5e39-441c-f8ffae4e456b",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.imo",
+              "value": "8572566"
+            }
+          ],
+          "period": {
+            "dateFrom": "2023-04-18T04:18:26Z",
+            "dateTo": "2026-09-13T23:59:57Z"
+          },
+          "latestVesselInfo": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "query": "8572566",
+    "normalizedQuery": "8572566",
+    "didYouMean": {
+      "shipname": {}
+    }
+  }
+}

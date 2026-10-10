@@ -1,0 +1,118 @@
+{
+  "limit": 30,
+  "since": null,
+  "total": 1,
+  "entries": [
+    {
+      "dataset": "public-global-vessel-identity:v4.0",
+      "registryInfoTotalRecords": 1,
+      "registryInfo": [
+        {
+          "id": "adb59e1e50e7e3ea5fe7c2f5568c57bf",
+          "sourceCode": [
+            "CCAMLR",
+            "SNP"
+          ],
+          "ssvid": "412549611",
+          "flag": "CHN",
+          "shipname": "FU YUAN YU 9199",
+          "nShipname": "FUYUANYU9199",
+          "callsign": "BZW9V",
+          "imo": "1014515",
+          "latestVesselInfo": true,
+          "transmissionDateFrom": "2024-11-10T08:41:12Z",
+          "transmissionDateTo": "2026-07-31T23:36:56Z",
+          "geartypes": [
+            "TRAWLERS"
+          ],
+          "lengthM": 138.9,
+          "tonnageGt": 16286,
+          "vesselInfoReference": "39b9061a5b67640f1c1675b7929e9ad5",
+          "extraFields": []
+        }
+      ],
+      "registryOwners": [],
+      "combinedSourcesInfo": [
+        {
+          "vesselId": "19b14885d-d48f-7c73-fe64-82f44daf7b87",
+          "geartypes": [
+            {
+              "name": "TRAWLERS",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2024,
+              "yearTo": 2026
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "FISHING",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2024,
+              "yearTo": 2026
+            }
+          ]
+        }
+      ],
+      "selfReportedInfo": [
+        {
+          "id": "19b14885d-d48f-7c73-fe64-82f44daf7b87",
+          "ssvid": "412549611",
+          "shipname": "FU YUAN YU 9199",
+          "nShipname": "FUYUANYU9199",
+          "flag": "CHN",
+          "callsign": "BZW9V",
+          "imo": "1014515",
+          "messagesCounter": 2764677,
+          "positionsCounter": 1030455,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "SEVERAL_FIELDS",
+          "transmissionDateFrom": "2024-11-08T00:37:29Z",
+          "transmissionDateTo": "2026-09-13T23:03:47Z"
+        }
+      ],
+      "matchCriteria": [
+        {
+          "reference": "19b14885d-d48f-7c73-fe64-82f44daf7b87",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.imo",
+              "value": "1014515"
+            }
+          ],
+          "period": {
+            "dateFrom": "2024-11-08T00:37:29Z",
+            "dateTo": "2026-09-13T23:03:47Z"
+          },
+          "latestVesselInfo": true
+        },
+        {
+          "reference": "39b9061a5b67640f1c1675b7929e9ad5",
+          "property": "registryInfo.vesselInfoReference",
+          "source": "registryInfo",
+          "matches": [
+            {
+              "property": "registryInfo.imo",
+              "value": "1014515"
+            }
+          ],
+          "period": {
+            "dateFrom": "2024-11-10T08:41:12Z",
+            "dateTo": "2026-07-31T23:36:56Z"
+          },
+          "latestVesselInfo": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "query": "1014515",
+    "normalizedQuery": "1014515",
+    "didYouMean": {
+      "shipname": {}
+    }
+  }
+}

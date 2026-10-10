@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-09-09T18:41:45",
+  "input_file_count": 3,
+  "rows": 30119,
+  "unique_mmsi": 908,
+  "message_types": {
+    "SubscriptionConfirmation": 48,
+    "PositionReport": 25707,
+    "ShipStaticData": 3903,
+    "StandardClassBPositionReport": 332,
+    "StaticDataReport": 105,
+    "ExtendedClassBPositionReport": 24
+  },
+  "vessel_categories": {
+    "货船": 181,
+    "其他编码": 30,
+    "油轮": 229,
+    "帆船或娱乐船": 12,
+    "拖带或港口服务": 36,
+    "客船": 14,
+    "高速船": 13
+  },
+  "vessel_type_conflicts": 0,
+  "eligible_cargo_tanker": 254,
+  "eligible_by_label": {
+    "油轮": 141,
+    "货船": 113
+  },
+  "estimated_test_20pct": 51,
+  "target_eligible": 500,
+  "remaining_to_target": 246,
+  "combined_csv": "C:\\Users\\卿之ya\\Desktop\\马六甲海峡实验\\运行结果\\Malacca_AIS_cumulative_audit_2026-09-09_124141_605\\马六甲增强AIS累计合并.csv"
+}

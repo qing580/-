@@ -1,0 +1,40 @@
+{
+  "status": "draft",
+  "reviewedBy": null,
+  "reviewedAt": null,
+  "expectedConclusionBoundary": "必须明确当前AIS证据不足，不能判断船舶当前运动或异常状态。",
+  "expectedEvidenceSummary": null,
+  "requiredConclusionTerms": [
+    "证据不足"
+  ],
+  "mustMentionEvidenceIds": [
+    "OBS-205493000-2026-09-08T04:39:12.011353+00:00",
+    "QUALITY-205493000"
+  ],
+  "allowedSourceIds": [
+    "KB-0002",
+    "KB-0001"
+  ],
+  "allowedNumericValues": [
+    1.26977,
+    103.924682,
+    0.1,
+    55.2,
+    6,
+    5,
+    94
+  ],
+  "requiresEvidenceRefusal": true,
+  "prohibitedClaims": [
+    "已违法",
+    "违反避碰规则",
+    "应立即转向",
+    "必须立即改向",
+    "碰撞风险分"
+  ],
+  "requiredLimitations": [
+    "仅使用回放时刻及以前的AIS证据",
+    "不替代人工航海判断"
+  ],
+  "reviewerNotes": "请逐项核对问题、证据ID、来源、数值、结论边界和拒答要求；确认后再将status改为approved。"
+}

@@ -1,0 +1,63 @@
+{
+  "status": "draft",
+  "reviewedBy": null,
+  "reviewedAt": null,
+  "expectedConclusionBoundary": "只能说明现有AIS与筛查规则形成需要关注或复核的证据，不认定违法、责任或主观意图。",
+  "requiredConclusionTerms": [
+    "会遇",
+    "人工复核"
+  ],
+  "mustMentionEvidenceIds": [
+    "OBS-352003176-2026-09-08T04:37:42.495113+00:00",
+    "DISTANCE-ENC-352003176-636093181",
+    "CPA-ENC-352003176-636093181",
+    "QUALITY-352003176"
+  ],
+  "allowedSourceIds": [
+    "KB-0001",
+    "KB-0002"
+  ],
+  "allowedNumericValues": [
+    2026,
+    -9,
+    -8,
+    4,
+    37,
+    42.495113,
+    0,
+    0.4,
+    214,
+    122,
+    2.792417,
+    40,
+    30.04,
+    0.533702,
+    0.524842,
+    0.806816,
+    2.661736,
+    0.625304,
+    13.161814,
+    3.117648,
+    0.657063,
+    17.240848,
+    2.861544,
+    0.389968,
+    45.487951,
+    2.180609,
+    1.755506,
+    6.536243
+  ],
+  "requiresEvidenceRefusal": false,
+  "prohibitedClaims": [
+    "已违法",
+    "违反避碰规则",
+    "应立即转向",
+    "必须立即改向",
+    "碰撞风险分"
+  ],
+  "requiredLimitations": [
+    "仅使用回放时刻及以前的AIS证据",
+    "不替代人工航海判断"
+  ],
+  "reviewerNotes": "请逐项核对问题、证据ID、来源、数值、结论边界和拒答要求；确认后再将status改为approved。"
+}

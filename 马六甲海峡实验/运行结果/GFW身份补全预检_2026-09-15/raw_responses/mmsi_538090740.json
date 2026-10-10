@@ -1,0 +1,78 @@
+{
+  "limit": 30,
+  "since": null,
+  "total": 1,
+  "entries": [
+    {
+      "dataset": "public-global-vessel-identity:v4.0",
+      "registryInfoTotalRecords": 0,
+      "registryInfo": [],
+      "registryOwners": [],
+      "combinedSourcesInfo": [
+        {
+          "vesselId": "40f878b0c-c980-1825-0d44-0258d10875ff",
+          "geartypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2026,
+              "yearTo": 2026
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2026,
+              "yearTo": 2026
+            }
+          ]
+        }
+      ],
+      "selfReportedInfo": [
+        {
+          "id": "40f878b0c-c980-1825-0d44-0258d10875ff",
+          "ssvid": "538090740",
+          "shipname": "GUO HENG ZHONG HANG",
+          "nShipname": "GUOHENGZHONGHANG",
+          "flag": "MHL",
+          "callsign": "V7B3544",
+          "imo": "1130711",
+          "messagesCounter": 613475,
+          "positionsCounter": 93388,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "NO_MATCH",
+          "transmissionDateFrom": "2026-07-22T03:08:29Z",
+          "transmissionDateTo": "2026-09-13T23:59:33Z"
+        }
+      ],
+      "matchCriteria": [
+        {
+          "reference": "40f878b0c-c980-1825-0d44-0258d10875ff",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.ssvid",
+              "value": "538090740"
+            }
+          ],
+          "period": {
+            "dateFrom": "2026-07-22T03:08:29Z",
+            "dateTo": "2026-09-13T23:59:33Z"
+          },
+          "latestVesselInfo": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "query": "538090740",
+    "normalizedQuery": "538090740",
+    "didYouMean": {
+      "shipname": {}
+    }
+  }
+}

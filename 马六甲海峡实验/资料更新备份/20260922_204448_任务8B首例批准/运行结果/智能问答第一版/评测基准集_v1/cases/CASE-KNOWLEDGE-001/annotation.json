@@ -1,0 +1,29 @@
+{
+  "status": "draft",
+  "reviewedBy": null,
+  "reviewedAt": null,
+  "expectedConclusionBoundary": "必须说明AIS不能作为唯一避碰依据，并要求结合雷达、瞭望、VTS或其他航海信息。",
+  "expectedEvidenceSummary": null,
+  "requiredConclusionTerms": [
+    "不能",
+    "唯一"
+  ],
+  "mustMentionEvidenceIds": [],
+  "allowedSourceIds": [
+    "KB-0001",
+    "KB-0002"
+  ],
+  "allowedNumericValues": [],
+  "requiresEvidenceRefusal": false,
+  "prohibitedClaims": [
+    "已违法",
+    "违反避碰规则",
+    "应立即转向",
+    "必须立即改向",
+    "碰撞风险分"
+  ],
+  "requiredLimitations": [
+    "AIS不能替代雷达、人工瞭望或航海判断"
+  ],
+  "reviewerNotes": "请逐项核对问题、证据ID、来源、数值、结论边界和拒答要求；确认后再将status改为approved。"
+}

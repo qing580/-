@@ -1,0 +1,471 @@
+{
+  "question": "当前回放时刻是否存在与关注船相关的明确异常事件？",
+  "aisContext": {
+    "query": {
+      "mmsi": "563105900",
+      "replayTime": "2026-09-08T05:05:30.040Z",
+      "trajectoryWindowMinutes": 30
+    },
+    "dataset": {
+      "name": "malacca_enhanced_ais_6h_demo_data.json",
+      "region": "malacca_southeast_singapore_strait",
+      "historicalReplay": true
+    },
+    "vessel": {
+      "mmsi": "563105900",
+      "name": "PSA MARVEL CS05",
+      "category": "拖船/港口服务船",
+      "categorySource": "AIS vessel_type",
+      "imo": "9869605",
+      "callSign": "9V6482"
+    },
+    "currentObservation": {
+      "observedAt": "2026-09-08T05:05:02.508385+00:00",
+      "lat": 1.263785,
+      "lon": 103.8364,
+      "sogKt": 0,
+      "cogDeg": 224.7,
+      "trueHeadingDeg": 140,
+      "sourceType": "AIS_real_observation",
+      "ageMinutes": 0.45886666666666664
+    },
+    "trajectory": [
+      {
+        "observedAt": "2026-09-08T04:35:31.259618+00:00",
+        "lat": 1.2638099999999999,
+        "lon": 103.83636,
+        "sogKt": 0,
+        "cogDeg": 224.7,
+        "trueHeadingDeg": 137,
+        "sourceType": "AIS_real_observation"
+      },
+      {
+        "observedAt": "2026-09-08T04:35:48.270558+00:00",
+        "lat": 1.2638150000000001,
+        "lon": 103.83637333333333,
+        "sogKt": 0,
+        "cogDeg": 224.7,
+        "trueHeadingDeg": 137,
+        "sourceType": "AIS_real_observation"
+      },
+      {
+        "observedAt": "2026-09-08T04:36:42.378358+00:00",
+        "lat": 1.2638033333333332,
+        "lon": 103.83636666666666,
+        "sogKt": 0,
+        "cogDeg": 224.7,
+        "trueHeadingDeg": 137,
+        "sourceType": "AIS_real_observation"
+      },
+      {
+        "observedAt": "2026-09-08T04:38:42.054215+00:00",
+        "lat": 1.2638233333333335,
+        "lon": 103.836345,
+        "sogKt": 0,
+        "cogDeg": 224.7,
+        "trueHeadingDeg": 125,
+        "sourceType": "AIS_real_observation"
+      },
+      {
+        "observedAt": "2026-09-08T04:38:55.143982+00:00",
+        "lat": 1.2638216666666666,
+        "lon": 103.83633499999999,
+        "sogKt": 0,
+        "cogDeg": 224.7,
+        "trueHeadingDeg": 123,
+        "sourceType": "AIS_real_observation"
+      },
+      {
+        "observedAt": "2026-09-08T04:40:02.177551+00:00",
+        "lat": 1.2637916666666666,
+        "lon": 103.83633333333334,
+        "sogKt": 0,
+        "cogDeg": 224.7,
+        "trueHeadingDeg": 124,
+        "sourceType": "AIS_real_observation"
+      },
+      {
+        "observedAt": "2026-09-08T04:41:01.750461+00:00",
+        "lat": 1.2638116666666666,
+        "lon": 103.83634666666667,
+        "sogKt": 0,
+        "cogDeg": 224.7,
+        "trueHeadingDeg": 128,
+        "sourceType": "AIS_real_observation"
+      },
+      {
+        "observedAt": "2026-09-08T04:42:11.989307+00:00",
+        "lat": 1.2638150000000001,
+        "lon": 103.836375,
+        "sogKt": 0,
+        "cogDeg": 224.7,
+        "trueHeadingDeg": 132,
+        "sourceType": "AIS_real_observation"
+      },
+      {
+        "observedAt": "2026-09-08T04:43:12.005977+00:00",
+        "lat": 1.2637983333333334,
+        "lon": 103.83637999999999,
+        "sogKt": 0,
+        "cogDeg": 224.7,
+        "trueHeadingDeg": 133,
+        "sourceType": "AIS_real_observation"
+      },
+      {
+        "observedAt": "2026-09-08T04:45:12.053848+00:00",
+        "lat": 1.26379,
+        "lon": 103.836375,
+        "sogKt": 0,
+        "cogDeg": 224.7,
+        "trueHeadingDeg": 135,
+        "sourceType": "AIS_real_observation"
+      },
+      {
+        "observedAt": "2026-09-08T04:46:12.087050+00:00",
+        "lat": 1.2637800000000001,
+        "lon": 103.83636833333334,
+        "sogKt": 0,
+        "cogDeg": 224.7,
+        "trueHeadingDeg": 133,
+        "sourceType": "AIS_real_observation"
+      },
+      {
+        "observedAt": "2026-09-08T04:47:31.549452+00:00",
+        "lat": 1.263785,
+        "lon": 103.83636166666666,
+        "sogKt": 0,
+        "cogDeg": 224.7,
+        "trueHeadingDeg": 129,
+        "sourceType": "AIS_real_observation"
+      },
+      {
+        "observedAt": "2026-09-08T04:48:12.030831+00:00",
+        "lat": 1.2637866666666668,
+        "lon": 103.83635,
+        "sogKt": 0,
+        "cogDeg": 224.7,
+        "trueHeadingDeg": 130,
+        "sourceType": "AIS_real_observation"
+      },
+      {
+        "observedAt": "2026-09-08T04:49:11.208194+00:00",
+        "lat": 1.2637833333333333,
+        "lon": 103.83635333333334,
+        "sogKt": 0,
+        "cogDeg": 224.7,
+        "trueHeadingDeg": 129,
+        "sourceType": "AIS_real_observation"
+      },
+      {
+        "observedAt": "2026-09-08T04:51:41.299984+00:00",
+        "lat": 1.26376,
+        "lon": 103.83636499999999,
+        "sogKt": 0,
+        "cogDeg": 224.7,
+        "trueHeadingDeg": 131,
+        "sourceType": "AIS_real_observation"
+      },
+      {
+        "observedAt": "2026-09-08T04:53:42.131548+00:00",
+        "lat": 1.2637566666666666,
+        "lon": 103.83638166666667,
+        "sogKt": 0,
+        "cogDeg": 224.7,
+        "trueHeadingDeg": 138,
+        "sourceType": "AIS_real_observation"
+      },
+      {
+        "observedAt": "2026-09-08T04:53:51.444301+00:00",
+        "lat": 1.2637533333333333,
+        "lon": 103.83638166666667,
+        "sogKt": 0,
+        "cogDeg": 224.7,
+        "trueHeadingDeg": 139,
+        "sourceType": "AIS_real_observation"
+      },
+      {
+        "observedAt": "2026-09-08T04:54:51.748454+00:00",
+        "lat": 1.2637583333333333,
+        "lon": 103.83639833333334,
+        "sogKt": 0,
+        "cogDeg": 224.7,
+        "trueHeadingDeg": 141,
+        "sourceType": "AIS_real_observation"
+      },
+      {
+        "observedAt": "2026-09-08T04:56:02.656679+00:00",
+        "lat": 1.26377,
+        "lon": 103.83639166666667,
+        "sogKt": 0,
+        "cogDeg": 224.7,
+        "trueHeadingDeg": 136,
+        "sourceType": "AIS_real_observation"
+      },
+      {
+        "observedAt": "2026-09-08T04:57:02.142331+00:00",
+        "lat": 1.263785,
+        "lon": 103.83638333333333,
+        "sogKt": 0,
+        "cogDeg": 224.7,
+        "trueHeadingDeg": 133,
+        "sourceType": "AIS_real_observation"
+      },
+      {
+        "observedAt": "2026-09-08T05:00:02.194920+00:00",
+        "lat": 1.2637683333333334,
+        "lon": 103.83639833333334,
+        "sogKt": 0,
+        "cogDeg": 224.7,
+        "trueHeadingDeg": 144,
+        "sourceType": "AIS_real_observation"
+      },
+      {
+        "observedAt": "2026-09-08T05:00:20.458237+00:00",
+        "lat": 1.26377,
+        "lon": 103.8364,
+        "sogKt": null,
+        "cogDeg": null,
+        "trueHeadingDeg": null,
+        "sourceType": "AIS_real_observation"
+      },
+      {
+        "observedAt": "2026-09-08T05:01:02.552257+00:00",
+        "lat": 1.26376,
+        "lon": 103.83638833333333,
+        "sogKt": 0,
+        "cogDeg": 224.7,
+        "trueHeadingDeg": 146,
+        "sourceType": "AIS_real_observation"
+      },
+      {
+        "observedAt": "2026-09-08T05:02:02.311687+00:00",
+        "lat": 1.2637500000000002,
+        "lon": 103.83639333333333,
+        "sogKt": 0,
+        "cogDeg": 224.7,
+        "trueHeadingDeg": 145,
+        "sourceType": "AIS_real_observation"
+      },
+      {
+        "observedAt": "2026-09-08T05:04:02.540905+00:00",
+        "lat": 1.2637816666666666,
+        "lon": 103.83639666666666,
+        "sogKt": 0,
+        "cogDeg": 224.7,
+        "trueHeadingDeg": 143,
+        "sourceType": "AIS_real_observation"
+      },
+      {
+        "observedAt": "2026-09-08T05:05:02.508385+00:00",
+        "lat": 1.263785,
+        "lon": 103.8364,
+        "sogKt": 0,
+        "cogDeg": 224.7,
+        "trueHeadingDeg": 140,
+        "sourceType": "AIS_real_observation"
+      }
+    ],
+    "neighbors": [
+      {
+        "mmsi": "563240600",
+        "name": "KOTA JOHAN",
+        "category": "货船",
+        "distanceNm": 0.15193254047801288,
+        "observationAgeMinutes": 3.052416666666667,
+        "courseComparison": "低速或航速缺失",
+        "courseDifferenceDeg": null,
+        "cpa": {
+          "available": false,
+          "label": "航速或航向不足，暂不计算CPA/TCPA",
+          "dcpaNm": null,
+          "tcpaMinutes": null,
+          "relativeSpeedKt": null,
+          "method": "constant_velocity_linear_extrapolation"
+        },
+        "screeningLevel": "未进入中等关注事件",
+        "evidenceConfidence": "未评级"
+      },
+      {
+        "mmsi": "565357000",
+        "name": "KOTA SEGAR",
+        "category": "货船",
+        "distanceNm": 0.16999184755605704,
+        "observationAgeMinutes": 4.723766666666666,
+        "courseComparison": "低速或航速缺失",
+        "courseDifferenceDeg": null,
+        "cpa": {
+          "available": false,
+          "label": "航速或航向不足，暂不计算CPA/TCPA",
+          "dcpaNm": null,
+          "tcpaMinutes": null,
+          "relativeSpeedKt": null,
+          "method": "constant_velocity_linear_extrapolation"
+        },
+        "screeningLevel": "未进入中等关注事件",
+        "evidenceConfidence": "未评级"
+      },
+      {
+        "mmsi": "525024416",
+        "name": "TB CAPRICORN 80",
+        "category": "未知",
+        "distanceNm": 0.2985867454693267,
+        "observationAgeMinutes": 3.794966666666667,
+        "courseComparison": "低速或航速缺失",
+        "courseDifferenceDeg": null,
+        "cpa": {
+          "available": false,
+          "label": "航速或航向不足，暂不计算CPA/TCPA",
+          "dcpaNm": null,
+          "tcpaMinutes": null,
+          "relativeSpeedKt": null,
+          "method": "constant_velocity_linear_extrapolation"
+        },
+        "screeningLevel": "未进入中等关注事件",
+        "evidenceConfidence": "未评级"
+      },
+      {
+        "mmsi": "525601594",
+        "name": "TB AMADEUS 1",
+        "category": "拖船/港口服务船",
+        "distanceNm": 0.4584747302503326,
+        "observationAgeMinutes": 0.4868166666666667,
+        "courseComparison": "低速或航速缺失",
+        "courseDifferenceDeg": null,
+        "cpa": {
+          "available": false,
+          "label": "航速或航向不足，暂不计算CPA/TCPA",
+          "dcpaNm": null,
+          "tcpaMinutes": null,
+          "relativeSpeedKt": null,
+          "method": "constant_velocity_linear_extrapolation"
+        },
+        "screeningLevel": "未进入中等关注事件",
+        "evidenceConfidence": "未评级"
+      },
+      {
+        "mmsi": "356688000",
+        "name": "DENEB LEADER",
+        "category": "货船",
+        "distanceNm": 0.604362983441259,
+        "observationAgeMinutes": 4.375283333333333,
+        "courseComparison": "低速或航速缺失",
+        "courseDifferenceDeg": null,
+        "cpa": {
+          "available": false,
+          "label": "航速或航向不足，暂不计算CPA/TCPA",
+          "dcpaNm": null,
+          "tcpaMinutes": null,
+          "relativeSpeedKt": null,
+          "method": "constant_velocity_linear_extrapolation"
+        },
+        "screeningLevel": "未进入中等关注事件",
+        "evidenceConfidence": "未评级"
+      }
+    ],
+    "events": [],
+    "quality": {
+      "positionValidity": 1,
+      "motionCoverage": 0.8171791877513949,
+      "classificationCoverage": 0.5335628227194492
+    },
+    "evidenceGate": {
+      "sufficientForCurrentMotion": true,
+      "missingReasons": [],
+      "boundary": "仅使用回放时刻及以前的真实AIS观测；CPA/TCPA为匀速直线外推，不替代人工航海判断。"
+    }
+  },
+  "caseEvidence": null,
+  "retrieval": [
+    {
+      "sourceId": "KB-0002",
+      "title": "增强AIS数据字段字典",
+      "institution": "国家级大学生创新训练项目组",
+      "sourceType": "项目内部技术文档",
+      "sourceUrl": "",
+      "version": "2026-09-08",
+      "region": "马六甲海峡项目数据",
+      "reviewStatus": "已审核",
+      "locator": "字段说明",
+      "excerpt": "| 字段 | 含义 | 对船舶分类的作用 |\n| --- | --- | --- |\n| collector_version | 采集脚本版本 | 用于复现实验和区分旧/新采集方式 |\n| source | 数据来源，本项目为 AISStream | 用于数据来源记录 |\n| bbox | 本次订阅的经纬度范围 | 用于说明采集海域边界 |\n| message_type | AISStream 消息类型 | 区分动态位置、静态船舶资料、Class B 等消息 |\n| received_at | 本机收到消息的 UTC 时间 | 作为接收时序代理，适合排序，但不是精确广播时间 |\n| metadata_time_utc | AISStream 元数据中的 UTC 时间 | 可辅助判断服务端接收时间 |\n| ais_timestamp | AIS 报文内时间戳 | 常为分钟内秒值或报文字段值，不能单独当完整日期时间 |\n| mmsi | Maritime Mobile Service Identity，船舶海上移动业务识别码 | 按船汇总、外部核验和训练集分组的核心 ID |\n| valid | 报文字段是否标记有效 | 数据质量控制 |\n| repeat_indicator | AIS 重复指示符 | 一般用于报文转发/重复情况分析 |\n| message_id | AIS 报文编号 | 可辅助识别消息类别 |\n| lat | 纬度 | 轨迹、航道位置和空间特征 |\n| lon | 经度 | 轨迹、航道位置和空间特征 |\n| sog | Speed Over Ground，对地航速，通常单位为节 | 船型行为特征、低速/停泊判断 |\n| cog | Course Over Ground，对地航向，单位通常为度 | 航向变化、转弯特征 |\n| true_heading | 船艏向，单位通常为度 | 与 COG 结合可分析航向稳定性；511 常表示不可用 |\n| rate_of_turn | 转向率 | 区分航行行为和异常转向的重要特征；特殊值需清洗 |\n| navigati",
+      "retrievalScore": 4
+    },
+    {
+      "sourceId": "KB-0001",
+      "title": "IMO Resolution A.1106(29): Revised guidelines for the onboard operational use of shipborne AIS",
+      "institution": "International Maritime Organization (IMO)",
+      "sourceType": "国际组织正式决议",
+      "sourceUrl": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/AssemblyDocuments/A.1106(29).pdf",
+      "version": "A.1106(29), adopted 2015-12-02",
+      "region": "国际",
+      "reviewStatus": "已审核",
+      "locator": "对异常监测智能体的约束",
+      "excerpt": "1. 每个异常解释应同时显示观测时间、位置或运动证据和数据质量提示。\n2. 若静态字段缺失、冲突或过旧，回答应降低确定性并明确指出限制。\n3. “未收到 AIS”不能直接推断“海域内没有船舶”；“收到 AIS”也不能证明所有字段正确。\n4. 涉及碰撞风险时，AIS 证据必须与规则资料区分，不能把算法阈值伪装成法规要求。\n5. 对安全关键问题，回答应提示用户结合雷达、目视、VTS 和最新航海资料复核。",
+      "retrievalScore": 2
+    },
+    {
+      "sourceId": "KB-0005",
+      "title": "马六甲AIS采集现状审计",
+      "institution": "国家级大学生创新训练项目组",
+      "sourceType": "项目内部实验审计",
+      "sourceUrl": "",
+      "version": "2026-09-15",
+      "region": "马六甲海峡东南段与新加坡海峡",
+      "reviewStatus": "已审核",
+      "locator": "新增文件结论",
+      "excerpt": "新增文件批次号为 `formal_self_6h_20260915_092440`，采集区域标识为 `malacca_southeast_singapore_strait`，边界为北纬 1.0 至 3.5 度、东经 103.0 至 104.5 度。记录时间为北京时间 2026-09-15 09:24 至 15:24，共六小时。\n\n- 总行数：13040。\n- 唯一 MMSI：548。\n- 动态消息：11427 行。\n- Class A 位置消息：11175 行。\n- Class B 动态消息：252 行。\n- 静态消息：1612 行。\n- 解析成功率：100%。\n- 动态 MMSI、经纬度、SOG、COG、真航向覆盖率：100%。\n- `rate_of_turn`和`navigational_status`动态覆盖率：97.79%。\n- `raw_json`：13040/13040，覆盖率100%。\n- `sequence_no`：1至13040连续且无重复。\n- 动态位置全部位于指定马六甲/新加坡海峡边界内。\n\n按唯一 MMSI 统计：\n\n- `vessel_type`：303艘，55.29%。\n- 船长：303艘，55.29%。\n- 船宽：303艘，55.29%。\n- 吃水：290艘，52.92%。\n- IMO：290艘，52.92%。\n- 呼号：297艘，54.20%。\n\n这些覆盖率超过当前正式批次30%的最低门槛。动态、静态和原始JSON字段均实际存在，不属于删减字段或无效采集。",
+      "retrievalScore": 2
+    },
+    {
+      "sourceId": "KB-0005",
+      "title": "马六甲AIS采集现状审计",
+      "institution": "国家级大学生创新训练项目组",
+      "sourceType": "项目内部实验审计",
+      "sourceUrl": "",
+      "version": "2026-09-15",
+      "region": "马六甲海峡东南段与新加坡海峡",
+      "reviewStatus": "已审核",
+      "locator": "负责人决策",
+      "excerpt": "1. 当前数据不是废数据，样本不足问题已从29艘测试样本明显改善为56艘真正跨日期未见船舶测试集，或87艘随机留出规模。\n2. 暂停重复白天时段的实时采集。先做9月15日错误船舶审计，重点分析油轮被判成货船的16艘案例、尺寸缺失、轨迹分段和空间特征偏差。\n3. 保留一次最多5.5至6小时的最终补采窗口。如果错误审计显示时段覆盖不足，选择北京时间20:00至次日02:00等现有数据较少的夜间窗口；无论是否达到500艘，达到36小时总上限后停止实时扩样。\n4. 9月15日此前未见的56艘船从现在起冻结为独立日期测试集，不用于调参。模型调整使用训练/验证数据，避免再次污染测试集。\n5. 下一优先级不是继续堆行数，而是外部核验标签、分析错误和建立按日期封存的评估协议。",
+      "retrievalScore": 2
+    }
+  ],
+  "graphTrace": {
+    "status": "no_current_event",
+    "query": {
+      "mmsi": "563105900",
+      "replayTime": "2026-09-08T05:05:30.040Z",
+      "trajectoryWindowMinutes": 30
+    },
+    "vessel": {
+      "mmsi": "563105900",
+      "name": "PSA MARVEL CS05",
+      "category": "拖船/港口服务船",
+      "categorySource": "AIS vessel_type",
+      "imo": "9869605",
+      "callSign": "9V6482"
+    },
+    "evidence": [
+      {
+        "id": "OBS-563105900-2026-09-08T05:05:02.508385+00:00",
+        "type": "AIS_REAL_OBSERVATION",
+        "observedAt": "2026-09-08T05:05:02.508385+00:00",
+        "facts": {
+          "lat": 1.263785,
+          "lon": 103.8364,
+          "sogKt": 0,
+          "cogDeg": 224.7,
+          "ageMinutes": 0.45886666666666664
+        }
+      },
+      {
+        "id": "QUALITY-563105900",
+        "type": "DATA_QUALITY_GATE",
+        "sufficientForCurrentMotion": true,
+        "missingReasons": [],
+        "boundary": "仅使用回放时刻及以前的真实AIS观测；CPA/TCPA为匀速直线外推，不替代人工航海判断。"
+      }
+    ],
+    "paths": [],
+    "boundary": "当前筛选器没有生成事件；这不等于海上绝对安全，也不生成规则或违法结论。"
+  }
+}

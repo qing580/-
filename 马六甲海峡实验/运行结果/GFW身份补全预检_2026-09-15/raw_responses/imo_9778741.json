@@ -1,0 +1,295 @@
+{
+  "limit": 30,
+  "since": null,
+  "total": 3,
+  "entries": [
+    {
+      "dataset": "public-global-vessel-identity:v4.0",
+      "registryInfoTotalRecords": 0,
+      "registryInfo": [],
+      "registryOwners": [],
+      "combinedSourcesInfo": [
+        {
+          "vesselId": "a3017b1d8-8004-a792-7875-063cc98a5e3e",
+          "geartypes": [
+            {
+              "name": "CARGO",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "CARGO",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            }
+          ]
+        }
+      ],
+      "selfReportedInfo": [
+        {
+          "id": "a3017b1d8-8004-a792-7875-063cc98a5e3e",
+          "ssvid": "565100000",
+          "shipname": "PELICAN REDEEM",
+          "nShipname": "PELICANREDEEM",
+          "flag": "SGP",
+          "callsign": "K",
+          "imo": "9778741",
+          "messagesCounter": 88,
+          "positionsCounter": 51,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "NO_MATCH",
+          "transmissionDateFrom": "2016-01-21T01:10:42Z",
+          "transmissionDateTo": "2016-03-03T07:38:37Z"
+        }
+      ],
+      "matchCriteria": [
+        {
+          "reference": "a3017b1d8-8004-a792-7875-063cc98a5e3e",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.imo",
+              "value": "9778741"
+            }
+          ],
+          "period": {
+            "dateFrom": "2016-01-21T01:10:42Z",
+            "dateTo": "2016-03-03T07:38:37Z"
+          },
+          "latestVesselInfo": true
+        }
+      ]
+    },
+    {
+      "dataset": "public-global-vessel-identity:v4.0",
+      "registryInfoTotalRecords": 1,
+      "registryInfo": [
+        {
+          "id": "57923f2031a9e7c474cc6d94074e7c06",
+          "sourceCode": [
+            "IMO"
+          ],
+          "ssvid": "563142000",
+          "flag": "SGP",
+          "shipname": "PENGUINREDEEM",
+          "nShipname": "PENGUINREDEEM",
+          "callsign": "9V5171",
+          "imo": "9778741",
+          "latestVesselInfo": true,
+          "transmissionDateFrom": "2016-07-21T05:46:37Z",
+          "transmissionDateTo": "2026-07-31T23:59:58Z",
+          "geartypes": [
+            "SUPPLY_VESSEL"
+          ],
+          "lengthM": null,
+          "tonnageGt": 181,
+          "vesselInfoReference": "766063bc1f7a595274e880b6e4e3b131",
+          "extraFields": []
+        }
+      ],
+      "registryOwners": [],
+      "combinedSourcesInfo": [
+        {
+          "vesselId": "b8002fa3c-ca3e-dcf1-9983-b9b71a061def",
+          "geartypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2016,
+              "yearTo": 2026
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2016,
+              "yearTo": 2026
+            }
+          ]
+        },
+        {
+          "vesselId": "1958dc1aa-adfa-e830-ad5d-c4da5c17c14c",
+          "geartypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2016,
+              "yearTo": 2016
+            }
+          ]
+        }
+      ],
+      "selfReportedInfo": [
+        {
+          "id": "b8002fa3c-ca3e-dcf1-9983-b9b71a061def",
+          "ssvid": "563142000",
+          "shipname": "PENGUIN REDEEM",
+          "nShipname": "PENGUINREDEEM",
+          "flag": "SGP",
+          "callsign": "9V5171",
+          "imo": "9778741",
+          "messagesCounter": 40555928,
+          "positionsCounter": 7446617,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "SEVERAL_FIELDS",
+          "transmissionDateFrom": "2016-07-21T05:44:02Z",
+          "transmissionDateTo": "2026-09-13T23:59:54Z"
+        },
+        {
+          "id": "1958dc1aa-adfa-e830-ad5d-c4da5c17c14c",
+          "ssvid": "533170355",
+          "shipname": "PELICAN REDEEM",
+          "nShipname": "PELICANREDEEM",
+          "flag": "MYS",
+          "callsign": "9MVU6",
+          "imo": "9778741",
+          "messagesCounter": 486,
+          "positionsCounter": 248,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "SEVERAL_FIELDS",
+          "transmissionDateFrom": "2016-03-23T02:09:22Z",
+          "transmissionDateTo": "2016-06-08T10:38:08Z"
+        }
+      ],
+      "matchCriteria": [
+        {
+          "reference": "b8002fa3c-ca3e-dcf1-9983-b9b71a061def",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.imo",
+              "value": "9778741"
+            }
+          ],
+          "period": {
+            "dateFrom": "2016-07-21T05:44:02Z",
+            "dateTo": "2026-09-13T23:59:54Z"
+          },
+          "latestVesselInfo": true
+        },
+        {
+          "reference": "1958dc1aa-adfa-e830-ad5d-c4da5c17c14c",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.imo",
+              "value": "9778741"
+            }
+          ],
+          "period": {
+            "dateFrom": "2016-03-23T02:09:22Z",
+            "dateTo": "2016-06-08T10:38:08Z"
+          },
+          "latestVesselInfo": true
+        },
+        {
+          "reference": "766063bc1f7a595274e880b6e4e3b131",
+          "property": "registryInfo.vesselInfoReference",
+          "source": "registryInfo",
+          "matches": [
+            {
+              "property": "registryInfo.imo",
+              "value": "9778741"
+            }
+          ],
+          "period": {
+            "dateFrom": "2016-07-21T05:46:37Z",
+            "dateTo": "2026-07-31T23:59:58Z"
+          },
+          "latestVesselInfo": true
+        }
+      ]
+    },
+    {
+      "dataset": "public-global-vessel-identity:v4.0",
+      "registryInfoTotalRecords": 0,
+      "registryInfo": [],
+      "registryOwners": [],
+      "combinedSourcesInfo": [
+        {
+          "vesselId": "9b6da0571-1753-61ba-8d55-1ab43d0a83be",
+          "geartypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2024,
+              "yearTo": 2024
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2024,
+              "yearTo": 2024
+            }
+          ]
+        }
+      ],
+      "selfReportedInfo": [
+        {
+          "id": "9b6da0571-1753-61ba-8d55-1ab43d0a83be",
+          "ssvid": "565239152",
+          "shipname": "PENGUIN R%DEEM",
+          "nShipname": "PENGUINRDEEM",
+          "flag": "SGP",
+          "callsign": "9V5171",
+          "imo": "9778741",
+          "messagesCounter": 6,
+          "positionsCounter": 5,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "NO_MATCH",
+          "transmissionDateFrom": "2024-06-26T11:22:05Z",
+          "transmissionDateTo": "2024-07-19T22:35:05Z"
+        }
+      ],
+      "matchCriteria": [
+        {
+          "reference": "9b6da0571-1753-61ba-8d55-1ab43d0a83be",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.imo",
+              "value": "9778741"
+            }
+          ],
+          "period": {
+            "dateFrom": "2024-06-26T11:22:05Z",
+            "dateTo": "2024-07-19T22:35:05Z"
+          },
+          "latestVesselInfo": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "query": "9778741",
+    "normalizedQuery": "9778741",
+    "didYouMean": {}
+  }
+}

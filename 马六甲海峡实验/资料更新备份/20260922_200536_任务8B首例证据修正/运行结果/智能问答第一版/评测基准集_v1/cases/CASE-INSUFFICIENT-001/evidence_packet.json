@@ -1,0 +1,260 @@
+{
+  "question": "当前AIS证据是否足以判断船舶运动或异常状态？",
+  "aisContext": {
+    "query": {
+      "mmsi": "205493000",
+      "replayTime": "2026-09-08T07:36:18.278Z",
+      "trajectoryWindowMinutes": 30
+    },
+    "dataset": {
+      "name": "malacca_enhanced_ais_6h_demo_data.json",
+      "region": "malacca_southeast_singapore_strait",
+      "historicalReplay": true
+    },
+    "vessel": {
+      "mmsi": "205493000",
+      "name": "MINERAL MAURITIUS",
+      "category": "货船",
+      "categorySource": "AIS vessel_type",
+      "imo": "9847970",
+      "callSign": "ONPY"
+    },
+    "currentObservation": {
+      "observedAt": "2026-09-08T07:36:18.278559+00:00",
+      "lat": 1.26839,
+      "lon": 103.92523,
+      "sogKt": null,
+      "cogDeg": null,
+      "trueHeadingDeg": null,
+      "sourceType": "AIS_real_observation",
+      "ageMinutes": 0
+    },
+    "trajectory": [
+      {
+        "observedAt": "2026-09-08T07:31:51.428183+00:00",
+        "lat": 1.2684666666666666,
+        "lon": 103.92516666666667,
+        "sogKt": 0.1,
+        "cogDeg": 55.2,
+        "trueHeadingDeg": 72,
+        "sourceType": "AIS_real_observation"
+      },
+      {
+        "observedAt": "2026-09-08T07:36:18.278559+00:00",
+        "lat": 1.26839,
+        "lon": 103.92523,
+        "sogKt": null,
+        "cogDeg": null,
+        "trueHeadingDeg": null,
+        "sourceType": "AIS_real_observation"
+      }
+    ],
+    "neighbors": [
+      {
+        "mmsi": "215939000",
+        "name": "DALMACIJA",
+        "category": "油轮",
+        "distanceNm": 0.9336541548269822,
+        "observationAgeMinutes": 0.13298333333333334,
+        "courseComparison": "低速或航速缺失",
+        "courseDifferenceDeg": null,
+        "cpa": {
+          "available": false,
+          "label": "航速或航向不足，暂不计算CPA/TCPA",
+          "dcpaNm": null,
+          "tcpaMinutes": null,
+          "relativeSpeedKt": null,
+          "method": "constant_velocity_linear_extrapolation"
+        },
+        "screeningLevel": "未进入中等关注事件",
+        "evidenceConfidence": "未评级"
+      },
+      {
+        "mmsi": "525119081",
+        "name": "ROSA DINI",
+        "category": "油轮",
+        "distanceNm": 1.0041029095049119,
+        "observationAgeMinutes": 0.246,
+        "courseComparison": "低速或航速缺失",
+        "courseDifferenceDeg": null,
+        "cpa": {
+          "available": false,
+          "label": "航速或航向不足，暂不计算CPA/TCPA",
+          "dcpaNm": null,
+          "tcpaMinutes": null,
+          "relativeSpeedKt": null,
+          "method": "constant_velocity_linear_extrapolation"
+        },
+        "screeningLevel": "未进入中等关注事件",
+        "evidenceConfidence": "未评级"
+      },
+      {
+        "mmsi": "636013854",
+        "name": "MARCO",
+        "category": "货船",
+        "distanceNm": 1.1505616570147812,
+        "observationAgeMinutes": 0.08865,
+        "courseComparison": "低速或航速缺失",
+        "courseDifferenceDeg": null,
+        "cpa": {
+          "available": false,
+          "label": "航速或航向不足，暂不计算CPA/TCPA",
+          "dcpaNm": null,
+          "tcpaMinutes": null,
+          "relativeSpeedKt": null,
+          "method": "constant_velocity_linear_extrapolation"
+        },
+        "screeningLevel": "未进入中等关注事件",
+        "evidenceConfidence": "未评级"
+      },
+      {
+        "mmsi": "538013054",
+        "name": "JAG PARTH",
+        "category": "油轮",
+        "distanceNm": 1.2161800334864317,
+        "observationAgeMinutes": 4.401783333333333,
+        "courseComparison": "低速或航速缺失",
+        "courseDifferenceDeg": null,
+        "cpa": {
+          "available": false,
+          "label": "航速或航向不足，暂不计算CPA/TCPA",
+          "dcpaNm": null,
+          "tcpaMinutes": null,
+          "relativeSpeedKt": null,
+          "method": "constant_velocity_linear_extrapolation"
+        },
+        "screeningLevel": "未进入中等关注事件",
+        "evidenceConfidence": "未评级"
+      },
+      {
+        "mmsi": "525119082",
+        "name": "SEA CHAMPION",
+        "category": "油轮",
+        "distanceNm": 1.3818451066923134,
+        "observationAgeMinutes": 0.6556,
+        "courseComparison": "低速或航速缺失",
+        "courseDifferenceDeg": null,
+        "cpa": {
+          "available": false,
+          "label": "航速或航向不足，暂不计算CPA/TCPA",
+          "dcpaNm": null,
+          "tcpaMinutes": null,
+          "relativeSpeedKt": null,
+          "method": "constant_velocity_linear_extrapolation"
+        },
+        "screeningLevel": "未进入中等关注事件",
+        "evidenceConfidence": "未评级"
+      }
+    ],
+    "events": [],
+    "quality": {
+      "positionValidity": 1,
+      "motionCoverage": 0.8171791877513949,
+      "classificationCoverage": 0.5335628227194492
+    },
+    "evidenceGate": {
+      "sufficientForCurrentMotion": false,
+      "missingReasons": [
+        "当前SOG缺失",
+        "当前COG缺失"
+      ],
+      "boundary": "仅使用回放时刻及以前的真实AIS观测；CPA/TCPA为匀速直线外推，不替代人工航海判断。"
+    }
+  },
+  "retrieval": [
+    {
+      "sourceId": "KB-0002",
+      "title": "增强AIS数据字段字典",
+      "institution": "国家级大学生创新训练项目组",
+      "sourceType": "项目内部技术文档",
+      "sourceUrl": "",
+      "version": "2026-09-08",
+      "region": "马六甲海峡项目数据",
+      "reviewStatus": "已审核",
+      "locator": "字段说明",
+      "excerpt": "| 字段 | 含义 | 对船舶分类的作用 |\n| --- | --- | --- |\n| collector_version | 采集脚本版本 | 用于复现实验和区分旧/新采集方式 |\n| source | 数据来源，本项目为 AISStream | 用于数据来源记录 |\n| bbox | 本次订阅的经纬度范围 | 用于说明采集海域边界 |\n| message_type | AISStream 消息类型 | 区分动态位置、静态船舶资料、Class B 等消息 |\n| received_at | 本机收到消息的 UTC 时间 | 作为接收时序代理，适合排序，但不是精确广播时间 |\n| metadata_time_utc | AISStream 元数据中的 UTC 时间 | 可辅助判断服务端接收时间 |\n| ais_timestamp | AIS 报文内时间戳 | 常为分钟内秒值或报文字段值，不能单独当完整日期时间 |\n| mmsi | Maritime Mobile Service Identity，船舶海上移动业务识别码 | 按船汇总、外部核验和训练集分组的核心 ID |\n| valid | 报文字段是否标记有效 | 数据质量控制 |\n| repeat_indicator | AIS 重复指示符 | 一般用于报文转发/重复情况分析 |\n| message_id | AIS 报文编号 | 可辅助识别消息类别 |\n| lat | 纬度 | 轨迹、航道位置和空间特征 |\n| lon | 经度 | 轨迹、航道位置和空间特征 |\n| sog | Speed Over Ground，对地航速，通常单位为节 | 船型行为特征、低速/停泊判断 |\n| cog | Course Over Ground，对地航向，单位通常为度 | 航向变化、转弯特征 |\n| true_heading | 船艏向，单位通常为度 | 与 COG 结合可分析航向稳定性；511 常表示不可用 |\n| rate_of_turn | 转向率 | 区分航行行为和异常转向的重要特征；特殊值需清洗 |\n| navigati",
+      "retrievalScore": 8.5
+    },
+    {
+      "sourceId": "KB-0001",
+      "title": "IMO Resolution A.1106(29): Revised guidelines for the onboard operational use of shipborne AIS",
+      "institution": "International Maritime Organization (IMO)",
+      "sourceType": "国际组织正式决议",
+      "sourceUrl": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/AssemblyDocuments/A.1106(29).pdf",
+      "version": "A.1106(29), adopted 2015-12-02",
+      "region": "国际",
+      "reviewStatus": "已审核",
+      "locator": "对异常监测智能体的约束",
+      "excerpt": "1. 每个异常解释应同时显示观测时间、位置或运动证据和数据质量提示。\n2. 若静态字段缺失、冲突或过旧，回答应降低确定性并明确指出限制。\n3. “未收到 AIS”不能直接推断“海域内没有船舶”；“收到 AIS”也不能证明所有字段正确。\n4. 涉及碰撞风险时，AIS 证据必须与规则资料区分，不能把算法阈值伪装成法规要求。\n5. 对安全关键问题，回答应提示用户结合雷达、目视、VTS 和最新航海资料复核。",
+      "retrievalScore": 6.5
+    },
+    {
+      "sourceId": "KB-0001",
+      "title": "IMO Resolution A.1106(29): Revised guidelines for the onboard operational use of shipborne AIS",
+      "institution": "International Maritime Organization (IMO)",
+      "sourceType": "国际组织正式决议",
+      "sourceUrl": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/AssemblyDocuments/A.1106(29).pdf",
+      "version": "A.1106(29), adopted 2015-12-02",
+      "region": "国际",
+      "reviewStatus": "已审核",
+      "locator": "AIS 固有限制",
+      "excerpt": "依据 IMO Resolution A.1106(29) 第32至39段，AIS 提供的态势信息并不完整：部分船舶可能没有配备 AIS，设备可能被关闭，收到的信息也可能因发送端输入、传感器配置或校准问题而错误。某些字段可能以“不可用”值发送。接收方不能默认其他船舶发来的 AIS 信息与本船数据具有相同质量和准确性。\n\n因此，船名、船型、航行状态、目的地、吃水等自报或人工录入字段应当视为可能缺失、陈旧或错误。智能体可以把这些字段作为证据，但必须同时报告字段来源、时间和缺失情况，不能把单个 AIS 字段包装成确定事实。\n\n定位：正式 PDF 第11页（PDF 第12页），第32至39段。",
+      "retrievalScore": 5.5
+    },
+    {
+      "sourceId": "KB-0001",
+      "title": "IMO Resolution A.1106(29): Revised guidelines for the onboard operational use of shipborne AIS",
+      "institution": "International Maritime Organization (IMO)",
+      "sourceType": "国际组织正式决议",
+      "sourceUrl": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/AssemblyDocuments/A.1106(29).pdf",
+      "version": "A.1106(29), adopted 2015-12-02",
+      "region": "国际",
+      "reviewStatus": "已审核",
+      "locator": "AIS 与避碰决策",
+      "excerpt": "依据同一决议第40至44段，AIS 可以辅助航行值班人员跟踪和识别目标，但不替代雷达、船舶交通服务信息、人工瞭望或其他既有系统。使用 AIS 不会免除值班人员遵守《国际海上避碰规则》的责任，尤其不能把 AIS 作为判定碰撞危险的唯一信息系统。\n\n本项目据此设置回答边界：系统可以解释 CPA、TCPA、相对运动、轨迹变化和数据质量，但只能给出“辅助研判”结论，不自动下达操船指令，不声称已经代替值班驾驶员作出避碰判断。\n\n定位：正式 PDF 第11页（PDF 第12页），第40至44段。",
+      "retrievalScore": 5.5
+    }
+  ],
+  "graphTrace": {
+    "status": "no_current_event",
+    "query": {
+      "mmsi": "205493000",
+      "replayTime": "2026-09-08T07:36:18.278Z",
+      "trajectoryWindowMinutes": 30
+    },
+    "vessel": {
+      "mmsi": "205493000",
+      "name": "MINERAL MAURITIUS",
+      "category": "货船",
+      "categorySource": "AIS vessel_type",
+      "imo": "9847970",
+      "callSign": "ONPY"
+    },
+    "evidence": [
+      {
+        "id": "OBS-205493000-2026-09-08T07:36:18.278559+00:00",
+        "type": "AIS_REAL_OBSERVATION",
+        "observedAt": "2026-09-08T07:36:18.278559+00:00",
+        "facts": {
+          "lat": 1.26839,
+          "lon": 103.92523,
+          "sogKt": null,
+          "cogDeg": null,
+          "ageMinutes": 0
+        }
+      },
+      {
+        "id": "QUALITY-205493000",
+        "type": "DATA_QUALITY_GATE",
+        "sufficientForCurrentMotion": false,
+        "missingReasons": [
+          "当前SOG缺失",
+          "当前COG缺失"
+        ],
+        "boundary": "仅使用回放时刻及以前的真实AIS观测；CPA/TCPA为匀速直线外推，不替代人工航海判断。"
+      }
+    ],
+    "paths": [],
+    "boundary": "当前筛选器没有生成事件；这不等于海上绝对安全，也不生成规则或违法结论。"
+  }
+}

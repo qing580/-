@@ -1,0 +1,1081 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=2.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<title>测绘遥感信息工程全国重点实验室</title><meta name="pageType" content="1">
+<meta name="pageTitle" content="测绘遥感信息工程全国重点实验室">
+<META Name="keywords" Content="测绘遥感信息工程全国重点实验室" />
+
+<link rel="shortcut icon" href="images/icon.ico" type="image/x-icon" />    
+<link type="text/css" rel="stylesheet" href="styles/base.css" />
+<link type="text/css" rel="stylesheet" href="styles/main.css" />
+<link type="text/css" rel="stylesheet" href="styles/swiper-3.4.0.min.css" />
+<link type="text/css" rel="stylesheet" href="styles/animate.min.css" />
+<link type="text/css" rel="stylesheet" href="styles/mobile.css" />
+<link type="text/css" rel="stylesheet" href="styles/DB_tab29.css" />
+<link type="text/css" rel="stylesheet" href="js/royalslider/css/royalslider.css" />
+
+<!--<link type="text/css" rel="stylesheet" href="styles/_sitegray_d.css" />-->
+
+<!--Announced by Visual SiteBuilder 9-->
+<link rel="stylesheet" type="text/css" href="_sitegray/_sitegray_d.css" />
+<script language="javascript" src="_sitegray/_sitegray.js"></script>
+<!-- CustomerNO:7765626265723230747f475750515742000300014351 -->
+<link rel="stylesheet" type="text/css" href="index.vsb.css" />
+<script type="text/javascript" src="/system/resource/js/counter.js"></script>
+<script type="text/javascript">_jsq_(1001,'/index.jsp',-1,2070870823)</script>
+</head>
+
+<body class="bodyHome">
+<div class="chyg-top-bg">
+  <div class="chyg-search-box" style="display:none;">
+    <div class="chyg-contain-box"><div class="chyg-contain-padding clearfix">
+
+
+<script language="javascript" src="/system/resource/js/base64.js"></script><script language="javascript" src="/system/resource/js/jquery/jquery-latest.min.js"></script><script language="javascript" src="/system/resource/vue/vue.js"></script><script language="javascript" src="/system/resource/vue/bluebird.min.js"></script><script language="javascript" src="/system/resource/vue/axios.js"></script><script language="javascript" src="/system/resource/vue/polyfill.js"></script><script language="javascript" src="/system/resource/vue/token.js"></script><LINK href="/system/resource/vue/static/element/index.css" type="text/css" rel="stylesheet"><script language="javascript" src="/system/resource/vue/static/element/index.js"></script><script language="javascript" src="/system/resource/vue/static/public.js"></script><style>
+    #appu0 .qwss{
+        height: 31px;
+        font-size: 12px;
+        min-width: 190px;
+        max-width: 600px;
+        width: 60%;
+        margin-top: -15px;
+        outline: none;
+        padding-left: 10px;
+        border-radius: 2px;
+        border: 1px solid #e4e7ed;}
+    #appu0 .tj{
+        padding-left: 6px;
+        letter-spacing: 5px;
+        color: white;
+        min-width: 53px;
+        max-width: 150px;
+        height: 32px;
+        border: 0;
+        border-radius: 2px;
+        background-color: #1890FF;
+        position: relative;
+        top: 1px;
+        width: 20%;
+        margin-top: -15px;}
+</style>
+<div id="divu0"></div>
+<script type="text/html" id="htmlu0">
+    <div id="appu0">
+        <div v-if="!isError">
+            <input type="text" class="chyg-txt" placeholder="请输入搜索关键字" autocomplete=off v-model=query.keyWord @keyup.enter="onSubmit">
+            <input class="chyg-btn" name="submit_button" type="button" value="搜索" v-on:click="onSubmit()"/>
+            <a href="javascript:;" class="chyg-close-search"></a>
+        </div>
+        <div v-if="isError" style="color: #b30216; font-size:18px;text-align: center;padding:20px;">
+            应用维护中！
+        </div>
+    </div>
+</script>
+<script>
+    $("#divu0").html($("#htmlu0").text());
+</script>
+<script>
+    var appOwner = "2070870823";
+    var token = 'tourist';
+    var urlPrefix = "/aop_component/";
+
+    jQuery.support.cors = true;
+    $.ajaxSetup({
+        beforeSend: function (request, settings) {
+            request.setRequestHeader("Authorization", token);
+            request.setRequestHeader("owner", appOwner);
+        }
+    });
+
+    new Vue({
+        el: "#appu0",
+        data: function () {
+            return {
+                query: {
+                    keyWord: "",//搜索关键词
+                    owner: appOwner,
+                    token: token,
+                    urlPrefix: urlPrefix,
+                    lang:"i18n_zh_CN"
+                },
+                isError: false
+            }
+        },
+        mounted: function () {
+            var _this = this;
+            // _this.init();
+        },
+        methods: {
+            init: function(){
+                $.ajax({
+                    url: "/aop_component//webber/search/test",
+                    type: "get",
+                    success: function (response) {
+                        if (response.code == "0000") {
+                        } else if (response.code == "220") {
+                            _this.isError = true;
+                            console.log(response);
+                        } else if (!response.code) {
+                            _this.isError = true;
+                            console.log(response);
+                        }
+                    },
+                    error: function (response) {
+                        _this.isError = true;
+                    }
+                });
+            },
+            onSubmit: function (e) {
+                var url = "/views/search/modules/resultpc/soso.html";
+                if ("10" == "1" || "10" == "2") {
+                    url = "" + url;
+                }
+                var _this = this;
+                var query = _this.query;
+                if (url.indexOf("?") > -1) {
+                    url = url.split("?")[0];
+                }
+                if (query.keyWord) {
+                    var query = new Base64().encode(JSON.stringify(query));
+                    window.open(url + "?query=" + query);
+                } else {
+                    alert("请填写搜索内容")
+                }
+            },
+        }
+    })
+</script></div></div>
+  </div>
+</div>
+<div class="chyg-nav-box-bg">
+    <div class="chyg-contain-box">
+     <div class="chyg-contain-padding">
+      <div class="chyg-logo"> <a href="index.htm" target=""><img src="images/logo.png" /></a> </div>
+      <div class="chyg-header-right-box">
+        <ul class="chyg-zt-page chyg-header-right">
+          <script language="javascript" src="/system/resource/js/dynclicks.js"></script><script language="javascript" src="/system/resource/js/openlink.js"></script><li class="li1"><a href="javascript:;" target="_blank">学生工作</a></li>      
+<li class="li2"><a href="javascript:;" target="_blank">党建专栏</a></li>      
+<li class="li3"><a href="hbzs/bkszs.htm" target="_blank">湖北招生</a></li>      
+<li class="en"><a href="http://www.lmars.whu.edu.cn/en">EN</a></li>
+<li class="search-icon"><a href="javascript:;"><img src="images/search1.png" /></a></li>
+<li class="chyg-nav-icon"><a href="javascript:;"><img src="images/nav-icon.png" /></a></li>
+        </ul>
+        <div class="chyg-nav-box">
+                 <ul class="chyg-nav clearfix">
+                  <li><a href="bsgk/jj.htm">本室概况</a>
+          <ul class="chyg-suNnav">
+          <li><a href="bsgk/jj.htm">简介</a></li>
+          <li><a href="bsgk/zzjg.htm">组织架构</a></li>
+          <li><a href="bsgk/xrld.htm">现任领导</a></li>
+          <li><a href="bsgk/xswyh.htm">学术委员会</a></li>
+          <li><a href="bsgk/jswyh.htm">教授委员会</a></li>
+          <li><a href="bsgk/jxzdwyh.htm">教学指导委员会</a></li>
+          <li><a href="bsgk/xwpdwyh.htm">学位评定委员会</a></li>
+          <li><a href="bsgk/lsyg.htm">历史沿革</a></li>
+           </ul>
+          </li>
+          <li><a href="kxyj.htm">科学研究</a>
+          <ul class="chyg-suNnav">
+          <li><a href="kxyj/yjfx.htm">研究方向</a></li>
+          <li><a href="kxyj/kyxm.htm">科研项目</a></li>
+          <li><a href="kxyj/kyjz.htm">科研进展</a></li>
+          <li><a href="kxyj/kycg.htm">科研成果</a></li>
+          <li><a href="kxyj/cxyy.htm">产学研用</a></li>
+           </ul>
+          </li>
+          <li><a href="yjry/gccrc.htm">研究人员</a>
+          <ul class="chyg-suNnav">
+          <li><a href="yjry/gccrc.htm">高层次人才</a></li>
+          <li><a href="yjry/gdyjry.htm">固定研究人员</a></li>
+          <li><a href="yjry/bsh_arzsj_.htm">博士后（按入站时间）</a></li>
+          <li><a href="yjry/jz_jzjs.htm">讲座/兼职教授</a></li>
+          <li><a href="yjry/xzry.htm">行政与技术支撑</a></li>
+           </ul>
+          </li>
+          <li><a href="yjspy.htm">研究生培养</a>
+          <ul class="chyg-suNnav">
+          <li><a href="yjspy/zs.htm">招生</a></li>
+          <li><a href="yjspy/py.htm">培养</a></li>
+          <li><a href="yjspy/xwgl.htm">学位管理</a></li>
+          <li><a href="yjspy/xyzc.htm">校友之窗</a></li>
+           </ul>
+          </li>
+          <li><a href="kfjl.htm">开放交流</a>
+          <ul class="chyg-suNnav">
+          <li><a href="kfjl/xsbg/xhdjt.htm">讲座报告</a></li>
+          <li><a href="kfjl/xshy.htm">学术会议</a></li>
+          <li><a href="kfjl/gjxsjl.htm">国际学术交流</a></li>
+          <li><a href="kfjl/kxjjsjyjd.htm">科学家精神教育基地</a></li>
+          <li><a href="kfjl/mtLIESMARS.htm">媒体LIESMARS</a></li>
+           </ul>
+          </li>
+          <li><a href="ptyss/kypt.htm">平台与设施</a>
+          <ul class="chyg-suNnav">
+          <li><a href="ptyss/kypt.htm">科研平台</a></li>
+          <li><a href="ptyss/whdxygwxdmz.htm">武汉大学遥感卫星地面站</a></li>
+          <li><a href="ptyss/ljxlkxsywx.htm">珞珈系列科学实验卫星</a></li>
+          <li><a href="ptyss/xwkyjd_ss_zw_cb_.htm">校外科研基地（嵩山、中卫、赤壁）</a></li>
+           </ul>
+          </li>
+          <li><a href="xxgk/bszn.htm">信息公开</a>
+          <ul class="chyg-suNnav">
+          <li><a href="xxgk/bszn.htm">办事指南</a></li>
+          <li><a href="xxgk/aqjy.htm">安全教育</a></li>
+          <li><a href="http://218.197.150.88:8080/hys/" target="_blank" href="xxgk/hysyd.htm">会议室预订</a></li>
+          <li><a href="http://202.114.114.18/LmarsOA/" target="_blank" href="xxgk/cggl.htm">成果管理</a></li>
+          <li><a href="xxgk/dzgs.htm">党政公示</a></li>
+          <li><a href="xxgk/zpxx.htm">招聘信息</a></li>
+           </ul>
+          </li>
+        </ul>
+        </div>
+    </div>
+  </div>
+ </div>
+</div>
+<div class="chyg-banner">    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+              <div class="swiper-slide">
+          <div class="img">
+            <a href="https://news.whu.edu.cn/info/1002/479727.htm"><img src="images/2025042901.jpg" /></a>
+          </div>
+          <div class="chyg-contain-box">
+            <div class="txt">龚健雅院士被授予全国先进工作者称号</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img">
+            <a href="https://news.whu.edu.cn/info/1002/461737.htm"><img src="images/202501231.png" /></a>
+          </div>
+          <div class="chyg-contain-box">
+            <div class="txt">李德仁院士获2023年度国家最高科学技术奖</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img">
+            <a href=""><img src="images/1.jpg" /></a>
+          </div>
+          <div class="chyg-contain-box">
+            <div class="txt"></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img">
+            <a href=""><img src="images/2.jpg" /></a>
+          </div>
+          <div class="chyg-contain-box">
+            <div class="txt"></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img">
+            <a href="https://liesmars.whu.edu.cn/info/7943/62839.htm"><img src="images/202501233.png" /></a>
+          </div>
+          <div class="chyg-contain-box">
+            <div class="txt">招聘全球英才</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="chyg-contain-box">
+      <div class="swiper-pagination"></div>
+    </div>
+</div>
+<div class="chyg-img-list"><script language="javascript" src="/system/resource/js/centerCutImg.js"></script><script language="javascript" src="/system/resource/js/ajax.js"></script><div class="chyg-contain-box">
+    <div class="chyg-contain-padding">
+      <div class="chyg-title-box clearfix">
+          <h3 class="chyg-title">科研成果<span>/RESEARCH</span></h3>
+          <a href="kxyj/kycg.htm" class="chyg-more"><span>更多</span><i class="more-line"></i><i class="more-icon"></i></a>
+        </div>
+      <div class="container container-button clearfix">
+        <div class="swiper-button-prev  swiper-button-disabled"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <div class="swiper-container swiper-container-horizontal" id="swiper-container">
+        <div class="swiper-wrapper">
+          
+<div class="swiper-slide">
+            <p class="img"><a href="https://news.whu.edu.cn/info/1002/461737.htm"> <img src="/__local/1/66/A1/1BF4A18D6DDECCFA3FC0B7FBD3F_BC623F36_2544D.jpg"> </a></p>
+            <p class="label"><a href="https://news.whu.edu.cn/info/1002/461737.htm"><i></i>科研成果</a> </p>
+            <h3 class="h3"><a href="https://news.whu.edu.cn/info/1002/461737.htm">李德仁院士获2023年度国家最高科学技术奖</a></h3>
+            <p class="txt"><a href="https://news.whu.edu.cn/info/1002/461737.htm"></a></p>
+            <p class="time"><a href="https://news.whu.edu.cn/info/1002/461737.htm">2024-06-24</a></p>
+            <p class="read"><a href="https://news.whu.edu.cn/info/1002/461737.htm"><i class="read-icon"></i>阅读全文</a></p>
+          </div>
+          
+<div class="swiper-slide">
+            <p class="img"><a href="info/1016/69479.htm"> <img src="/__local/2/9B/8D/180449F3891063C01821CA45989_311CF395_ABDC.jpg"> </a></p>
+            <p class="label"><a href="info/1016/69479.htm"><i></i>科研成果</a> </p>
+            <h3 class="h3"><a href="info/1016/69479.htm">冯炼教授团队在高纬海域颗石藻藻华长期变化研究中取得新进展</a></h3>
+            <p class="txt"><a href="info/1016/69479.htm">近日，武汉大学测绘遥感信息工程全国重点实验室冯炼教授团队联合南方科技大学等单位，在国际综合性学术期刊《Science Advances》发表研究成果。研究基于2003—2022年MODIS卫星观测，构建了1公里空间分辨率的逐日颗石藻藻华数据集，系统刻画了北大西洋至巴伦支海颗石藻藻华的长期变化及区域差异。研究背景颗石藻是一类重要的钙化浮游植物，能够形成碳酸钙小板片，是海洋颗粒无机碳的重要来源，在海洋生态系统和全球碳循环中发挥重要作用。...</a></p>
+            <p class="time"><a href="info/1016/69479.htm">2026-07-30</a></p>
+            <p class="read"><a href="info/1016/69479.htm"><i class="read-icon"></i>阅读全文</a></p>
+          </div>
+          
+<div class="swiper-slide">
+            <p class="img"><a href="info/1016/69249.htm"> <img src="/__local/6/CF/6E/0B4A62E9FAAE8DC8349597DB0C9_2B6C8DEC_93F5.jpg"> </a></p>
+            <p class="label"><a href="info/1016/69249.htm"><i></i>科研成果</a> </p>
+            <h3 class="h3"><a href="info/1016/69249.htm">郑先伟教授课题组天地联合三维生成与实体重建等2项成果发表于TPAMI</a></h3>
+            <p class="txt"><a href="info/1016/69249.htm">近期，武汉大学测绘遥感信息工程全国重点实验室郑先伟教授指导的空间数智化（GeoTell）课题组在天地联合三维生成与实体化重建方向取得了重要进展。研究成果《Seeing through Satellite Images at Street Views》和《Learning Shape Anchors for Holistic Indoor Scene Understanding》连续发表于国际人工智能顶刊IEEE Transactions on Pattern Analysis and Machine Intelligence（IEEE TPAMI，IF: 20.4）。论文第一作者分别为博士生钱铭和博士生董明玥，...</a></p>
+            <p class="time"><a href="info/1016/69249.htm">2026-07-10</a></p>
+            <p class="read"><a href="info/1016/69249.htm"><i class="read-icon"></i>阅读全文</a></p>
+          </div>
+          
+<div class="swiper-slide">
+            <p class="img"><a href="info/1016/69089.htm"> <img src="/__local/9/EA/F9/150186EE45E82C8E9DCCD2449F8_9CDBEE42_6625.jpg"> </a></p>
+            <p class="label"><a href="info/1016/69089.htm"><i></i>科研成果</a> </p>
+            <h3 class="h3"><a href="info/1016/69089.htm">贺威教授课题组黄土高原土地覆盖与土壤侵蚀研究成果发表于ESSD</a></h3>
+            <p class="txt"><a href="info/1016/69089.htm">近日，武汉大学测绘遥感信息工程全国重点实验室贺威教授课题组在黄土高原长期土地覆盖监测与土壤侵蚀评估方向取得了重要进展。研究成果在《地球系统科学数据》（Earth System Science Data）在线发表，标题为“25-year, quarterly land change maps of China’s Loess Plateau reveal long-term and substantial water-induced soil erosion  mitigation”，博士生程谟凡为第一作者，张洪艳教授、贺威教授、李卓鸿博士为通讯作者。相关制图成果已发布于数据共享平台。...</a></p>
+            <p class="time"><a href="info/1016/69089.htm">2026-06-16</a></p>
+            <p class="read"><a href="info/1016/69089.htm"><i class="read-icon"></i>阅读全文</a></p>
+          </div>
+          
+<div class="swiper-slide">
+            <p class="img"><a href="info/1016/69009.htm"> <img src="/__local/B/A0/B2/0C4B30D9B42479F6E98BD81CB2B_F1604657_16AAB.png"> </a></p>
+            <p class="label"><a href="info/1016/69009.htm"><i></i>科研成果</a> </p>
+            <h3 class="h3"><a href="info/1016/69009.htm">沈欣课题组在遥感星座成像任务智能调度新成果发表于AST和JAG</a></h3>
+            <p class="txt"><a href="info/1016/69009.htm">近日，我室遥感卫星地面站沈欣课题组在遥感星座成像任务智能调度领域取得新进展，相关成果分别在《Aerospace Science and Technology》（AST，中科院一区，IF=5.8）和《International Journal of Applied Earth Observation and Geoinformation》（JAG，中科院一区，IF=8.6）在线发表，论文第一作者分别为我室2023级博士生姚伟和王珈樱。发表在AST的成果题为“Meta reinforcement learning method for dynamic mission scheduling of ...</a></p>
+            <p class="time"><a href="info/1016/69009.htm">2026-06-05</a></p>
+            <p class="read"><a href="info/1016/69009.htm"><i class="read-icon"></i>阅读全文</a></p>
+          </div>
+          
+<div class="swiper-slide">
+            <p class="img"><a href="info/1016/68479.htm"> <img src="/__local/1/60/38/20B4AF70827432B2944710CDC2C_1CF88AA6_D2A1.png"> </a></p>
+            <p class="label"><a href="info/1016/68479.htm"><i></i>科研成果</a> </p>
+            <h3 class="h3"><a href="info/1016/68479.htm">冯炼教授课题组全球冲积河型格局成果发表于《Nature Communications》</a></h3>
+            <p class="txt"><a href="info/1016/68479.htm">近日，武汉大学测绘遥感信息工程全国重点实验室冯炼教授课题组与国内外科学家合作，在全球冲积河流形态的空间格局研究方面取得了重要进展。2026年1月21日，《自然通讯》（Nature Communications）在线发表研究成果“Global alluvial channel patterns”（全球冲积河型格局）。对冲积河流形态进行定量分析是认知河流演变规律与指导工程实践的基础。河道形态不仅是水沙情势、地表过程和人类干预的结果，它反过来也会深刻地影响河流的行为和演变。...</a></p>
+            <p class="time"><a href="info/1016/68479.htm">2026-04-07</a></p>
+            <p class="read"><a href="info/1016/68479.htm"><i class="read-icon"></i>阅读全文</a></p>
+          </div>
+          
+<div class="swiper-slide">
+            <p class="img"><a href="info/1016/68439.htm"> <img src="/__local/8/77/BD/6CAA90049DCB9A0535B71AD30C0_852EB391_42777.jpg"> </a></p>
+            <p class="label"><a href="info/1016/68439.htm"><i></i>科研成果</a> </p>
+            <h3 class="h3"><a href="info/1016/68439.htm">田礼乔课题组在国产海洋水色卫星数据处理领域取得系统性进展</a></h3>
+            <p class="txt"><a href="info/1016/68439.htm">近两年，武汉大学测绘遥感信息工程全国重点实验室田礼乔教授课题组（WHU-Group for Aquatic Technological Equipment &amp; Remote Sensing，WATERS）围绕我国新一代海洋水色观测卫星第二代海岸带成像仪（The Second-Generation Coastal Zone Imager，CZI）数据处理取得系统性突破，相关成果发表于《ISPRS Journal of Photogrammetry and Remote Sensing》《IEEE Transactions on Geoscience and Remote Sensing》等国际遥感领域顶级期刊。...</a></p>
+            <p class="time"><a href="info/1016/68439.htm">2026-04-02</a></p>
+            <p class="read"><a href="info/1016/68439.htm"><i class="read-icon"></i>阅读全文</a></p>
+          </div>
+          
+<div class="swiper-slide">
+            <p class="img"><a href="info/1016/67669.htm"> <img src="/__local/5/9D/EB/56347722F01BF50BE5D0F445B0D_885AD45C_56CE.jpg"> </a></p>
+            <p class="label"><a href="info/1016/67669.htm"><i></i>科研成果</a> </p>
+            <h3 class="h3"><a href="info/1016/67669.htm">RSIDEA团队提出面向无人机边缘端实时灾害损毁评估的知识蒸馏框架DisasterKD</a></h3>
+            <p class="txt"><a href="info/1016/67669.htm"> 武汉大学测绘遥感信息工程全国重点实验室RSIDEA团队提出了首个面向无人机（UAV）边缘端实时灾害损毁评估的知识蒸馏框架DisasterKD，通过“灾害场景高-低频率引导的知识分解”和“跨解码器知识迁移”两项关键设计，在不增加部署端推理开销的前提下显著提升轻量模型在灾后复杂场景中的分割与损毁评估能力。相关研究成果 “DisasterKD: Frequency-guided cross-decoder knowledge distillation for UAV real-time disaster damage assessment”...</a></p>
+            <p class="time"><a href="info/1016/67669.htm">2026-01-15</a></p>
+            <p class="read"><a href="info/1016/67669.htm"><i class="read-icon"></i>阅读全文</a></p>
+          </div>
+          
+</div>
+      </div>
+    </div>
+  </div><script>_showDynClickBatch(['dynclicks_u4_17593','dynclicks_u4_69479','dynclicks_u4_69249','dynclicks_u4_69089','dynclicks_u4_69009','dynclicks_u4_68479','dynclicks_u4_68439','dynclicks_u4_67669'],[17593,69479,69249,69089,69009,68479,68439,67669],"wbnews", 2070870823)</script>
+</div>
+<div class="chyg-news-warp">
+    <div class="chyg-contain-box">
+      <div class="chyg-contain-padding clearfix">
+        <div class="chyg-title-box clearfix">
+          <h3 class="chyg-title">新闻资讯<span>/EVENTS</span></h3>
+          <a href="index/xwzx.htm" class="chyg-more" target=""><span>更多</span><i class="more-line"></i><i class="more-icon"></i></a>
+        </div>
+        <div class="chyg-yqxw-box">
+          <div class="chyg-jgdt-img-list">
+
+            <a href="info/1056/69709.htm">
+              <div class="img"><img src="/__local/6/85/49/1915235CF29B28A88790EF6F1B1_0CDCC7FE_7840.jpg" /><span class="time">2026-09-02</span></div>
+              <div class="box">
+                <h3 class="title">逐梦芯空|林立宇团队在国产芯片上的突围 ——记武汉大学硬核团队在集成电路与时空智能领域的攻坚之路</h3>
+                <p class="des">在武汉大学测绘遥感信息工程全国重点实验室，有一支以“本硕博”贯通为梯队的研发团队。他们胸怀“中国芯”梦想，既深耕数字信号处理与遥感影像处理数十年，也将破解集成电路“卡脖子”难题视为己任，坚定瞄准国产替代与自主可控的核心战场。在团队带头人、武汉大学副教授林立宇的带领下，芯片专家陈仲轶协同，团队以自主研发的“YT式协同架构创新”为牵引，打通了“通信导航遥感计算”（通导遥算）的全链路，把算法、嵌入式系统与芯片设计能力贯通，...</p>
+              </div>
+            </a>
+          
+
+<script>_showDynClickBatch(['dynclicks_u5_69709'],[69709],"wbnews", 2070870823)</script>
+</div>
+          <div class="chyg-yqxw-list"><ul>
+              
+<li><a href="info/1056/69759.htm">
+                  <div class="box">
+                    <div class="inf">
+                      <h3 class="title">测绘七十薪火传，时空智能启研途|实验室2026级新生“开学第一课”圆满举办</h3>
+                    </div>
+                    <div class="time">
+                      <div class="year">
+                        2026-09-04
+                      </div>
+                    </div>
+                  </div>
+                </a> </li>
+<li><a href="info/1056/69739.htm">
+                  <div class="box">
+                    <div class="inf">
+                      <h3 class="title">新生报到｜实验室277名新生集结，开启科研新征程！</h3>
+                    </div>
+                    <div class="time">
+                      <div class="year">
+                        2026-09-02
+                      </div>
+                    </div>
+                  </div>
+                </a> </li>
+<li><a href="info/1056/69709.htm">
+                  <div class="box">
+                    <div class="inf">
+                      <h3 class="title">逐梦芯空|林立宇团队在国产芯片上的突围 ——记武汉大学硬核团队在集成电路与时空智能领域的攻坚之路</h3>
+                    </div>
+                    <div class="time">
+                      <div class="year">
+                        2026-09-02
+                      </div>
+                    </div>
+                  </div>
+                </a> </li>
+<li><a href="info/1056/69539.htm">
+                  <div class="box">
+                    <div class="inf">
+                      <h3 class="title">“扎根西部沃土，赋能国之重器”实验室暑期实践队调研见闻（三）</h3>
+                    </div>
+                    <div class="time">
+                      <div class="year">
+                        2026-07-31
+                      </div>
+                    </div>
+                  </div>
+                </a> </li>
+<li><a href="info/1056/69519.htm">
+                  <div class="box">
+                    <div class="inf">
+                      <h3 class="title">“扎根西部沃土，赋能国之重器”实验室暑期实践队调研见闻（二）</h3>
+                    </div>
+                    <div class="time">
+                      <div class="year">
+                        2026-07-31
+                      </div>
+                    </div>
+                  </div>
+                </a> </li>
+<li><a href="info/1056/69499.htm">
+                  <div class="box">
+                    <div class="inf">
+                      <h3 class="title">“扎根西部沃土，赋能国之重器”实验室暑期实践队调研见闻（一）</h3>
+                    </div>
+                    <div class="time">
+                      <div class="year">
+                        2026-07-31
+                      </div>
+                    </div>
+                  </div>
+                </a> </li>
+</ul><script>_showDynClickBatch(['dynclicks_u6_69759','dynclicks_u6_69739','dynclicks_u6_69709','dynclicks_u6_69539','dynclicks_u6_69519','dynclicks_u6_69499'],[69759,69739,69709,69539,69519,69499],"wbnews", 2070870823)</script>
+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="chyg-bgcolor-warp">
+    <div class="chyg-contain-box">
+      <div class="chyg-contain-padding clearfix">
+        <div class="chyg-left"><div class="chyg-title-box clearfix">
+            <h3 class="chyg-title">通知公告<span>/NOTICES</span></h3>
+            <a href="index/tzgg.htm" class="chyg-more"><span>更多</span><i class="more-line"></i><i class="more-icon"></i></a>
+          </div>
+          <div class="chyg-tzgg-list">
+            <ul class="clearfix">
+              
+      <li>
+                <a href="info/1058/69689.htm">
+                  <div class="item">
+                    <h3><span class="top">【置顶】</span>2027年武汉大学测绘遥感信息工程全国重点实验室推免生接收预报名工作通知
+                    </h3>
+                    <div class="time">
+                      <div class="year">
+                       2026-09-01
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>        
+      <li>
+                <a href="info/1058/69109.htm">
+                  <div class="item">
+                    <h3>武汉大学测绘遥感学科创建70周年庆祝活动通告（第一号）
+                    </h3>
+                    <div class="time">
+                      <div class="year">
+                       2026-06-18
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>        
+      <li>
+                <a href="info/1058/68789.htm">
+                  <div class="item">
+                    <h3>武汉大学与德国慕尼黑工业大学地球空间科学与技术双硕士项目2026年度招生简章
+                    </h3>
+                    <div class="time">
+                      <div class="year">
+                       2026-05-19
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>        
+      <li>
+                <a href="info/1058/62849.htm">
+                  <div class="item">
+                    <h3>筑一流平台，邀天下英才——武汉大学测绘遥感信息工程全国重点实验室招聘启事
+                    </h3>
+                    <div class="time">
+                      <div class="year">
+                       2025-01-23
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>        
+      <li>
+                <a href="info/1058/69609.htm">
+                  <div class="item">
+                    <h3>喜报！我室2026年获批25项国家自然科学基金
+                    </h3>
+                    <div class="time">
+                      <div class="year">
+                       2026-08-27
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>        
+      <li>
+                <a href="info/1058/69559.htm">
+                  <div class="item">
+                    <h3>关于征求《地理信息泛在公共访问参考模型（征求意见稿）》意见的函
+                    </h3>
+                    <div class="time">
+                      <div class="year">
+                       2026-08-12
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>        
+      <li>
+                <a href="info/1058/69419.htm">
+                  <div class="item">
+                    <h3>测绘遥感信息工程全国重点实验室学术创新奖评奖细则
+                    </h3>
+                    <div class="time">
+                      <div class="year">
+                       2026-07-21
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>        
+      <li>
+                <a href="info/1058/69409.htm">
+                  <div class="item">
+                    <h3>第一届“东方航天港杯”OGE应用创新大赛（2号通知）
+                    </h3>
+                    <div class="time">
+                      <div class="year">
+                       2026-07-20
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>        
+</ul>
+          </div><script>_showDynClickBatch(['dynclicks_u7_69689','dynclicks_u7_69109','dynclicks_u7_68789','dynclicks_u7_62849','dynclicks_u7_69609','dynclicks_u7_69559','dynclicks_u7_69419','dynclicks_u7_69409'],[69689,69109,68789,62849,69609,69559,69419,69409],"wbnews", 2070870823)</script>
+</div>
+        <div class="chyg-right"><div class="chyg-right">
+          <div class="chyg-title-box clearfix">
+            <h3 class="chyg-title">学术海报<span>/LECTURES</span></h3>
+            <a href="kfjl/xsbg/hb.htm" class="chyg-more"><span>更多</span><i class="more-line"></i><i class="more-icon"></i></a>
+          </div>
+          <div class="chyg-xshb-warp">
+            <div class="chyg-xshb-list">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"> <a href="info/7993/69749.htm">
+                      <div class="img"><img src="/__local/5/4B/35/A82A40ADEC47B9711976C8AD988_2993CB18_35434.png" /></div>
+                    </a> </div>
+                  <div class="swiper-slide"> <a href="info/7993/69309.htm">
+                      <div class="img"><img src="/__local/D/BF/50/165A9D3D1BA4B511BD9127CD171_6957A0CB_36394.png" /></div>
+                    </a> </div>
+                  <div class="swiper-slide"> <a href="info/7993/67589.htm">
+                      <div class="img"><img src="/__local/0/16/AB/6547A9C969FFDB4CEFB67A7C859_48CBD81F_341AD.png" /></div>
+                    </a> </div>
+                  <div class="swiper-slide"> <a href="info/7993/66969.htm">
+                      <div class="img"><img src="/__local/A/14/9A/46180EFE947D13CD1346749A314_1868802D_353C0.png" /></div>
+                    </a> </div>
+                  <div class="swiper-slide"> <a href="info/7993/66569.htm">
+                      <div class="img"><img src="/__local/E/C4/0E/51479FC8C5595800063E7147ED6_D24E2EA3_33B67.png" /></div>
+                    </a> </div>
+                  <div class="swiper-slide"> <a href="info/7993/66529.htm">
+                      <div class="img"><img src="/__local/5/CA/DA/7B64E17FF6B6EE0EC22D19E807A_A3331198_35EC9.png" /></div>
+                    </a> </div>
+                  <div class="swiper-slide"> <a href="info/7993/66519.htm">
+                      <div class="img"><img src="/__local/7/C4/0C/809C5E4C1FF20B8FAF3A9EC83E6_5F133B0A_35185.png" /></div>
+                    </a> </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="container-button clearfix">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+        </div><script>_showDynClickBatch(['dynclicks_u8_69749','dynclicks_u8_69309','dynclicks_u8_67589','dynclicks_u8_66969','dynclicks_u8_66569','dynclicks_u8_66529','dynclicks_u8_66519'],[69749,69309,67589,66969,66569,66529,66519],"wbnews", 2070870823)</script>
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="chyg-bg-warp">
+    <div class="chyg-contain-box">
+      <div class="chyg-contain-padding">
+        <div class="chyg-title-box clearfix">
+          <h3 class="chyg-title">加入我们<span>/JOIN</span></h3>
+          <a href="jrwm.htm" class="chyg-more" target=""><span>更多</span><i class="more-line"></i><i class="more-icon"></i></a>
+        </div>
+        <div class="chyg-jrwm-box">
+          <div class="chyg-jrwm-img">    
+<img src="images/jrwm.png">
+
+</div>
+          <div class="chyg-jrwm-list"><ul>
+              
+<li> <a href="info/7943/68329.htm">
+                  <div class="box">
+                    <div class="inf">
+                      <h3 class="title">田礼乔教授团队博士后、科研助理、研发工程师和客座学生长期招聘启事</h3>
+                    </div>
+                    <div class="time">
+                      <div class="year">
+                        2026-03-27
+                      </div>
+                    </div>
+                  </div>
+                </a> </li>
+              
+<li> <a href="info/7943/67429.htm">
+                  <div class="box">
+                    <div class="inf">
+                      <h3 class="title">李必军教授课题组博士后招聘</h3>
+                    </div>
+                    <div class="time">
+                      <div class="year">
+                        2025-12-12
+                      </div>
+                    </div>
+                  </div>
+                </a> </li>
+              
+<li> <a href="info/7943/66479.htm">
+                  <div class="box">
+                    <div class="inf">
+                      <h3 class="title">冯炼教授课题组博士后招聘启事</h3>
+                    </div>
+                    <div class="time">
+                      <div class="year">
+                        2025-09-30
+                      </div>
+                    </div>
+                  </div>
+                </a> </li>
+              
+<li> <a href="https://rsb.whu.edu.cn/info/1182/29421.htm">
+                  <div class="box">
+                    <div class="inf">
+                      <h3 class="title">翟广教授课题组博士后招聘启事</h3>
+                    </div>
+                    <div class="time">
+                      <div class="year">
+                        2025-06-24
+                      </div>
+                    </div>
+                  </div>
+                </a> </li>
+              
+</ul><script>_showDynClickBatch(['dynclicks_u10_68329','dynclicks_u10_67429','dynclicks_u10_66479','dynclicks_u10_65789'],[68329,67429,66479,65789],"wbnews", 2070870823)</script>
+</div>
+        </div>
+        <div class="chyg-kjrk-box">
+        <ul>
+            <li>
+              <a href="https://liesmars.whu.edu.cn/xxgk/bszn.htm" /system/go.jsp?treeid="7813&apptype=treetemp&urltype=tree.TreeTempUrl')}'" target="">
+                <div class="item">
+                  <div class="box">
+                    <p class="img1"></p>
+                    <p class="num">01</p>
+                  </div>
+                  <h3 class="title">办事指南</h3>
+                  <p class="en">Management guide</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="item">
+                  <div class="box">
+                    <p class="img2"></p>
+                    <p class="num">02</p>
+                  </div>
+                  <h3 class="title">下载中心</h3>
+                  <p class="en">Download Center</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="http://218.197.150.88:8080/hys/">
+                <div class="item">
+                  <div class="box">
+                    <p class="img3"></p>
+                    <p class="num">03</p>
+                  </div>
+                  <h3 class="title">会议室预定</h3>
+                  <p class="en">Meeting room reservation</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="http://219.140.164.93/LmarsOA/">
+                <div class="item">
+                  <div class="box">
+                    <p class="img4"></p>
+                    <p class="num">04</p>
+                  </div>
+                  <h3 class="title">成果管理</h3>
+                  <p class="en">Management for results</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="item">
+                  <div class="box">
+                    <p class="img5"></p>
+                    <p class="num">05</p>
+                  </div>
+                  <h3 class="title">规章制度</h3>
+                  <p class="en">Rules and requlations</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="chyg-footer-box">
+    <div class="chyg-contain-box">
+      <div class="chyg-contain-padding">
+        <div class="chyg-link-list"><ul>
+            
+<li><a href="https://www.whu.edu.cn/">武汉大学</a></li>
+            
+<li><a href="http://kfy.whu.edu.cn/">科学技术发展研究院</a></li>
+            
+<li><a href="#">实验室期刊</a></li>
+            
+<li><a href="https://pole.whu.edu.cn/cn/">南极测绘研究中心</a></li>
+            
+<li><a href="https://gnsscenter.whu.edu.cn/index.htm">武汉大学卫星定位导航技术研究中心</a></li>
+            
+<li><a href="https://www.sgg.whu.edu.cn/">武汉大学测绘学院</a></li>
+            
+<li><a href="https://rsgis.whu.edu.cn/">遥感信息工程学院</a></li>
+            
+<li><a href="http://sres.whu.edu.cn/">资源与环境科学学院</a></li>
+            
+<li><a href="#">“珞珈一号”数据</a></li>
+            
+<li><a href="http://innogst.whu.edu.cn/index.jsp">地球空间信息技术协同创新中心</a></li>
+            
+</ul></div>
+        <div class="chyg-footer-center">
+          <div class="chyg-footer-logo">
+            <p><a href="index.htm"><img src="images/footer-logo.png" /></a></p>
+          </div>
+          <div class="chyg-address">
+
+
+
+
+<script language="javascript" src="/system/resource/js/ajax.js"></script><script language="javascript">_getBatchClickTimes('null',2070870823,'wbnews','u12')</script>
+<script>function seeContenta12(contentid,size,displayid){	document.getElementById(contentid).innerHTML = '[';	for(var i=0;i<=size;i++){		var allcontentid = contentid+(i+1);		if(allcontentid==displayid){			document.getElementById(contentid).innerHTML += " <span id='"+allcontentid+"' name='"+allcontentid+"'  >"+(i+1)+"</span> ";			document.getElementById(displayid).style.display = 'block';		}else{			document.getElementById(contentid).innerHTML += " <span style='cursor:pointer' id='"+allcontentid+"' name='"+allcontentid+"' onclick=seeContenta12('"+contentid+"','"+size+"','"+allcontentid+"')  >"+(i+1)+"</span> ";			document.getElementById(allcontentid).style.display = 'none';		}	}	document.getElementById(contentid).innerHTML += ']';}</script>
+<script language="javascript" src="/system/resource/js/news/mp4video.js"></script>
+<script>_addDynClicks('wbnews',2070870823,5678)</script>
+<p>地址：武汉市洪山区珞喻路129号武汉大学信息学部</p>
+<p>联系电话：+86-27-68778229</p>
+<p>传真：027-68778229</p>
+<p>邮箱：liesmars@whu.edu.cn</p>
+</div>
+          <div class="chyg-footer-wx"><ul>
+              <li><a href="javascript:;">
+                  <p class="img"><img src="images/gzh.png" /></p>
+                  <p class="txt">公众号</p>
+                </a>
+                <p class="wx"><img src="images/gzh-wx.png" /></p>
+              </li>
+              <li><a href="javascript:;">
+                  <p class="img"><img src="images/sph.png" /></p>
+                  <p class="txt">视频号</p>
+                </a>
+                <p class="wx"><img src="images/sph-wx.png" /></p>
+              </li>
+            </ul></div>
+        </div>
+      </div>
+    </div>
+    <div class="chyg-copyright">
+      <p>Copyright @ 2023 | LIESMARS 版权所有</p>
+    </div>
+  </div>
+<div class="chyg-return-top"><a href="javascript:;"><img src="images/goToTop.png" /></a></div>
+<div class="chyg-layer-box">
+  <div class="chyg-layer"><i class="chyg-layer-close"></i>
+<ul class="chyg-layer-nav clearfix">
+      <li><a href="bsgk/jj.htm">本室概况</a><i class="jiahao"></i>
+      <ul class="chyg-suNnav">
+          <li><a href="bsgk/jj.htm">简介</a>
+          </li>
+          <li><a href="bsgk/zzjg.htm">组织架构</a>
+          </li>
+          <li><a href="bsgk/xrld.htm">现任领导</a>
+          </li>
+          <li><a href="bsgk/xswyh.htm">学术委员会</a>
+          </li>
+          <li><a href="bsgk/jswyh.htm">教授委员会</a>
+          </li>
+          <li><a href="bsgk/jxzdwyh.htm">教学指导委员会</a>
+          </li>
+          <li><a href="bsgk/xwpdwyh.htm">学位评定委员会</a>
+          </li>
+          <li><a href="bsgk/lsyg.htm">历史沿革</a>
+          </li>
+      </ul>
+      </li>
+      <li><a href="kxyj.htm">科学研究</a><i class="jiahao"></i>
+      <ul class="chyg-suNnav">
+          <li><a href="kxyj/yjfx.htm">研究方向</a>
+          </li>
+          <li><a href="kxyj/kyxm.htm">科研项目</a>
+          </li>
+          <li><a href="kxyj/kyjz.htm">科研进展</a>
+          </li>
+          <li><a href="kxyj/kycg.htm">科研成果</a>
+          </li>
+          <li><a href="kxyj/cxyy.htm">产学研用</a>
+          </li>
+      </ul>
+      </li>
+      <li><a href="yjry/gccrc.htm">研究人员</a><i class="jiahao"></i>
+      <ul class="chyg-suNnav">
+          <li><a href="yjry/gccrc.htm">高层次人才</a>
+          </li>
+          <li><a href="yjry/gdyjry.htm">固定研究人员</a>
+          </li>
+          <li><a href="yjry/bsh_arzsj_.htm">博士后（按入站时间）</a>
+          </li>
+          <li><a href="yjry/jz_jzjs.htm">讲座/兼职教授</a>
+          </li>
+          <li><a href="yjry/xzry.htm">行政与技术支撑</a>
+          </li>
+      </ul>
+      </li>
+      <li><a href="yjspy.htm">研究生培养</a><i class="jiahao"></i>
+      <ul class="chyg-suNnav">
+          <li><a href="yjspy/zs.htm">招生</a>
+          </li>
+          <li><a href="yjspy/py.htm">培养</a>
+          </li>
+          <li><a href="yjspy/xwgl.htm">学位管理</a>
+          </li>
+          <li><a href="yjspy/xyzc.htm">校友之窗</a>
+            <ul class="chyg-nav-sub-nav">
+               <li><a href="yjspy/xyzc/xyll.htm">校友联络</a>
+               </li>
+               <li><a href="yjspy/xyzc/xydt.htm">校友动态</a>
+               </li>
+               <li><a href="yjspy/xyzc/xyjz.htm">校友捐赠</a>
+               </li>
+               <li><a href="yjspy/xyzc/lxwm.htm">联系我们</a>
+               </li>
+          </ul>
+          </li>
+      </ul>
+      </li>
+      <li><a href="kfjl.htm">开放交流</a><i class="jiahao"></i>
+      <ul class="chyg-suNnav">
+          <li><a href="kfjl/xsbg/xhdjt.htm">讲座报告</a>
+            <ul class="chyg-nav-sub-nav">
+               <li><a href="kfjl/xsbg/xhdjt.htm">星湖大讲坛</a>
+               </li>
+               <li><a href="kfjl/xsbg/LIESMARSqyjz.htm">LIESMARS前沿讲座</a>
+               </li>
+               <li><a href="kfjl/xsbg/GEOCAFE.htm">GEOCAFE</a>
+               </li>
+          </ul>
+          </li>
+          <li><a href="kfjl/xshy.htm">学术会议</a>
+          </li>
+          <li><a href="kfjl/gjxsjl.htm">国际学术交流</a>
+          </li>
+          <li><a href="kfjl/kxjjsjyjd.htm">科学家精神教育基地</a>
+          </li>
+          <li><a href="kfjl/mtLIESMARS.htm">媒体LIESMARS</a>
+          </li>
+      </ul>
+      </li>
+      <li><a href="ptyss/kypt.htm">平台与设施</a><i class="jiahao"></i>
+      <ul class="chyg-suNnav">
+          <li><a href="ptyss/kypt.htm">科研平台</a>
+          </li>
+          <li><a href="ptyss/whdxygwxdmz.htm">武汉大学遥感卫星地面站</a>
+          </li>
+          <li><a href="ptyss/ljxlkxsywx.htm">珞珈系列科学实验卫星</a>
+          </li>
+          <li><a href="ptyss/xwkyjd_ss_zw_cb_.htm">校外科研基地（嵩山、中卫、赤壁）</a>
+          </li>
+      </ul>
+      </li>
+      <li><a href="xxgk/bszn.htm">信息公开</a><i class="jiahao"></i>
+      <ul class="chyg-suNnav">
+          <li><a href="xxgk/bszn.htm">办事指南</a>
+          </li>
+          <li><a href="xxgk/aqjy.htm">安全教育</a>
+          </li>
+          <li><a href="http://218.197.150.88/hys/" target="_blank" href="xxgk/hysyd.htm">会议室预订</a>
+          </li>
+          <li><a href="https://202.114.114.18/LmarsOA/" target="_blank" href="xxgk/cggl.htm">成果管理</a>
+          </li>
+          <li><a href="xxgk/dzgs.htm">党政公示</a>
+          </li>
+          <li><a href="xxgk/zpxx.htm">招聘信息</a>
+          </li>
+      </ul>
+      </li>
+</ul>
+  
+
+</div>
+</div>
+  <script type="text/javascript" src="js/jquery_1.10.2_jquery.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/swiper-3.4.0.jquery.min.js"></script>
+  <script type="text/javascript">
+    var mySwiper = new Swiper('#swiper-container', {
+      autoplay: 5000,
+      autoplayStopOnLast: false,
+      slidesPerView: 4,
+      slidesPerColumnFill: 'column',
+      spaceBetween: 40,
+      nextButton: '.chyg-img-list .swiper-button-next',
+      prevButton: '.chyg-img-list .swiper-button-prev',
+      // pagination: '.chyg-img-list .swiper-pagination',
+      breakpoints: {
+        1600: {
+          slidesPerView: 4,
+          spaceBetween: 23
+        },
+        1500: {
+          slidesPerView: 4,
+          spaceBetween: 23
+        },
+        1400: {
+          slidesPerView: 4,
+          spaceBetween: 23
+        },
+        1300: {
+          slidesPerView: 3,
+          spaceBetween: 20
+        },
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 20
+        },
+        1100: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 15
+        },
+        800: {
+          slidesPerView: 2,
+          spaceBetween: 15
+        },
+        720: {
+          slidesPerView: 2,
+          spaceBetween: 15
+        },
+        680: {
+          slidesPerView: 1,
+          spaceBetween: 15
+        },
+        600: {
+          slidesPerView: 1,
+          spaceBetween: 15
+        },
+        520: {
+          slidesPerView: 1,
+          spaceBetween: 5
+        }
+      }
+    })
+  </script>
+  <script type="text/javascript" src="js/swiper0116.min.js"></script>
+  <script type="text/javascript">
+    var swiperBanner = new Swiper(".chyg-banner .mySwiper", {
+      speed: 1000,
+      centeredSlides: true,
+      autoplay: {
+        delay: 4500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.chyg-banner .swiper-pagination',
+        clickable: true,
+      },
+      /*navigation: {
+            nextEl: '.chyg-banner .swiper-button-next',
+            prevEl: '.chyg-banner .swiper-button-prev',
+          },*/
+    });
+
+    var swiperImg = new Swiper(".chyg-xshb-list .mySwiper", {
+      speed: 600,
+      centeredSlides: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.chyg-xshb-list .swiper-button-next',
+        prevEl: '.chyg-xshb-list .swiper-button-prev',
+      },
+      pagination: {
+        el: '.chyg-xshb-list .swiper-pagination',
+        type: 'fraction',
+        renderFraction: function (currentClass, totalClass) {
+          return '<span class="currenttxt"></span><span class="' + currentClass + '"></span>' +
+            ' / ' +
+            '<span class="totaltxt"></span><span class="' + totalClass + '"></span>';
+        },
+      },
+    });    
+  </script>
+  <script type="text/javascript" src="js/jquery.toTop.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $(".chyg-return-top").toTop();
+    });
+  </script>
+</body>
+</html>

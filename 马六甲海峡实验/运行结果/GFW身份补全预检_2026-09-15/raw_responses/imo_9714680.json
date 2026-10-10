@@ -1,0 +1,181 @@
+{
+  "limit": 30,
+  "since": null,
+  "total": 2,
+  "entries": [
+    {
+      "dataset": "public-global-vessel-identity:v4.0",
+      "registryInfoTotalRecords": 1,
+      "registryInfo": [
+        {
+          "id": "66e26d2ce0b7a59524ff941dcbc90303",
+          "sourceCode": [
+            "IMO"
+          ],
+          "ssvid": "636017535",
+          "flag": "LBR",
+          "shipname": "SBIPHOENIX",
+          "nShipname": "SBIPHOENIX",
+          "callsign": "D5LK8",
+          "imo": "9714680",
+          "latestVesselInfo": true,
+          "transmissionDateFrom": "2016-06-21T08:52:57Z",
+          "transmissionDateTo": "2020-11-03T16:14:07Z",
+          "geartypes": [
+            "CARGO"
+          ],
+          "lengthM": null,
+          "tonnageGt": 36421,
+          "vesselInfoReference": "b4d1c6483c204cdc76c6e8d99320bf53",
+          "extraFields": []
+        }
+      ],
+      "registryOwners": [],
+      "combinedSourcesInfo": [
+        {
+          "vesselId": "233febfab-bc17-da3d-4e9a-71a03b23dcef",
+          "geartypes": [
+            {
+              "name": "CARGO",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2016,
+              "yearTo": 2020
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "CARGO",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2016,
+              "yearTo": 2020
+            }
+          ]
+        }
+      ],
+      "selfReportedInfo": [
+        {
+          "id": "233febfab-bc17-da3d-4e9a-71a03b23dcef",
+          "ssvid": "636017535",
+          "shipname": "SBI PHOENIX",
+          "nShipname": "SBIPHOENIX",
+          "flag": "LBR",
+          "callsign": "D5LK8",
+          "imo": "9714680",
+          "messagesCounter": 915234,
+          "positionsCounter": 332716,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "SEVERAL_FIELDS",
+          "transmissionDateFrom": "2016-06-21T08:47:25Z",
+          "transmissionDateTo": "2020-11-21T09:13:30Z"
+        }
+      ],
+      "matchCriteria": [
+        {
+          "reference": "233febfab-bc17-da3d-4e9a-71a03b23dcef",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.imo",
+              "value": "9714680"
+            }
+          ],
+          "period": {
+            "dateFrom": "2016-06-21T08:47:25Z",
+            "dateTo": "2020-11-21T09:13:30Z"
+          },
+          "latestVesselInfo": true
+        },
+        {
+          "reference": "b4d1c6483c204cdc76c6e8d99320bf53",
+          "property": "registryInfo.vesselInfoReference",
+          "source": "registryInfo",
+          "matches": [
+            {
+              "property": "registryInfo.imo",
+              "value": "9714680"
+            }
+          ],
+          "period": {
+            "dateFrom": "2016-06-21T08:52:57Z",
+            "dateTo": "2020-11-03T16:14:07Z"
+          },
+          "latestVesselInfo": true
+        }
+      ]
+    },
+    {
+      "dataset": "public-global-vessel-identity:v4.0",
+      "registryInfoTotalRecords": 0,
+      "registryInfo": [],
+      "registryOwners": [],
+      "combinedSourcesInfo": [
+        {
+          "vesselId": "927b6431a-abb6-6f8d-daf2-374d61e82870",
+          "geartypes": [
+            {
+              "name": "CARGO",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2020,
+              "yearTo": 2026
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "CARGO",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2020,
+              "yearTo": 2026
+            }
+          ]
+        }
+      ],
+      "selfReportedInfo": [
+        {
+          "id": "927b6431a-abb6-6f8d-daf2-374d61e82870",
+          "ssvid": "538009130",
+          "shipname": "GENCO MAYFLOWER",
+          "nShipname": "GENCOMAYFLOWER",
+          "flag": "MHL",
+          "callsign": "V7A4357",
+          "imo": "9714680",
+          "messagesCounter": 5046203,
+          "positionsCounter": 1563977,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "NO_MATCH",
+          "transmissionDateFrom": "2020-11-03T16:17:56Z",
+          "transmissionDateTo": "2026-09-13T23:59:49Z"
+        }
+      ],
+      "matchCriteria": [
+        {
+          "reference": "927b6431a-abb6-6f8d-daf2-374d61e82870",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.imo",
+              "value": "9714680"
+            }
+          ],
+          "period": {
+            "dateFrom": "2020-11-03T16:17:56Z",
+            "dateTo": "2026-09-13T23:59:49Z"
+          },
+          "latestVesselInfo": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "query": "9714680",
+    "normalizedQuery": "9714680",
+    "didYouMean": {
+      "shipname": {}
+    }
+  }
+}

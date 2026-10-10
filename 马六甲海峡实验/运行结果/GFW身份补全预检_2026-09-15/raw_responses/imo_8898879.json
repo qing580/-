@@ -1,0 +1,117 @@
+{
+  "limit": 30,
+  "since": null,
+  "total": 1,
+  "entries": [
+    {
+      "dataset": "public-global-vessel-identity:v4.0",
+      "registryInfoTotalRecords": 1,
+      "registryInfo": [
+        {
+          "id": "5e132ace96a163773fc858ac8024c62b",
+          "sourceCode": [
+            "IMO"
+          ],
+          "ssvid": "563001270",
+          "flag": "SGP",
+          "shipname": "AYERMANIS",
+          "nShipname": "AYERMANIS",
+          "callsign": "9V5855",
+          "imo": "8898879",
+          "latestVesselInfo": true,
+          "transmissionDateFrom": "2012-01-03T16:48:56Z",
+          "transmissionDateTo": "2026-07-31T23:58:53Z",
+          "geartypes": [
+            "TANKER"
+          ],
+          "lengthM": null,
+          "tonnageGt": 305,
+          "vesselInfoReference": "717f7066be069eb2f5d01d6c86cdd6eb",
+          "extraFields": []
+        }
+      ],
+      "registryOwners": [],
+      "combinedSourcesInfo": [
+        {
+          "vesselId": "697e08be7-7b3e-e5d6-ee76-778854d51ee9",
+          "geartypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2012,
+              "yearTo": 2026
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2012,
+              "yearTo": 2026
+            }
+          ]
+        }
+      ],
+      "selfReportedInfo": [
+        {
+          "id": "697e08be7-7b3e-e5d6-ee76-778854d51ee9",
+          "ssvid": "563001270",
+          "shipname": "AYER MANIS",
+          "nShipname": "AYERMANIS",
+          "flag": "SGP",
+          "callsign": "9V5855",
+          "imo": "8898879",
+          "messagesCounter": 47012644,
+          "positionsCounter": 9237136,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "SEVERAL_FIELDS",
+          "transmissionDateFrom": "2012-01-01T15:07:11Z",
+          "transmissionDateTo": "2026-09-13T23:59:49Z"
+        }
+      ],
+      "matchCriteria": [
+        {
+          "reference": "697e08be7-7b3e-e5d6-ee76-778854d51ee9",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.imo",
+              "value": "8898879"
+            }
+          ],
+          "period": {
+            "dateFrom": "2012-01-01T15:07:11Z",
+            "dateTo": "2026-09-13T23:59:49Z"
+          },
+          "latestVesselInfo": true
+        },
+        {
+          "reference": "717f7066be069eb2f5d01d6c86cdd6eb",
+          "property": "registryInfo.vesselInfoReference",
+          "source": "registryInfo",
+          "matches": [
+            {
+              "property": "registryInfo.imo",
+              "value": "8898879"
+            }
+          ],
+          "period": {
+            "dateFrom": "2012-01-03T16:48:56Z",
+            "dateTo": "2026-07-31T23:58:53Z"
+          },
+          "latestVesselInfo": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "query": "8898879",
+    "normalizedQuery": "8898879",
+    "didYouMean": {
+      "shipname": {}
+    }
+  }
+}

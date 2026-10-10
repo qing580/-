@@ -1,0 +1,78 @@
+{
+  "limit": 30,
+  "since": null,
+  "total": 1,
+  "entries": [
+    {
+      "dataset": "public-global-vessel-identity:v4.0",
+      "registryInfoTotalRecords": 0,
+      "registryInfo": [],
+      "registryOwners": [],
+      "combinedSourcesInfo": [
+        {
+          "vesselId": "871f92ca0-0241-98ed-e99f-bdcb12fc8a3d",
+          "geartypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2024,
+              "yearTo": 2026
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2024,
+              "yearTo": 2026
+            }
+          ]
+        }
+      ],
+      "selfReportedInfo": [
+        {
+          "id": "871f92ca0-0241-98ed-e99f-bdcb12fc8a3d",
+          "ssvid": "256162000",
+          "shipname": "SANDPIPER 1",
+          "nShipname": "SANDPIPER1",
+          "flag": "MLT",
+          "callsign": "9HA5721",
+          "imo": "8359043",
+          "messagesCounter": 13764193,
+          "positionsCounter": 1139822,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "NO_MATCH",
+          "transmissionDateFrom": "2024-01-28T03:33:23Z",
+          "transmissionDateTo": "2026-09-13T23:59:55Z"
+        }
+      ],
+      "matchCriteria": [
+        {
+          "reference": "871f92ca0-0241-98ed-e99f-bdcb12fc8a3d",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.imo",
+              "value": "8359043"
+            }
+          ],
+          "period": {
+            "dateFrom": "2024-01-28T03:33:23Z",
+            "dateTo": "2026-09-13T23:59:55Z"
+          },
+          "latestVesselInfo": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "query": "8359043",
+    "normalizedQuery": "8359043",
+    "didYouMean": {
+      "shipname": {}
+    }
+  }
+}

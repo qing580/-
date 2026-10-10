@@ -1,0 +1,61 @@
+{
+  "schemaVersion": "1.0",
+  "updatedAt": "2026-09-21",
+  "claims": [
+    {
+      "id": "KG-C001",
+      "title": "AIS信息可能不完整或错误",
+      "statement": "AIS信息可能因未配备、设备关闭、人工输入、传感器配置或校准问题而缺失、陈旧或错误。",
+      "boundary": "用于数据质量提示，不能据此推断某船存在主观故意或违法行为。",
+      "appliesToKinds": ["*"],
+      "topics": ["ais_limitations", "data_quality"],
+      "sourceId": "KB-0001",
+      "locator": "AIS 固有限制",
+      "reviewStatus": "已审核"
+    },
+    {
+      "id": "KG-C002",
+      "title": "AIS不能作为唯一避碰依据",
+      "statement": "AIS、CPA和TCPA可以辅助识别与跟踪目标，但不能替代雷达、人工瞭望、VTS信息或值班人员的航海判断。",
+      "boundary": "系统只提供辅助研判，不自动下达操船指令，也不认定船舶违反避碰规则。",
+      "appliesToKinds": ["高风险会遇", "会遇风险初筛"],
+      "topics": ["collision_avoidance", "ais_limitations"],
+      "sourceId": "KB-0001",
+      "locator": "AIS 与避碰决策",
+      "reviewStatus": "已审核"
+    },
+    {
+      "id": "KG-C003",
+      "title": "STRAITREP报告船舶范围",
+      "statement": "MPA页面列出按总吨、船长、拖带组合、危险货物、客船和特定通航情形参加STRAITREP的船舶类别。",
+      "boundary": "只能提示可能属于报告范围，具体航次必须结合船舶尺度、载货、设备和主管机关最新要求复核。",
+      "appliesToKinds": [],
+      "topics": ["straitrep", "reporting"],
+      "sourceId": "KB-0003",
+      "locator": "哪些船舶需要报告",
+      "reviewStatus": "已审核"
+    },
+    {
+      "id": "KG-C004",
+      "title": "AIS船型码属于弱标签",
+      "statement": "项目中的vessel_type是AIS自报船型码，可用于规则分类和弱监督标签，但不等于外部登记真值。",
+      "boundary": "不得把AIS自报船型或模型输出直接表述为已经完成登记核验的真实船型。",
+      "appliesToKinds": ["*"],
+      "topics": ["classification", "ais_fields"],
+      "sourceId": "KB-0002",
+      "locator": "使用注意",
+      "reviewStatus": "已审核"
+    },
+    {
+      "id": "KG-C005",
+      "title": "当前分类结果尚非论文最终性能",
+      "statement": "独立日期检查的增强特征结果优于旧轨迹特征，但油轮召回偏低，且标签仍为AIS弱标签。",
+      "boundary": "当前结果只用于阶段性方法判断，不能宣传为真实船型识别的最终准确率。",
+      "appliesToKinds": [],
+      "topics": ["classification", "experiment_status"],
+      "sourceId": "KB-0005",
+      "locator": "独立日期分类检查",
+      "reviewStatus": "已审核"
+    }
+  ]
+}

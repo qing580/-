@@ -1,0 +1,463 @@
+{
+  "generated_at": "2026-09-15T19:44:27",
+  "per_file": [
+    {
+      "rows": 979,
+      "unique_mmsi": 203,
+      "messages": {
+        "SubscriptionConfirmation": 1,
+        "PositionReport": 841,
+        "ShipStaticData": 123,
+        "StandardClassBPositionReport": 11,
+        "StaticDataReport": 2,
+        "ExtendedClassBPositionReport": 1
+      },
+      "parse_success": 0.9989785495403473,
+      "dynamic_rows": 853,
+      "dynamic_coverage": {
+        "mmsi": 1.0,
+        "lat": 1.0,
+        "lon": 1.0,
+        "sog": 1.0,
+        "cog": 1.0,
+        "true_heading": 1.0,
+        "rate_of_turn": 0.9859320046893317,
+        "navigational_status": 0.9859320046893317
+      },
+      "profile_counts": {
+        "vessel_type": 81,
+        "ship_length": 81,
+        "ship_width": 81,
+        "draught": 79,
+        "imo": 79,
+        "call_sign": 80
+      },
+      "profile_coverage": {
+        "vessel_type": 0.39901477832512317,
+        "ship_length": 0.39901477832512317,
+        "ship_width": 0.39901477832512317,
+        "draught": 0.3891625615763547,
+        "imo": 0.3891625615763547,
+        "call_sign": 0.39408866995073893
+      },
+      "eligible_counts": {
+        "油轮": 8,
+        "货船": 2
+      },
+      "start": "2026-09-07T11:44:56.781730+00:00",
+      "end": "2026-09-07T12:14:44.569810+00:00",
+      "bbox_valid": 1.0,
+      "batch_ids": [],
+      "region_ids": [],
+      "file": "C:\\Users\\卿之ya\\Desktop\\马六甲海峡实验\\原始数据\\malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv",
+      "sha256": "3E78C2B4E46C4344DE5FBD3A1BB6640191BE41C53021CA800D4AF0BF982C1240",
+      "new_mmsi_vs_previous": 203,
+      "new_eligible_after_addition": 10,
+      "added_rows_after_exact_dedup": 979
+    },
+    {
+      "rows": 15460,
+      "unique_mmsi": 581,
+      "messages": {
+        "SubscriptionConfirmation": 46,
+        "PositionReport": 13006,
+        "ShipStaticData": 2062,
+        "StandardClassBPositionReport": 249,
+        "StaticDataReport": 75,
+        "ExtendedClassBPositionReport": 22
+      },
+      "parse_success": 0.9970245795601552,
+      "dynamic_rows": 13277,
+      "dynamic_coverage": {
+        "mmsi": 1.0,
+        "lat": 1.0,
+        "lon": 1.0,
+        "sog": 1.0,
+        "cog": 1.0,
+        "true_heading": 1.0,
+        "rate_of_turn": 0.9795887625216539,
+        "navigational_status": 0.9795887625216539
+      },
+      "profile_counts": {
+        "vessel_type": 329,
+        "ship_length": 329,
+        "ship_width": 329,
+        "draught": 310,
+        "imo": 310,
+        "call_sign": 319
+      },
+      "profile_coverage": {
+        "vessel_type": 0.5662650602409639,
+        "ship_length": 0.5662650602409639,
+        "ship_width": 0.5662650602409639,
+        "draught": 0.5335628227194492,
+        "imo": 0.5335628227194492,
+        "call_sign": 0.5490533562822719
+      },
+      "eligible_counts": {
+        "油轮": 79,
+        "货船": 65
+      },
+      "start": "2026-09-08T04:35:27.444133+00:00",
+      "end": "2026-09-08T10:35:19.979026+00:00",
+      "bbox_valid": 1.0,
+      "batch_ids": [],
+      "region_ids": [],
+      "file": "C:\\Users\\卿之ya\\Desktop\\马六甲海峡实验\\原始数据\\malacca_enhanced_ais_6h_2026-09-08_123520_473.csv",
+      "sha256": "BB7910BE8D30BC2ADEB253A816971B342856DEB51F37E4DEBB38CB54DFC83F60",
+      "new_mmsi_vs_previous": 471,
+      "new_eligible_after_addition": 142,
+      "added_rows_after_exact_dedup": 15460
+    },
+    {
+      "rows": 13680,
+      "unique_mmsi": 471,
+      "messages": {
+        "SubscriptionConfirmation": 1,
+        "PositionReport": 11860,
+        "ShipStaticData": 1718,
+        "StandardClassBPositionReport": 72,
+        "StaticDataReport": 28,
+        "ExtendedClassBPositionReport": 1
+      },
+      "parse_success": 1.0,
+      "dynamic_rows": 11933,
+      "dynamic_coverage": {
+        "mmsi": 1.0,
+        "lat": 1.0,
+        "lon": 1.0,
+        "sog": 1.0,
+        "cog": 1.0,
+        "true_heading": 1.0,
+        "rate_of_turn": 0.993882510684656,
+        "navigational_status": 0.993882510684656
+      },
+      "profile_counts": {
+        "vessel_type": 266,
+        "ship_length": 266,
+        "ship_width": 266,
+        "draught": 258,
+        "imo": 258,
+        "call_sign": 260
+      },
+      "profile_coverage": {
+        "vessel_type": 0.564755838641189,
+        "ship_length": 0.564755838641189,
+        "ship_width": 0.564755838641189,
+        "draught": 0.5477707006369427,
+        "imo": 0.5477707006369427,
+        "call_sign": 0.5520169851380042
+      },
+      "eligible_counts": {
+        "油轮": 64,
+        "货船": 57
+      },
+      "start": "2026-09-09T04:41:48.489021+00:00",
+      "end": "2026-09-09T10:41:40.867347+00:00",
+      "bbox_valid": 1.0,
+      "batch_ids": [
+        "formal_6h_2026-09-09_124141_605"
+      ],
+      "region_ids": [
+        "malacca_southeast_singapore_strait"
+      ],
+      "file": "C:\\Users\\卿之ya\\Desktop\\马六甲海峡实验\\原始数据\\batches\\formal_6h_2026-09-09_124141_605\\normalized_events.csv",
+      "sha256": "DDB541805BCC1D7F5FA782EBCB92E0DD3E2CE53B616FB11AD411815C79B0380E",
+      "new_mmsi_vs_previous": 234,
+      "new_eligible_after_addition": 102,
+      "added_rows_after_exact_dedup": 13680
+    },
+    {
+      "rows": 5770,
+      "unique_mmsi": 346,
+      "messages": {
+        "SubscriptionConfirmation": 1,
+        "PositionReport": 5069,
+        "ShipStaticData": 669,
+        "StandardClassBPositionReport": 19,
+        "StaticDataReport": 12
+      },
+      "parse_success": 1.0,
+      "dynamic_rows": 5088,
+      "dynamic_coverage": {
+        "mmsi": 1.0,
+        "lat": 1.0,
+        "lon": 1.0,
+        "sog": 1.0,
+        "cog": 1.0,
+        "true_heading": 1.0,
+        "rate_of_turn": 0.9962657232704403,
+        "navigational_status": 0.9962657232704403
+      },
+      "profile_counts": {
+        "vessel_type": 147,
+        "ship_length": 147,
+        "ship_width": 147,
+        "draught": 145,
+        "imo": 145,
+        "call_sign": 147
+      },
+      "profile_coverage": {
+        "vessel_type": 0.42485549132947975,
+        "ship_length": 0.42485549132947975,
+        "ship_width": 0.42485549132947975,
+        "draught": 0.4190751445086705,
+        "imo": 0.4190751445086705,
+        "call_sign": 0.42485549132947975
+      },
+      "eligible_counts": {
+        "货船": 25,
+        "油轮": 20
+      },
+      "start": "2026-09-13T04:35:00.066171+00:00",
+      "end": "2026-09-13T10:34:29.941173+00:00",
+      "bbox_valid": 1.0,
+      "batch_ids": [
+        "formal_6h_2026-09-13_123437_689"
+      ],
+      "region_ids": [
+        "malacca_southeast_singapore_strait"
+      ],
+      "file": "C:\\Users\\卿之ya\\Desktop\\马六甲海峡实验\\原始数据\\batches\\formal_6h_2026-09-13_123437_689\\normalized_events.csv",
+      "sha256": "4AB78F7E9BF309CE9D8CA96EDD2E6CC4973C87D421F60A5CE8D0A41B141BD1F1",
+      "new_mmsi_vs_previous": 206,
+      "new_eligible_after_addition": 39,
+      "added_rows_after_exact_dedup": 5770
+    },
+    {
+      "rows": 8100,
+      "unique_mmsi": 416,
+      "messages": {
+        "SubscriptionConfirmation": 1,
+        "PositionReport": 7013,
+        "ShipStaticData": 1064,
+        "StaticDataReport": 12,
+        "StandardClassBPositionReport": 10
+      },
+      "parse_success": 1.0,
+      "dynamic_rows": 7023,
+      "dynamic_coverage": {
+        "mmsi": 1.0,
+        "lat": 1.0,
+        "lon": 1.0,
+        "sog": 1.0,
+        "cog": 1.0,
+        "true_heading": 1.0,
+        "rate_of_turn": 0.9985761070767478,
+        "navigational_status": 0.9985761070767478
+      },
+      "profile_counts": {
+        "vessel_type": 217,
+        "ship_length": 217,
+        "ship_width": 217,
+        "draught": 213,
+        "imo": 213,
+        "call_sign": 214
+      },
+      "profile_coverage": {
+        "vessel_type": 0.5216346153846154,
+        "ship_length": 0.5216346153846154,
+        "ship_width": 0.5216346153846154,
+        "draught": 0.5120192307692307,
+        "imo": 0.5120192307692307,
+        "call_sign": 0.5144230769230769
+      },
+      "eligible_counts": {
+        "货船": 36,
+        "油轮": 33
+      },
+      "start": "2026-09-14T05:17:48.929075+00:00",
+      "end": "2026-09-14T11:17:40.104841+00:00",
+      "bbox_valid": 1.0,
+      "batch_ids": [
+        "formal_6h_2026-09-14_131740_539"
+      ],
+      "region_ids": [
+        "malacca_southeast_singapore_strait"
+      ],
+      "file": "C:\\Users\\卿之ya\\Desktop\\马六甲海峡实验\\原始数据\\batches\\formal_6h_2026-09-14_131740_539\\normalized_events.csv",
+      "sha256": "318C655AEE1B6EAD492A9753953E3ED06FE88BE76A7F2BDEE25537FA6D24A56B",
+      "new_mmsi_vs_previous": 171,
+      "new_eligible_after_addition": 53,
+      "added_rows_after_exact_dedup": 8100
+    },
+    {
+      "rows": 13040,
+      "unique_mmsi": 548,
+      "messages": {
+        "SubscriptionConfirmation": 1,
+        "PositionReport": 11175,
+        "ShipStaticData": 1533,
+        "StandardClassBPositionReport": 239,
+        "StaticDataReport": 79,
+        "ExtendedClassBPositionReport": 13
+      },
+      "parse_success": 1.0,
+      "dynamic_rows": 11427,
+      "dynamic_coverage": {
+        "mmsi": 1.0,
+        "lat": 1.0,
+        "lon": 1.0,
+        "sog": 1.0,
+        "cog": 1.0,
+        "true_heading": 1.0,
+        "rate_of_turn": 0.9779469677080599,
+        "navigational_status": 0.9779469677080599
+      },
+      "profile_counts": {
+        "vessel_type": 303,
+        "ship_length": 303,
+        "ship_width": 303,
+        "draught": 290,
+        "imo": 290,
+        "call_sign": 297
+      },
+      "profile_coverage": {
+        "vessel_type": 0.5529197080291971,
+        "ship_length": 0.5529197080291971,
+        "ship_width": 0.5529197080291971,
+        "draught": 0.5291970802919708,
+        "imo": 0.5291970802919708,
+        "call_sign": 0.541970802919708
+      },
+      "eligible_counts": {
+        "油轮": 64,
+        "货船": 43
+      },
+      "start": "2026-09-15T01:24:49.209692+00:00",
+      "end": "2026-09-15T07:24:43.724250+00:00",
+      "bbox_valid": 1.0,
+      "batch_ids": [
+        "formal_self_6h_20260915_092440"
+      ],
+      "region_ids": [
+        "malacca_southeast_singapore_strait"
+      ],
+      "file": "C:\\Users\\卿之ya\\Documents\\xwechat_files\\wxid_0ybhi61e8yog22_5f4c\\msg\\file\\2026-09\\normalized_events.csv",
+      "sha256": "E5510DA1BD13B6366D1EC2E23841895827F1DDA6702C5BC4A4641B5C0DF30C71",
+      "new_mmsi_vs_previous": 215,
+      "new_eligible_after_addition": 90,
+      "added_rows_after_exact_dedup": 13040
+    }
+  ],
+  "cumulative": [
+    {
+      "through_file": "malacca_enhanced_ais_0p5h_2026-09-07_194446_570.csv",
+      "rows": 979,
+      "unique_mmsi": 203,
+      "eligible": 10,
+      "eligible_counts": {
+        "油轮": 8,
+        "货船": 2
+      }
+    },
+    {
+      "through_file": "malacca_enhanced_ais_6h_2026-09-08_123520_473.csv",
+      "rows": 16439,
+      "unique_mmsi": 674,
+      "eligible": 152,
+      "eligible_counts": {
+        "油轮": 86,
+        "货船": 66
+      }
+    },
+    {
+      "through_file": "normalized_events.csv",
+      "rows": 30119,
+      "unique_mmsi": 908,
+      "eligible": 254,
+      "eligible_counts": {
+        "油轮": 141,
+        "货船": 113
+      }
+    },
+    {
+      "through_file": "normalized_events.csv",
+      "rows": 35889,
+      "unique_mmsi": 1114,
+      "eligible": 293,
+      "eligible_counts": {
+        "货船": 136,
+        "油轮": 157
+      }
+    },
+    {
+      "through_file": "normalized_events.csv",
+      "rows": 43989,
+      "unique_mmsi": 1285,
+      "eligible": 345,
+      "eligible_counts": {
+        "货船": 169,
+        "油轮": 176
+      }
+    },
+    {
+      "through_file": "normalized_events.csv",
+      "rows": 57029,
+      "unique_mmsi": 1500,
+      "eligible": 435,
+      "eligible_counts": {
+        "货船": 208,
+        "油轮": 227
+      }
+    }
+  ],
+  "final": {
+    "rows": 57029,
+    "unique_mmsi": 1500,
+    "messages": {
+      "SubscriptionConfirmation": 51,
+      "PositionReport": 48964,
+      "ShipStaticData": 7169,
+      "StandardClassBPositionReport": 600,
+      "StaticDataReport": 208,
+      "ExtendedClassBPositionReport": 37
+    },
+    "parse_success": 0.9991758000876808,
+    "dynamic_rows": 49601,
+    "dynamic_coverage": {
+      "mmsi": 1.0,
+      "lat": 1.0,
+      "lon": 1.0,
+      "sog": 1.0,
+      "cog": 1.0,
+      "true_heading": 1.0,
+      "rate_of_turn": 0.9871575169855447,
+      "navigational_status": 0.9871575169855447
+    },
+    "profile_counts": {
+      "vessel_type": 921,
+      "ship_length": 921,
+      "ship_width": 921,
+      "draught": 886,
+      "imo": 886,
+      "call_sign": 902
+    },
+    "profile_coverage": {
+      "vessel_type": 0.614,
+      "ship_length": 0.614,
+      "ship_width": 0.614,
+      "draught": 0.5906666666666667,
+      "imo": 0.5906666666666667,
+      "call_sign": 0.6013333333333334
+    },
+    "eligible_counts": {
+      "货船": 208,
+      "油轮": 227
+    },
+    "start": "2026-09-07T11:44:56.781730+00:00",
+    "end": "2026-09-15T07:24:43.724250+00:00",
+    "bbox_valid": 1.0,
+    "batch_ids": [
+      "formal_6h_2026-09-09_124141_605",
+      "formal_6h_2026-09-13_123437_689",
+      "formal_6h_2026-09-14_131740_539",
+      "formal_self_6h_20260915_092440"
+    ],
+    "region_ids": [
+      "malacca_southeast_singapore_strait"
+    ]
+  },
+  "remaining_to_500": 65,
+  "estimated_test_20pct": 87
+}

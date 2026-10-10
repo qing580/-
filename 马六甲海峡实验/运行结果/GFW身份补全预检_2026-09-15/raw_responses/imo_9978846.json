@@ -1,0 +1,78 @@
+{
+  "limit": 30,
+  "since": null,
+  "total": 1,
+  "entries": [
+    {
+      "dataset": "public-global-vessel-identity:v4.0",
+      "registryInfoTotalRecords": 0,
+      "registryInfo": [],
+      "registryOwners": [],
+      "combinedSourcesInfo": [
+        {
+          "vesselId": "90a7b2b6b-baf8-c60f-b915-2fbca0cf2b77",
+          "geartypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2022,
+              "yearTo": 2026
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2022,
+              "yearTo": 2026
+            }
+          ]
+        }
+      ],
+      "selfReportedInfo": [
+        {
+          "id": "90a7b2b6b-baf8-c60f-b915-2fbca0cf2b77",
+          "ssvid": "572549220",
+          "shipname": "VALLIANZ PRESTIGE",
+          "nShipname": "VALLIANZPRESTIGE",
+          "flag": "TUV",
+          "callsign": "T2VO5",
+          "imo": "9978846",
+          "messagesCounter": 16957318,
+          "positionsCounter": 2151224,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "NO_MATCH",
+          "transmissionDateFrom": "2022-10-03T01:54:58Z",
+          "transmissionDateTo": "2026-09-13T23:59:59Z"
+        }
+      ],
+      "matchCriteria": [
+        {
+          "reference": "90a7b2b6b-baf8-c60f-b915-2fbca0cf2b77",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.imo",
+              "value": "9978846"
+            }
+          ],
+          "period": {
+            "dateFrom": "2022-10-03T01:54:58Z",
+            "dateTo": "2026-09-13T23:59:59Z"
+          },
+          "latestVesselInfo": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "query": "9978846",
+    "normalizedQuery": "9978846",
+    "didYouMean": {
+      "shipname": {}
+    }
+  }
+}

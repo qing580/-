@@ -1,0 +1,181 @@
+{
+  "limit": 30,
+  "since": null,
+  "total": 2,
+  "entries": [
+    {
+      "dataset": "public-global-vessel-identity:v4.0",
+      "registryInfoTotalRecords": 1,
+      "registryInfo": [
+        {
+          "id": "53c404a6db2dde88e79cb589ce1e4c58",
+          "sourceCode": [
+            "IMO"
+          ],
+          "ssvid": "419479000",
+          "flag": "IND",
+          "shipname": "JAGPANKHI",
+          "nShipname": "JAGPANKHI",
+          "callsign": "AUBT",
+          "imo": "9258686",
+          "latestVesselInfo": true,
+          "transmissionDateFrom": "2012-01-13T22:20:16Z",
+          "transmissionDateTo": "2026-05-16T10:23:29Z",
+          "geartypes": [
+            "TANKER"
+          ],
+          "lengthM": null,
+          "tonnageGt": 27627,
+          "vesselInfoReference": "14d468f44517719bc7215e523ad65964",
+          "extraFields": []
+        }
+      ],
+      "registryOwners": [],
+      "combinedSourcesInfo": [
+        {
+          "vesselId": "e4ab2b742-2669-25b5-ad83-c062028b91da",
+          "geartypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2012,
+              "yearTo": 2026
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2012,
+              "yearTo": 2026
+            }
+          ]
+        }
+      ],
+      "selfReportedInfo": [
+        {
+          "id": "e4ab2b742-2669-25b5-ad83-c062028b91da",
+          "ssvid": "419479000",
+          "shipname": "JAG PANKHI",
+          "nShipname": "JAGPANKHI",
+          "flag": "IND",
+          "callsign": "AUBT",
+          "imo": "9258686",
+          "messagesCounter": 3617690,
+          "positionsCounter": 1285661,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "SEVERAL_FIELDS",
+          "transmissionDateFrom": "2012-01-12T11:02:22Z",
+          "transmissionDateTo": "2026-05-16T10:27:13Z"
+        }
+      ],
+      "matchCriteria": [
+        {
+          "reference": "e4ab2b742-2669-25b5-ad83-c062028b91da",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.imo",
+              "value": "9258686"
+            }
+          ],
+          "period": {
+            "dateFrom": "2012-01-12T11:02:22Z",
+            "dateTo": "2026-05-16T10:27:13Z"
+          },
+          "latestVesselInfo": true
+        },
+        {
+          "reference": "14d468f44517719bc7215e523ad65964",
+          "property": "registryInfo.vesselInfoReference",
+          "source": "registryInfo",
+          "matches": [
+            {
+              "property": "registryInfo.imo",
+              "value": "9258686"
+            }
+          ],
+          "period": {
+            "dateFrom": "2012-01-13T22:20:16Z",
+            "dateTo": "2026-05-16T10:23:29Z"
+          },
+          "latestVesselInfo": true
+        }
+      ]
+    },
+    {
+      "dataset": "public-global-vessel-identity:v4.0",
+      "registryInfoTotalRecords": 0,
+      "registryInfo": [],
+      "registryOwners": [],
+      "combinedSourcesInfo": [
+        {
+          "vesselId": "2cb069abe-efbc-25d2-9efe-c42a4e6263c9",
+          "geartypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2026,
+              "yearTo": 2026
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2026,
+              "yearTo": 2026
+            }
+          ]
+        }
+      ],
+      "selfReportedInfo": [
+        {
+          "id": "2cb069abe-efbc-25d2-9efe-c42a4e6263c9",
+          "ssvid": "305034400",
+          "shipname": "ANGEL 7",
+          "nShipname": "ANGEL7",
+          "flag": "ATG",
+          "callsign": "V2C2034",
+          "imo": "9258686",
+          "messagesCounter": 2947512,
+          "positionsCounter": 208294,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "NO_MATCH",
+          "transmissionDateFrom": "2026-05-16T13:09:26Z",
+          "transmissionDateTo": "2026-09-13T23:59:54Z"
+        }
+      ],
+      "matchCriteria": [
+        {
+          "reference": "2cb069abe-efbc-25d2-9efe-c42a4e6263c9",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.imo",
+              "value": "9258686"
+            }
+          ],
+          "period": {
+            "dateFrom": "2026-05-16T13:09:26Z",
+            "dateTo": "2026-09-13T23:59:54Z"
+          },
+          "latestVesselInfo": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "query": "9258686",
+    "normalizedQuery": "9258686",
+    "didYouMean": {
+      "shipname": {}
+    }
+  }
+}

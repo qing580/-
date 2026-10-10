@@ -1,0 +1,117 @@
+{
+  "limit": 30,
+  "since": null,
+  "total": 1,
+  "entries": [
+    {
+      "dataset": "public-global-vessel-identity:v4.0",
+      "registryInfoTotalRecords": 1,
+      "registryInfo": [
+        {
+          "id": "174a50561fa4b0d63913047d8178c694",
+          "sourceCode": [
+            "IMO"
+          ],
+          "ssvid": "566858000",
+          "flag": "SGP",
+          "shipname": "KOTALEMBAH",
+          "nShipname": "KOTALEMBAH",
+          "callsign": "9V7665",
+          "imo": "9622318",
+          "latestVesselInfo": true,
+          "transmissionDateFrom": "2013-03-14T07:23:43Z",
+          "transmissionDateTo": "2026-07-31T22:50:32Z",
+          "geartypes": [
+            "CARGO"
+          ],
+          "lengthM": null,
+          "tonnageGt": 41678,
+          "vesselInfoReference": "9ab06ab7995c146c23958c2a774ff984",
+          "extraFields": []
+        }
+      ],
+      "registryOwners": [],
+      "combinedSourcesInfo": [
+        {
+          "vesselId": "bdd1818a0-04df-0f81-6d09-c85f39128684",
+          "geartypes": [
+            {
+              "name": "CARGO",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2013,
+              "yearTo": 2026
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "CARGO",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2013,
+              "yearTo": 2026
+            }
+          ]
+        }
+      ],
+      "selfReportedInfo": [
+        {
+          "id": "bdd1818a0-04df-0f81-6d09-c85f39128684",
+          "ssvid": "566858000",
+          "shipname": "KOTA LEMBAH",
+          "nShipname": "KOTALEMBAH",
+          "flag": "SGP",
+          "callsign": "9V7665",
+          "imo": "9622318",
+          "messagesCounter": 21090187,
+          "positionsCounter": 5640560,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "SEVERAL_FIELDS",
+          "transmissionDateFrom": "2013-03-14T07:22:22Z",
+          "transmissionDateTo": "2026-09-13T23:59:54Z"
+        }
+      ],
+      "matchCriteria": [
+        {
+          "reference": "bdd1818a0-04df-0f81-6d09-c85f39128684",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.imo",
+              "value": "9622318"
+            }
+          ],
+          "period": {
+            "dateFrom": "2013-03-14T07:22:22Z",
+            "dateTo": "2026-09-13T23:59:54Z"
+          },
+          "latestVesselInfo": true
+        },
+        {
+          "reference": "9ab06ab7995c146c23958c2a774ff984",
+          "property": "registryInfo.vesselInfoReference",
+          "source": "registryInfo",
+          "matches": [
+            {
+              "property": "registryInfo.imo",
+              "value": "9622318"
+            }
+          ],
+          "period": {
+            "dateFrom": "2013-03-14T07:23:43Z",
+            "dateTo": "2026-07-31T22:50:32Z"
+          },
+          "latestVesselInfo": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "query": "9622318",
+    "normalizedQuery": "9622318",
+    "didYouMean": {
+      "shipname": {}
+    }
+  }
+}

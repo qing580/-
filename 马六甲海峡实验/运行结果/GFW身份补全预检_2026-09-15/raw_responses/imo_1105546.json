@@ -1,0 +1,142 @@
+{
+  "limit": 30,
+  "since": null,
+  "total": 2,
+  "entries": [
+    {
+      "dataset": "public-global-vessel-identity:v4.0",
+      "registryInfoTotalRecords": 0,
+      "registryInfo": [],
+      "registryOwners": [],
+      "combinedSourcesInfo": [
+        {
+          "vesselId": "0ebab5d49-9447-c5f0-c6a3-8585205fa926",
+          "geartypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2026,
+              "yearTo": 2026
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2026,
+              "yearTo": 2026
+            }
+          ]
+        }
+      ],
+      "selfReportedInfo": [
+        {
+          "id": "0ebab5d49-9447-c5f0-c6a3-8585205fa926",
+          "ssvid": "563087130",
+          "shipname": "STL T6",
+          "nShipname": "STLT6",
+          "flag": "SGP",
+          "callsign": "9VDA3",
+          "imo": "1105546",
+          "messagesCounter": 4951324,
+          "positionsCounter": 327429,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "NO_MATCH",
+          "transmissionDateFrom": "2026-06-24T03:39:41Z",
+          "transmissionDateTo": "2026-09-13T23:59:52Z"
+        }
+      ],
+      "matchCriteria": [
+        {
+          "reference": "0ebab5d49-9447-c5f0-c6a3-8585205fa926",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.imo",
+              "value": "1105546"
+            }
+          ],
+          "period": {
+            "dateFrom": "2026-06-24T03:39:41Z",
+            "dateTo": "2026-09-13T23:59:52Z"
+          },
+          "latestVesselInfo": true
+        }
+      ]
+    },
+    {
+      "dataset": "public-global-vessel-identity:v4.0",
+      "registryInfoTotalRecords": 0,
+      "registryInfo": [],
+      "registryOwners": [],
+      "combinedSourcesInfo": [
+        {
+          "vesselId": "fc5cbec0d-ddc7-bce7-5121-c066facd3ebb",
+          "geartypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2025,
+              "yearTo": 2026
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2025,
+              "yearTo": 2026
+            }
+          ]
+        }
+      ],
+      "selfReportedInfo": [
+        {
+          "id": "fc5cbec0d-ddc7-bce7-5121-c066facd3ebb",
+          "ssvid": "312626000",
+          "shipname": "STL T6",
+          "nShipname": "STLT6",
+          "flag": "BLZ",
+          "callsign": "V3RK6",
+          "imo": "1105546",
+          "messagesCounter": 1123299,
+          "positionsCounter": 287424,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "NO_MATCH",
+          "transmissionDateFrom": "2025-07-09T07:16:35Z",
+          "transmissionDateTo": "2026-06-24T03:41:09Z"
+        }
+      ],
+      "matchCriteria": [
+        {
+          "reference": "fc5cbec0d-ddc7-bce7-5121-c066facd3ebb",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.imo",
+              "value": "1105546"
+            }
+          ],
+          "period": {
+            "dateFrom": "2025-07-09T07:16:35Z",
+            "dateTo": "2026-06-24T03:41:09Z"
+          },
+          "latestVesselInfo": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "query": "1105546",
+    "normalizedQuery": "1105546",
+    "didYouMean": {
+      "shipname": {}
+    }
+  }
+}

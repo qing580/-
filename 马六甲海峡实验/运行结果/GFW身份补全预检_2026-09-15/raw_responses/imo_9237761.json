@@ -1,0 +1,295 @@
+{
+  "limit": 30,
+  "since": null,
+  "total": 3,
+  "entries": [
+    {
+      "dataset": "public-global-vessel-identity:v4.0",
+      "registryInfoTotalRecords": 0,
+      "registryInfo": [],
+      "registryOwners": [],
+      "combinedSourcesInfo": [
+        {
+          "vesselId": "c9f25c432-28a4-9221-0c55-526eff43c6e7",
+          "geartypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2022,
+              "yearTo": 2026
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2022,
+              "yearTo": 2026
+            }
+          ]
+        }
+      ],
+      "selfReportedInfo": [
+        {
+          "id": "c9f25c432-28a4-9221-0c55-526eff43c6e7",
+          "ssvid": "352001757",
+          "shipname": "TINA 5",
+          "nShipname": "TINA5",
+          "flag": "PAN",
+          "callsign": "3E2593",
+          "imo": "9237761",
+          "messagesCounter": 2939257,
+          "positionsCounter": 1158789,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "NO_MATCH",
+          "transmissionDateFrom": "2022-08-06T08:54:15Z",
+          "transmissionDateTo": "2026-03-25T04:54:28Z"
+        }
+      ],
+      "matchCriteria": [
+        {
+          "reference": "c9f25c432-28a4-9221-0c55-526eff43c6e7",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.imo",
+              "value": "9237761"
+            }
+          ],
+          "period": {
+            "dateFrom": "2022-08-06T08:54:15Z",
+            "dateTo": "2026-03-25T04:54:28Z"
+          },
+          "latestVesselInfo": true
+        }
+      ]
+    },
+    {
+      "dataset": "public-global-vessel-identity:v4.0",
+      "registryInfoTotalRecords": 1,
+      "registryInfo": [
+        {
+          "id": "754317645b8a4164ab67df6cccf0742e",
+          "sourceCode": [
+            "IMO"
+          ],
+          "ssvid": "403557000",
+          "flag": "SAU",
+          "shipname": "TINAT",
+          "nShipname": "TINAT",
+          "callsign": "HZGS",
+          "imo": "9237761",
+          "latestVesselInfo": true,
+          "transmissionDateFrom": "2017-07-14T05:04:50Z",
+          "transmissionDateTo": "2022-08-06T08:32:10Z",
+          "geartypes": [
+            "TANKER"
+          ],
+          "lengthM": null,
+          "tonnageGt": 164292,
+          "vesselInfoReference": "c9f2d596e19ac9eaeb1daeda8566ca4d",
+          "extraFields": []
+        }
+      ],
+      "registryOwners": [],
+      "combinedSourcesInfo": [
+        {
+          "vesselId": "252761025-557e-5237-9a88-879079de9d8e",
+          "geartypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2017,
+              "yearTo": 2022
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2017,
+              "yearTo": 2022
+            }
+          ]
+        },
+        {
+          "vesselId": "23116e225-5719-57ad-549c-a48764c37a18",
+          "geartypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2012,
+              "yearTo": 2017
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2012,
+              "yearTo": 2017
+            }
+          ]
+        }
+      ],
+      "selfReportedInfo": [
+        {
+          "id": "252761025-557e-5237-9a88-879079de9d8e",
+          "ssvid": "403557000",
+          "shipname": "TINAT",
+          "nShipname": "TINAT",
+          "flag": "SAU",
+          "callsign": "HZGS",
+          "imo": "9237761",
+          "messagesCounter": 723686,
+          "positionsCounter": 246707,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "SEVERAL_FIELDS",
+          "transmissionDateFrom": "2017-07-14T04:58:18Z",
+          "transmissionDateTo": "2022-08-06T08:29:23Z"
+        },
+        {
+          "id": "23116e225-5719-57ad-549c-a48764c37a18",
+          "ssvid": "636011567",
+          "shipname": "MT TINAT",
+          "nShipname": "TINAT",
+          "flag": "LBR",
+          "callsign": "A8AD3",
+          "imo": "9237761",
+          "messagesCounter": 252981,
+          "positionsCounter": 148442,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "SEVERAL_FIELDS",
+          "transmissionDateFrom": "2012-01-06T21:33:18Z",
+          "transmissionDateTo": "2017-07-16T01:24:13Z"
+        }
+      ],
+      "matchCriteria": [
+        {
+          "reference": "252761025-557e-5237-9a88-879079de9d8e",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.imo",
+              "value": "9237761"
+            }
+          ],
+          "period": {
+            "dateFrom": "2017-07-14T04:58:18Z",
+            "dateTo": "2022-08-06T08:29:23Z"
+          },
+          "latestVesselInfo": true
+        },
+        {
+          "reference": "23116e225-5719-57ad-549c-a48764c37a18",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.imo",
+              "value": "9237761"
+            }
+          ],
+          "period": {
+            "dateFrom": "2012-01-06T21:33:18Z",
+            "dateTo": "2017-07-16T01:24:13Z"
+          },
+          "latestVesselInfo": true
+        },
+        {
+          "reference": "c9f2d596e19ac9eaeb1daeda8566ca4d",
+          "property": "registryInfo.vesselInfoReference",
+          "source": "registryInfo",
+          "matches": [
+            {
+              "property": "registryInfo.imo",
+              "value": "9237761"
+            }
+          ],
+          "period": {
+            "dateFrom": "2017-07-14T05:04:50Z",
+            "dateTo": "2022-08-06T08:32:10Z"
+          },
+          "latestVesselInfo": true
+        }
+      ]
+    },
+    {
+      "dataset": "public-global-vessel-identity:v4.0",
+      "registryInfoTotalRecords": 0,
+      "registryInfo": [],
+      "registryOwners": [],
+      "combinedSourcesInfo": [
+        {
+          "vesselId": "dd371a226-65ec-0195-f392-8a612e9a846e",
+          "geartypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2026,
+              "yearTo": 2026
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2026,
+              "yearTo": 2026
+            }
+          ]
+        }
+      ],
+      "selfReportedInfo": [
+        {
+          "id": "dd371a226-65ec-0195-f392-8a612e9a846e",
+          "ssvid": "577710000",
+          "shipname": "TINA 5",
+          "nShipname": "TINA5",
+          "flag": "VUT",
+          "callsign": "YJRL8",
+          "imo": "9237761",
+          "messagesCounter": 1379028,
+          "positionsCounter": 217711,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "NO_MATCH",
+          "transmissionDateFrom": "2026-03-25T04:44:24Z",
+          "transmissionDateTo": "2026-09-13T23:59:54Z"
+        }
+      ],
+      "matchCriteria": [
+        {
+          "reference": "dd371a226-65ec-0195-f392-8a612e9a846e",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.imo",
+              "value": "9237761"
+            }
+          ],
+          "period": {
+            "dateFrom": "2026-03-25T04:44:24Z",
+            "dateTo": "2026-09-13T23:59:54Z"
+          },
+          "latestVesselInfo": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "query": "9237761",
+    "normalizedQuery": "9237761",
+    "didYouMean": {}
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "verdict": "PASS",
+  "mode": "formal",
+  "batch_id": "formal_6h_2026-09-13_123437_689",
+  "region_id": "malacca_southeast_singapore_strait",
+  "bbox": [
+    [
+      1.0,
+      103.0
+    ],
+    [
+      3.5,
+      104.5
+    ]
+  ],
+  "rows": 5770,
+  "data_rows": 5769,
+  "dynamic_rows": 5088,
+  "unique_mmsi": 346,
+  "message_counts": {
+    "SubscriptionConfirmation": 1,
+    "PositionReport": 5069,
+    "ShipStaticData": 669,
+    "StandardClassBPositionReport": 19,
+    "StaticDataReport": 12
+  },
+  "parse_success_rate": 1.0,
+  "dynamic_coverage": {
+    "mmsi": 1.0,
+    "lat": 1.0,
+    "lon": 1.0,
+    "sog": 1.0,
+    "cog": 1.0,
+    "true_heading": 1.0,
+    "rate_of_turn": 0.9962657232704403,
+    "navigational_status": 0.9962657232704403
+  },
+  "unique_mmsi_static_coverage": {
+    "vessel_name": {
+      "count": 327,
+      "rate": 0.9450867052023122
+    },
+    "call_sign": {
+      "count": 147,
+      "rate": 0.42485549132947975
+    },
+    "imo": {
+      "count": 145,
+      "rate": 0.4190751445086705
+    },
+    "vessel_type": {
+      "count": 147,
+      "rate": 0.42485549132947975
+    },
+    "destination": {
+      "count": 142,
+      "rate": 0.41040462427745666
+    },
+    "draught": {
+      "count": 145,
+      "rate": 0.4190751445086705
+    },
+    "ship_length": {
+      "count": 147,
+      "rate": 0.42485549132947975
+    },
+    "ship_width": {
+      "count": 147,
+      "rate": 0.42485549132947975
+    }
+  },
+  "classification_eligible": 69,
+  "classification_eligible_by_type": {
+    "cargo": 38,
+    "tanker": 31
+  },
+  "received_data_start_utc": "2026-09-13T04:35:04.723575+00:00",
+  "received_data_end_utc": "2026-09-13T10:34:29.941173+00:00",
+  "reconnect_count": 1,
+  "connection_event_counts": {
+    "collector_started": 1,
+    "connection_error": 1,
+    "connected": 1,
+    "subscription_sent": 1,
+    "collector_finished": 1
+  },
+  "missing_required_columns": [],
+  "checks": {
+    "required_columns_present": true,
+    "raw_json_in_csv_complete": true,
+    "raw_jsonl_complete_and_valid": true,
+    "dynamic_message_received": true,
+    "static_message_received": true,
+    "parse_success_ge_99pct": true,
+    "dynamic_mmsi_ge_99pct": true,
+    "dynamic_lat_ge_99pct": true,
+    "dynamic_lon_ge_99pct": true,
+    "dynamic_absolute_time_ge_99pct": true,
+    "dynamic_sog_ge_95pct": true,
+    "dynamic_cog_ge_95pct": true,
+    "at_least_one_mmsi_with_type": true,
+    "at_least_one_mmsi_with_size": true,
+    "formal_unique_mmsi_type_coverage_ge_30pct": true,
+    "formal_unique_mmsi_length_coverage_ge_30pct": true,
+    "formal_unique_mmsi_width_coverage_ge_30pct": true
+  },
+  "files": {
+    "normalized_events.csv": {
+      "path": "C:\\Users\\卿之ya\\Desktop\\马六甲海峡实验\\原始数据\\batches\\formal_6h_2026-09-13_123437_689\\normalized_events.csv",
+      "sha256": "4AB78F7E9BF309CE9D8CA96EDD2E6CC4973C87D421F60A5CE8D0A41B141BD1F1",
+      "bytes": 5993849
+    },
+    "raw_events.jsonl": {
+      "path": "C:\\Users\\卿之ya\\Desktop\\马六甲海峡实验\\原始数据\\batches\\formal_6h_2026-09-13_123437_689\\raw_events.jsonl",
+      "sha256": "CA52B4E4E6A9EB48C522F49FD4F5E9991C4159EF2FE0A2D586980BDC586C1BEA",
+      "bytes": 5017579
+    },
+    "connection_events.csv": {
+      "path": "C:\\Users\\卿之ya\\Desktop\\马六甲海峡实验\\原始数据\\batches\\formal_6h_2026-09-13_123437_689\\connection_events.csv",
+      "sha256": "E6C3E819C1880A424AE81DB454B9848198E0114E32A3722279501F34B2EE53D5",
+      "bytes": 525
+    },
+    "batch_runtime.json": {
+      "path": "C:\\Users\\卿之ya\\Desktop\\马六甲海峡实验\\原始数据\\batches\\formal_6h_2026-09-13_123437_689\\batch_runtime.json",
+      "sha256": "7157DF5B784F4E32F13356BE619B464E5FA36CB17ED5146EDCA2B903F067880A",
+      "bytes": 1698
+    },
+    "vessel_static_profiles.csv": {
+      "path": "C:\\Users\\卿之ya\\Desktop\\马六甲海峡实验\\原始数据\\batches\\formal_6h_2026-09-13_123437_689\\vessel_static_profiles.csv",
+      "sha256": "A37E77B300EBFAA8C8C253F480686DC3382584275121F46197F6D8F0C21DD2BE",
+      "bytes": 68892
+    },
+    "positions_enriched.csv": {
+      "path": "C:\\Users\\卿之ya\\Desktop\\马六甲海峡实验\\原始数据\\batches\\formal_6h_2026-09-13_123437_689\\positions_enriched.csv",
+      "sha256": "2DA76393DA325C5F1C427A8A84F2E65C2D5B5027C919713EEF86783D1632725F",
+      "bytes": 6302374
+    }
+  }
+}

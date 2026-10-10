@@ -1,0 +1,257 @@
+{
+  "limit": 30,
+  "since": null,
+  "total": 1,
+  "entries": [
+    {
+      "dataset": "public-global-vessel-identity:v4.0",
+      "registryInfoTotalRecords": 1,
+      "registryInfo": [
+        {
+          "id": "52ec8d5dab5501b59fb3c80b53643fe5",
+          "sourceCode": [
+            "IMO"
+          ],
+          "ssvid": "565209000",
+          "flag": "SGP",
+          "shipname": "PARMELIA1",
+          "nShipname": "PARMELIA1",
+          "callsign": "9V8267",
+          "imo": "9565168",
+          "latestVesselInfo": true,
+          "transmissionDateFrom": "2017-05-08T23:06:10Z",
+          "transmissionDateTo": "2026-07-31T23:58:57Z",
+          "geartypes": [
+            "TANKER"
+          ],
+          "lengthM": null,
+          "tonnageGt": 1564,
+          "vesselInfoReference": "b2caa919cca5a9c63b6e3a2a14571564",
+          "extraFields": []
+        }
+      ],
+      "registryOwners": [],
+      "combinedSourcesInfo": [
+        {
+          "vesselId": "833f8ec43-31b0-49ee-1940-eace703121ca",
+          "geartypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2023,
+              "yearTo": 2025
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2023,
+              "yearTo": 2025
+            }
+          ]
+        },
+        {
+          "vesselId": "df5bed223-35ea-657f-dc8d-f9b8ea980318",
+          "geartypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2012,
+              "yearTo": 2017
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2012,
+              "yearTo": 2017
+            }
+          ]
+        },
+        {
+          "vesselId": "94f655478-8485-2161-cf8c-753dbf2fe5e7",
+          "geartypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2025,
+              "yearTo": 2026
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2025,
+              "yearTo": 2026
+            }
+          ]
+        },
+        {
+          "vesselId": "eccdf8076-6e1c-0b24-0ec9-152cb4fc122c",
+          "geartypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2017,
+              "yearTo": 2023
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2017,
+              "yearTo": 2023
+            }
+          ]
+        }
+      ],
+      "selfReportedInfo": [
+        {
+          "id": "94f655478-8485-2161-cf8c-753dbf2fe5e7",
+          "ssvid": "565209000",
+          "shipname": "PARMELIA 1",
+          "nShipname": "PARMELIA1",
+          "flag": "SGP",
+          "callsign": "9V8267",
+          "imo": null,
+          "messagesCounter": 14408242,
+          "positionsCounter": 1970759,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "SEVERAL_FIELDS",
+          "transmissionDateFrom": "2025-08-01T16:06:02Z",
+          "transmissionDateTo": "2026-09-13T23:59:58Z"
+        },
+        {
+          "id": "833f8ec43-31b0-49ee-1940-eace703121ca",
+          "ssvid": "565209000",
+          "shipname": "PARMELIA 1",
+          "nShipname": "PARMELIA1",
+          "flag": "SGP",
+          "callsign": null,
+          "imo": null,
+          "messagesCounter": 12686228,
+          "positionsCounter": 2199055,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "SEVERAL_FIELDS",
+          "transmissionDateFrom": "2023-11-15T06:00:27Z",
+          "transmissionDateTo": "2025-12-19T19:28:45Z"
+        },
+        {
+          "id": "eccdf8076-6e1c-0b24-0ec9-152cb4fc122c",
+          "ssvid": "565209000",
+          "shipname": "PARMELIA 1",
+          "nShipname": "PARMELIA1",
+          "flag": "SGP",
+          "callsign": "9V8267",
+          "imo": "9565168",
+          "messagesCounter": 9788556,
+          "positionsCounter": 2341144,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "SEVERAL_FIELDS",
+          "transmissionDateFrom": "2017-05-08T23:06:02Z",
+          "transmissionDateTo": "2023-11-20T11:32:36Z"
+        },
+        {
+          "id": "df5bed223-35ea-657f-dc8d-f9b8ea980318",
+          "ssvid": "503613000",
+          "shipname": "PARMELIA I",
+          "nShipname": "PARMELIA1",
+          "flag": "AUS",
+          "callsign": "VHMM",
+          "imo": "9565168",
+          "messagesCounter": 606220,
+          "positionsCounter": 282946,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "SEVERAL_FIELDS",
+          "transmissionDateFrom": "2012-01-01T00:18:43Z",
+          "transmissionDateTo": "2017-05-08T22:50:59Z"
+        }
+      ],
+      "matchCriteria": [
+        {
+          "reference": "94f655478-8485-2161-cf8c-753dbf2fe5e7",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.ssvid",
+              "value": "565209000"
+            }
+          ],
+          "period": {
+            "dateFrom": "2025-08-01T16:06:02Z",
+            "dateTo": "2026-09-13T23:59:58Z"
+          },
+          "latestVesselInfo": true
+        },
+        {
+          "reference": "833f8ec43-31b0-49ee-1940-eace703121ca",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.ssvid",
+              "value": "565209000"
+            }
+          ],
+          "period": {
+            "dateFrom": "2023-11-15T06:00:27Z",
+            "dateTo": "2025-12-19T19:28:45Z"
+          },
+          "latestVesselInfo": true
+        },
+        {
+          "reference": "eccdf8076-6e1c-0b24-0ec9-152cb4fc122c",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.ssvid",
+              "value": "565209000"
+            }
+          ],
+          "period": {
+            "dateFrom": "2017-05-08T23:06:02Z",
+            "dateTo": "2023-11-20T11:32:36Z"
+          },
+          "latestVesselInfo": true
+        },
+        {
+          "reference": "b2caa919cca5a9c63b6e3a2a14571564",
+          "property": "registryInfo.vesselInfoReference",
+          "source": "registryInfo",
+          "matches": [
+            {
+              "property": "registryInfo.ssvid",
+              "value": "565209000"
+            }
+          ],
+          "period": {
+            "dateFrom": "2017-05-08T23:06:10Z",
+            "dateTo": "2026-07-31T23:58:57Z"
+          },
+          "latestVesselInfo": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "query": "565209000",
+    "normalizedQuery": "565209000",
+    "didYouMean": {
+      "shipname": {}
+    }
+  }
+}

@@ -1,0 +1,533 @@
+{
+  "question": "请解释当前关注船附近的主要会遇异常及其AIS证据。",
+  "aisContext": {
+    "query": {
+      "mmsi": "305034400",
+      "replayTime": "2026-09-08T04:40:30.040Z",
+      "trajectoryWindowMinutes": 30
+    },
+    "dataset": {
+      "name": "malacca_enhanced_ais_6h_demo_data.json",
+      "region": "malacca_southeast_singapore_strait",
+      "historicalReplay": true
+    },
+    "vessel": {
+      "mmsi": "305034400",
+      "name": "ARAGUA",
+      "category": "油轮",
+      "categorySource": "AIS vessel_type",
+      "imo": "9258686",
+      "callSign": "V2C2034"
+    },
+    "currentObservation": {
+      "observedAt": "2026-09-08T04:40:05.912145+00:00",
+      "lat": 1.2160166666666667,
+      "lon": 103.82181666666666,
+      "sogKt": 0.5,
+      "cogDeg": 9.5,
+      "trueHeadingDeg": 98,
+      "sourceType": "AIS_real_observation",
+      "ageMinutes": 0.40213333333333334
+    },
+    "trajectory": [
+      {
+        "observedAt": "2026-09-08T04:36:25.255221+00:00",
+        "lat": 1.215555,
+        "lon": 103.82178166666667,
+        "sogKt": 0.3,
+        "cogDeg": 357.9,
+        "trueHeadingDeg": 79,
+        "sourceType": "AIS_real_observation"
+      },
+      {
+        "observedAt": "2026-09-08T04:37:45.962207+00:00",
+        "lat": 1.2157116666666667,
+        "lon": 103.82177666666666,
+        "sogKt": 0.4,
+        "cogDeg": 2.6,
+        "trueHeadingDeg": 85,
+        "sourceType": "AIS_real_observation"
+      },
+      {
+        "observedAt": "2026-09-08T04:40:05.912145+00:00",
+        "lat": 1.2160166666666667,
+        "lon": 103.82181666666666,
+        "sogKt": 0.5,
+        "cogDeg": 9.5,
+        "trueHeadingDeg": 98,
+        "sourceType": "AIS_real_observation"
+      }
+    ],
+    "neighbors": [
+      {
+        "mmsi": "477229100",
+        "name": "SEAMERIDIAN",
+        "category": "油轮",
+        "distanceNm": 0.2196921855932226,
+        "observationAgeMinutes": 1.3387666666666667,
+        "courseComparison": "低速或航速缺失",
+        "courseDifferenceDeg": null,
+        "cpa": {
+          "available": true,
+          "label": "已计算未来最近会遇点",
+          "dcpaNm": 0.030019554414095213,
+          "tcpaMinutes": 63.347443391139,
+          "relativeSpeedKt": 0.20598948328249944,
+          "method": "constant_velocity_linear_extrapolation"
+        },
+        "screeningLevel": "中高风险",
+        "evidenceConfidence": "中"
+      },
+      {
+        "mmsi": "566753000",
+        "name": "HAI SOON 33",
+        "category": "油轮",
+        "distanceNm": 0.24799017798543177,
+        "observationAgeMinutes": 0.4570166666666667,
+        "courseComparison": "低速或航速缺失",
+        "courseDifferenceDeg": null,
+        "cpa": {
+          "available": true,
+          "label": "已计算未来最近会遇点",
+          "dcpaNm": 0.06786682437698663,
+          "tcpaMinutes": 130.67015037319572,
+          "relativeSpeedKt": 0.10944300807045412,
+          "method": "constant_velocity_linear_extrapolation"
+        },
+        "screeningLevel": "中高风险",
+        "evidenceConfidence": "高"
+      },
+      {
+        "mmsi": "538009746",
+        "name": "ALDER EXPRESS",
+        "category": "油轮",
+        "distanceNm": 0.350109140100944,
+        "observationAgeMinutes": 2.574316666666667,
+        "courseComparison": "低速或航速缺失",
+        "courseDifferenceDeg": null,
+        "cpa": {
+          "available": true,
+          "label": "已计算未来最近会遇点",
+          "dcpaNm": 0.32585460234580177,
+          "tcpaMinutes": 10.1908313970286,
+          "relativeSpeedKt": 0.7500618323129666,
+          "method": "constant_velocity_linear_extrapolation"
+        },
+        "screeningLevel": "中高风险",
+        "evidenceConfidence": "中"
+      },
+      {
+        "mmsi": "352003176",
+        "name": "PVT SOLANA",
+        "category": "油轮",
+        "distanceNm": 0.460463864713294,
+        "observationAgeMinutes": 2.7924166666666665,
+        "courseComparison": "低速或航速缺失",
+        "courseDifferenceDeg": null,
+        "cpa": {
+          "available": true,
+          "label": "最近会遇点已在过去，显示当前最小距离",
+          "dcpaNm": 0.46015295409838525,
+          "tcpaMinutes": -20.2498195138844,
+          "relativeSpeedKt": 0.8797638935251988,
+          "method": "constant_velocity_linear_extrapolation"
+        },
+        "screeningLevel": "未进入中等关注事件",
+        "evidenceConfidence": "未评级"
+      },
+      {
+        "mmsi": "352004737",
+        "name": "NORD VIGNALE",
+        "category": "油轮",
+        "distanceNm": 0.5519909028947083,
+        "observationAgeMinutes": 4.01175,
+        "courseComparison": "低速或航速缺失",
+        "courseDifferenceDeg": null,
+        "cpa": {
+          "available": false,
+          "label": "航速或航向不足，暂不计算CPA/TCPA",
+          "dcpaNm": null,
+          "tcpaMinutes": null,
+          "relativeSpeedKt": null,
+          "method": "constant_velocity_linear_extrapolation"
+        },
+        "screeningLevel": "未进入中等关注事件",
+        "evidenceConfidence": "未评级"
+      }
+    ],
+    "events": [
+      {
+        "id": "ENC-305034400-538009746",
+        "kind": "会遇风险初筛",
+        "level": "中高风险",
+        "source": "AIS + CPA/TCPA",
+        "confidence": "中",
+        "updatedAt": "2026-09-08T04:40:30.040Z",
+        "vesselMmsis": [
+          "305034400",
+          "538009746"
+        ],
+        "distanceNm": 0.350109140100944,
+        "cpa": {
+          "available": true,
+          "label": "已计算未来最近会遇点",
+          "dcpaNm": 0.32585460234580177,
+          "tcpaMinutes": 10.1908313970286,
+          "relativeSpeedKt": 0.7500618323129666,
+          "method": "constant_velocity_linear_extrapolation"
+        },
+        "encounterShape": "交叉形态",
+        "metric": null,
+        "explanation": "基于两船最新 AIS 位置、航速和航向进行匀速直线外推。"
+      },
+      {
+        "id": "ENC-305034400-477229100",
+        "kind": "会遇风险初筛",
+        "level": "中高风险",
+        "source": "AIS + CPA/TCPA",
+        "confidence": "中",
+        "updatedAt": "2026-09-08T04:40:30.040Z",
+        "vesselMmsis": [
+          "305034400",
+          "477229100"
+        ],
+        "distanceNm": 0.2196921855932226,
+        "cpa": {
+          "available": true,
+          "label": "已计算未来最近会遇点",
+          "dcpaNm": 0.030019554414095213,
+          "tcpaMinutes": 63.347443391139,
+          "relativeSpeedKt": 0.20598948328249944,
+          "method": "constant_velocity_linear_extrapolation"
+        },
+        "encounterShape": "同向或追越形态",
+        "metric": null,
+        "explanation": "基于两船最新 AIS 位置、航速和航向进行匀速直线外推。"
+      },
+      {
+        "id": "ENC-305034400-636093181",
+        "kind": "会遇风险初筛",
+        "level": "中高风险",
+        "source": "AIS + CPA/TCPA",
+        "confidence": "高",
+        "updatedAt": "2026-09-08T04:40:30.040Z",
+        "vesselMmsis": [
+          "305034400",
+          "636093181"
+        ],
+        "distanceNm": 0.9779900827945133,
+        "cpa": {
+          "available": true,
+          "label": "已计算未来最近会遇点",
+          "dcpaNm": 0.9508328266360075,
+          "tcpaMinutes": 1.8367773768722653,
+          "relativeSpeedKt": 7.383531580121382,
+          "method": "constant_velocity_linear_extrapolation"
+        },
+        "encounterShape": "交叉形态",
+        "metric": null,
+        "explanation": "基于两船最新 AIS 位置、航速和航向进行匀速直线外推。"
+      },
+      {
+        "id": "ENC-305034400-566753000",
+        "kind": "会遇风险初筛",
+        "level": "中高风险",
+        "source": "AIS + CPA/TCPA",
+        "confidence": "高",
+        "updatedAt": "2026-09-08T04:40:30.040Z",
+        "vesselMmsis": [
+          "305034400",
+          "566753000"
+        ],
+        "distanceNm": 0.24799017798543177,
+        "cpa": {
+          "available": true,
+          "label": "已计算未来最近会遇点",
+          "dcpaNm": 0.06786682437698663,
+          "tcpaMinutes": 130.67015037319572,
+          "relativeSpeedKt": 0.10944300807045412,
+          "method": "constant_velocity_linear_extrapolation"
+        },
+        "encounterShape": "同向或追越形态",
+        "metric": null,
+        "explanation": "基于两船最新 AIS 位置、航速和航向进行匀速直线外推。"
+      },
+      {
+        "id": "ENC-305034400-563096800",
+        "kind": "会遇风险初筛",
+        "level": "中等关注",
+        "source": "AIS + CPA/TCPA",
+        "confidence": "较低",
+        "updatedAt": "2026-09-08T04:40:30.040Z",
+        "vesselMmsis": [
+          "305034400",
+          "563096800"
+        ],
+        "distanceNm": 1.0362928883633766,
+        "cpa": {
+          "available": true,
+          "label": "已计算未来最近会遇点",
+          "dcpaNm": 0.4277146420675664,
+          "tcpaMinutes": 81.30032239806799,
+          "relativeSpeedKt": 0.6960416539831041,
+          "method": "constant_velocity_linear_extrapolation"
+        },
+        "encounterShape": "对遇形态",
+        "metric": null,
+        "explanation": "基于两船最新 AIS 位置、航速和航向进行匀速直线外推。"
+      }
+    ],
+    "quality": {
+      "positionValidity": 1,
+      "motionCoverage": 0.8171791877513949,
+      "classificationCoverage": 0.5335628227194492
+    },
+    "evidenceGate": {
+      "sufficientForCurrentMotion": true,
+      "missingReasons": [],
+      "boundary": "仅使用回放时刻及以前的真实AIS观测；CPA/TCPA为匀速直线外推，不替代人工航海判断。"
+    }
+  },
+  "caseEvidence": {
+    "selectedEventId": "ENC-305034400-477229100",
+    "involvedObservations": [
+      {
+        "id": "CASEOBS-305034400-2026-09-08T04:40:05.912Z",
+        "mmsi": "305034400",
+        "vesselName": "ARAGUA",
+        "observedAt": "2026-09-08T04:40:05.912Z",
+        "lat": 1.2160166666666667,
+        "lon": 103.82181666666666,
+        "sogKt": 0.5,
+        "cogDeg": 9.5,
+        "trueHeadingDeg": 98,
+        "sourceType": "AIS_real_observation"
+      },
+      {
+        "id": "CASEOBS-477229100-2026-09-08T04:39:09.714Z",
+        "mmsi": "477229100",
+        "vesselName": "SEAMERIDIAN",
+        "observedAt": "2026-09-08T04:39:09.714Z",
+        "lat": 1.2195916666666666,
+        "lon": 103.82259666666667,
+        "sogKt": 0.3,
+        "cogDeg": 2.2,
+        "trueHeadingDeg": 67,
+        "sourceType": "AIS_real_observation"
+      }
+    ]
+  },
+  "retrieval": [
+    {
+      "sourceId": "KB-0001",
+      "title": "IMO Resolution A.1106(29): Revised guidelines for the onboard operational use of shipborne AIS",
+      "institution": "International Maritime Organization (IMO)",
+      "sourceType": "国际组织正式决议",
+      "sourceUrl": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/AssemblyDocuments/A.1106(29).pdf",
+      "version": "A.1106(29), adopted 2015-12-02",
+      "region": "国际",
+      "reviewStatus": "已审核",
+      "locator": "对异常监测智能体的约束",
+      "excerpt": "1. 每个异常解释应同时显示观测时间、位置或运动证据和数据质量提示。\n2. 若静态字段缺失、冲突或过旧，回答应降低确定性并明确指出限制。\n3. “未收到 AIS”不能直接推断“海域内没有船舶”；“收到 AIS”也不能证明所有字段正确。\n4. 涉及碰撞风险时，AIS 证据必须与规则资料区分，不能把算法阈值伪装成法规要求。\n5. 对安全关键问题，回答应提示用户结合雷达、目视、VTS 和最新航海资料复核。",
+      "retrievalScore": 5.5
+    },
+    {
+      "sourceId": "KB-0002",
+      "title": "增强AIS数据字段字典",
+      "institution": "国家级大学生创新训练项目组",
+      "sourceType": "项目内部技术文档",
+      "sourceUrl": "",
+      "version": "2026-09-08",
+      "region": "马六甲海峡项目数据",
+      "reviewStatus": "已审核",
+      "locator": "字段说明",
+      "excerpt": "| 字段 | 含义 | 对船舶分类的作用 |\n| --- | --- | --- |\n| collector_version | 采集脚本版本 | 用于复现实验和区分旧/新采集方式 |\n| source | 数据来源，本项目为 AISStream | 用于数据来源记录 |\n| bbox | 本次订阅的经纬度范围 | 用于说明采集海域边界 |\n| message_type | AISStream 消息类型 | 区分动态位置、静态船舶资料、Class B 等消息 |\n| received_at | 本机收到消息的 UTC 时间 | 作为接收时序代理，适合排序，但不是精确广播时间 |\n| metadata_time_utc | AISStream 元数据中的 UTC 时间 | 可辅助判断服务端接收时间 |\n| ais_timestamp | AIS 报文内时间戳 | 常为分钟内秒值或报文字段值，不能单独当完整日期时间 |\n| mmsi | Maritime Mobile Service Identity，船舶海上移动业务识别码 | 按船汇总、外部核验和训练集分组的核心 ID |\n| valid | 报文字段是否标记有效 | 数据质量控制 |\n| repeat_indicator | AIS 重复指示符 | 一般用于报文转发/重复情况分析 |\n| message_id | AIS 报文编号 | 可辅助识别消息类别 |\n| lat | 纬度 | 轨迹、航道位置和空间特征 |\n| lon | 经度 | 轨迹、航道位置和空间特征 |\n| sog | Speed Over Ground，对地航速，通常单位为节 | 船型行为特征、低速/停泊判断 |\n| cog | Course Over Ground，对地航向，单位通常为度 | 航向变化、转弯特征 |\n| true_heading | 船艏向，单位通常为度 | 与 COG 结合可分析航向稳定性；511 常表示不可用 |\n| rate_of_turn | 转向率 | 区分航行行为和异常转向的重要特征；特殊值需清洗 |\n| navigati",
+      "retrievalScore": 4.5
+    },
+    {
+      "sourceId": "KB-0001",
+      "title": "IMO Resolution A.1106(29): Revised guidelines for the onboard operational use of shipborne AIS",
+      "institution": "International Maritime Organization (IMO)",
+      "sourceType": "国际组织正式决议",
+      "sourceUrl": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/AssemblyDocuments/A.1106(29).pdf",
+      "version": "A.1106(29), adopted 2015-12-02",
+      "region": "国际",
+      "reviewStatus": "已审核",
+      "locator": "AIS 固有限制",
+      "excerpt": "依据 IMO Resolution A.1106(29) 第32至39段，AIS 提供的态势信息并不完整：部分船舶可能没有配备 AIS，设备可能被关闭，收到的信息也可能因发送端输入、传感器配置或校准问题而错误。某些字段可能以“不可用”值发送。接收方不能默认其他船舶发来的 AIS 信息与本船数据具有相同质量和准确性。\n\n因此，船名、船型、航行状态、目的地、吃水等自报或人工录入字段应当视为可能缺失、陈旧或错误。智能体可以把这些字段作为证据，但必须同时报告字段来源、时间和缺失情况，不能把单个 AIS 字段包装成确定事实。\n\n定位：正式 PDF 第11页（PDF 第12页），第32至39段。",
+      "retrievalScore": 3.5
+    },
+    {
+      "sourceId": "KB-0001",
+      "title": "IMO Resolution A.1106(29): Revised guidelines for the onboard operational use of shipborne AIS",
+      "institution": "International Maritime Organization (IMO)",
+      "sourceType": "国际组织正式决议",
+      "sourceUrl": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/AssemblyDocuments/A.1106(29).pdf",
+      "version": "A.1106(29), adopted 2015-12-02",
+      "region": "国际",
+      "reviewStatus": "已审核",
+      "locator": "AIS 与避碰决策",
+      "excerpt": "依据同一决议第40至44段，AIS 可以辅助航行值班人员跟踪和识别目标，但不替代雷达、船舶交通服务信息、人工瞭望或其他既有系统。使用 AIS 不会免除值班人员遵守《国际海上避碰规则》的责任，尤其不能把 AIS 作为判定碰撞危险的唯一信息系统。\n\n本项目据此设置回答边界：系统可以解释 CPA、TCPA、相对运动、轨迹变化和数据质量，但只能给出“辅助研判”结论，不自动下达操船指令，不声称已经代替值班驾驶员作出避碰判断。\n\n定位：正式 PDF 第11页（PDF 第12页），第40至44段。",
+      "retrievalScore": 3.5
+    }
+  ],
+  "graphTrace": {
+    "status": "ready",
+    "query": {
+      "mmsi": "305034400",
+      "replayTime": "2026-09-08T04:40:30.040Z",
+      "trajectoryWindowMinutes": 30
+    },
+    "vessel": {
+      "mmsi": "305034400",
+      "name": "ARAGUA",
+      "category": "油轮",
+      "categorySource": "AIS vessel_type",
+      "imo": "9258686",
+      "callSign": "V2C2034"
+    },
+    "event": {
+      "id": "ENC-305034400-477229100",
+      "kind": "会遇风险初筛",
+      "level": "中高风险",
+      "source": "AIS + CPA/TCPA",
+      "confidence": "中",
+      "updatedAt": "2026-09-08T04:40:30.040Z",
+      "vesselMmsis": [
+        "305034400",
+        "477229100"
+      ],
+      "distanceNm": 0.2196921855932226,
+      "cpa": {
+        "available": true,
+        "label": "已计算未来最近会遇点",
+        "dcpaNm": 0.030019554414095213,
+        "tcpaMinutes": 63.347443391139,
+        "relativeSpeedKt": 0.20598948328249944,
+        "method": "constant_velocity_linear_extrapolation"
+      },
+      "encounterShape": "同向或追越形态",
+      "metric": null,
+      "explanation": "基于两船最新 AIS 位置、航速和航向进行匀速直线外推。"
+    },
+    "evidence": [
+      {
+        "id": "OBS-305034400-2026-09-08T04:40:05.912145+00:00",
+        "type": "AIS_REAL_OBSERVATION",
+        "observedAt": "2026-09-08T04:40:05.912145+00:00",
+        "facts": {
+          "lat": 1.2160166666666667,
+          "lon": 103.82181666666666,
+          "sogKt": 0.5,
+          "cogDeg": 9.5,
+          "ageMinutes": 0.40213333333333334
+        }
+      },
+      {
+        "id": "DISTANCE-ENC-305034400-477229100",
+        "type": "RELATIVE_DISTANCE",
+        "unit": "nautical_mile",
+        "value": 0.2196921855932226
+      },
+      {
+        "id": "CPA-ENC-305034400-477229100",
+        "type": "CPA_TCPA_DERIVATION",
+        "method": "constant_velocity_linear_extrapolation",
+        "available": true,
+        "facts": {
+          "dcpaNm": 0.030019554414095213,
+          "tcpaMinutes": 63.347443391139,
+          "relativeSpeedKt": 0.20598948328249944
+        }
+      },
+      {
+        "id": "QUALITY-305034400",
+        "type": "DATA_QUALITY_GATE",
+        "sufficientForCurrentMotion": true,
+        "missingReasons": [],
+        "boundary": "仅使用回放时刻及以前的真实AIS观测；CPA/TCPA为匀速直线外推，不替代人工航海判断。"
+      }
+    ],
+    "paths": [
+      {
+        "eventId": "ENC-305034400-477229100",
+        "evidenceIds": [
+          "OBS-305034400-2026-09-08T04:40:05.912145+00:00",
+          "DISTANCE-ENC-305034400-477229100",
+          "CPA-ENC-305034400-477229100",
+          "QUALITY-305034400"
+        ],
+        "relation": "MAY_BE_EXPLAINED_WITH",
+        "claim": {
+          "id": "KG-C001",
+          "title": "AIS信息可能不完整或错误",
+          "statement": "AIS信息可能因未配备、设备关闭、人工输入、传感器配置或校准问题而缺失、陈旧或错误。",
+          "boundary": "用于数据质量提示，不能据此推断某船存在主观故意或违法行为。",
+          "relation": "MAY_INFORM_INTERPRETATION",
+          "source": {
+            "id": "KB-0001",
+            "title": "IMO Resolution A.1106(29): Revised guidelines for the onboard operational use of shipborne AIS",
+            "institution": "International Maritime Organization (IMO)",
+            "version": "A.1106(29), adopted 2015-12-02",
+            "sourceUrl": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/AssemblyDocuments/A.1106(29).pdf",
+            "locator": "AIS 固有限制",
+            "reviewStatus": "已审核"
+          }
+        }
+      },
+      {
+        "eventId": "ENC-305034400-477229100",
+        "evidenceIds": [
+          "OBS-305034400-2026-09-08T04:40:05.912145+00:00",
+          "DISTANCE-ENC-305034400-477229100",
+          "CPA-ENC-305034400-477229100",
+          "QUALITY-305034400"
+        ],
+        "relation": "MAY_BE_EXPLAINED_WITH",
+        "claim": {
+          "id": "KG-C002",
+          "title": "AIS不能作为唯一避碰依据",
+          "statement": "AIS、CPA和TCPA可以辅助识别与跟踪目标，但不能替代雷达、人工瞭望、VTS信息或值班人员的航海判断。",
+          "boundary": "系统只提供辅助研判，不自动下达操船指令，也不认定船舶违反避碰规则。",
+          "relation": "MAY_INFORM_INTERPRETATION",
+          "source": {
+            "id": "KB-0001",
+            "title": "IMO Resolution A.1106(29): Revised guidelines for the onboard operational use of shipborne AIS",
+            "institution": "International Maritime Organization (IMO)",
+            "version": "A.1106(29), adopted 2015-12-02",
+            "sourceUrl": "https://wwwcdn.imo.org/localresources/en/KnowledgeCentre/IndexofIMOResolutions/AssemblyDocuments/A.1106(29).pdf",
+            "locator": "AIS 与避碰决策",
+            "reviewStatus": "已审核"
+          }
+        }
+      },
+      {
+        "eventId": "ENC-305034400-477229100",
+        "evidenceIds": [
+          "OBS-305034400-2026-09-08T04:40:05.912145+00:00",
+          "DISTANCE-ENC-305034400-477229100",
+          "CPA-ENC-305034400-477229100",
+          "QUALITY-305034400"
+        ],
+        "relation": "MAY_BE_EXPLAINED_WITH",
+        "claim": {
+          "id": "KG-C004",
+          "title": "AIS船型码属于弱标签",
+          "statement": "项目中的vessel_type是AIS自报船型码，可用于规则分类和弱监督标签，但不等于外部登记真值。",
+          "boundary": "不得把AIS自报船型或模型输出直接表述为已经完成登记核验的真实船型。",
+          "relation": "MAY_INFORM_INTERPRETATION",
+          "source": {
+            "id": "KB-0002",
+            "title": "增强AIS数据字段字典",
+            "institution": "国家级大学生创新训练项目组",
+            "version": "2026-09-08",
+            "sourceUrl": "",
+            "locator": "使用注意",
+            "reviewStatus": "已审核"
+          }
+        }
+      }
+    ],
+    "boundary": "图谱路径只说明当前事件、观测证据与已审核知识之间可能相关，不认定违法，不替代雷达、人工瞭望、VTS或值班人员判断。"
+  }
+}

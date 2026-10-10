@@ -1,0 +1,22 @@
+{
+  "pilot_vessels": 20,
+  "request_status_counts": {
+    "success": 20
+  },
+  "successful_identity_aligned_vessels": 20,
+  "evidence_level_counts": {
+    "broad_cargo_only": 2,
+    "registry_supported": 1,
+    "non_target_type": 14,
+    "combined_inference_candidate": 3
+  },
+  "candidate_target_class_counts": {
+    "cargo_unspecified": 2,
+    "fishing": 1,
+    "non_target_or_unknown": 14,
+    "passenger": 3
+  },
+  "container_or_bulk_labels_obtained": 0,
+  "verdict": "PARTIAL_PASS_NOT_A_FIVE_CLASS_GOLD_LABEL_SOURCE",
+  "decision": "The GFW API is usable for identity cross-checking and selected fishing/passenger candidates, but this pilot does not separate container ships from bulk carriers and mixed inferred shiptypes must not be treated as registry ground truth."
+}

@@ -1,0 +1,41 @@
+{
+  "status": "draft",
+  "reviewedBy": null,
+  "reviewedAt": null,
+  "expectedConclusionBoundary": "可说明当前筛选器未形成关联事件，但不得表述为海上绝对安全。",
+  "expectedEvidenceSummary": null,
+  "requiredConclusionTerms": [
+    "未形成事件",
+    "绝对安全"
+  ],
+  "mustMentionEvidenceIds": [
+    "OBS-563105900-2026-09-08T05:05:02.508385+00:00",
+    "QUALITY-563105900"
+  ],
+  "allowedSourceIds": [
+    "KB-0002",
+    "KB-0001",
+    "KB-0005"
+  ],
+  "allowedNumericValues": [
+    1.263785,
+    103.8364,
+    0,
+    224.7,
+    0.458867,
+    140
+  ],
+  "requiresEvidenceRefusal": false,
+  "prohibitedClaims": [
+    "已违法",
+    "违反避碰规则",
+    "应立即转向",
+    "必须立即改向",
+    "碰撞风险分"
+  ],
+  "requiredLimitations": [
+    "仅使用回放时刻及以前的AIS证据",
+    "不替代人工航海判断"
+  ],
+  "reviewerNotes": "请逐项核对问题、证据ID、来源、数值、结论边界和拒答要求；确认后再将status改为approved。"
+}

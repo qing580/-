@@ -1,0 +1,88 @@
+{
+  "status": "draft",
+  "reviewedBy": null,
+  "reviewedAt": null,
+  "expectedConclusionBoundary": "只能说明现有AIS与筛查规则形成需要关注或复核的证据，不认定违法、责任或主观意图。",
+  "expectedEvidenceSummary": {
+    "selectedEventId": "ENC-305034400-477229100",
+    "screeningLevel": "中高风险",
+    "screeningConfidence": "中",
+    "distanceNm": 0.2196921855932226,
+    "dcpaNm": 0.030019554414095213,
+    "tcpaMinutes": 63.347443391139,
+    "relativeSpeedKt": 0.20598948328249944,
+    "method": "constant_velocity_linear_extrapolation",
+    "involvedObservations": [
+      {
+        "id": "CASEOBS-305034400-2026-09-08T04:40:05.912Z",
+        "mmsi": "305034400",
+        "vesselName": "ARAGUA",
+        "observedAt": "2026-09-08T04:40:05.912Z",
+        "lat": 1.2160166666666667,
+        "lon": 103.82181666666666,
+        "sogKt": 0.5,
+        "cogDeg": 9.5,
+        "trueHeadingDeg": 98,
+        "sourceType": "AIS_real_observation"
+      },
+      {
+        "id": "CASEOBS-477229100-2026-09-08T04:39:09.714Z",
+        "mmsi": "477229100",
+        "vesselName": "SEAMERIDIAN",
+        "observedAt": "2026-09-08T04:39:09.714Z",
+        "lat": 1.2195916666666666,
+        "lon": 103.82259666666667,
+        "sogKt": 0.3,
+        "cogDeg": 2.2,
+        "trueHeadingDeg": 67,
+        "sourceType": "AIS_real_observation"
+      }
+    ]
+  },
+  "requiredConclusionTerms": [
+    "会遇",
+    "人工复核"
+  ],
+  "mustMentionEvidenceIds": [
+    "DISTANCE-ENC-305034400-477229100",
+    "CPA-ENC-305034400-477229100",
+    "QUALITY-305034400",
+    "CASEOBS-305034400-2026-09-08T04:40:05.912Z",
+    "CASEOBS-477229100-2026-09-08T04:39:09.714Z"
+  ],
+  "allowedSourceIds": [
+    "KB-0001",
+    "KB-0002"
+  ],
+  "allowedNumericValues": [
+    1.216017,
+    103.821817,
+    0.5,
+    9.5,
+    0.402133,
+    0.219692,
+    0.03002,
+    63.347443,
+    0.205989,
+    98,
+    1.219592,
+    103.822597,
+    0.3,
+    2.2,
+    67
+  ],
+  "requiresEvidenceRefusal": false,
+  "prohibitedClaims": [
+    "已违法",
+    "违反避碰规则",
+    "应立即转向",
+    "必须立即改向",
+    "碰撞风险分"
+  ],
+  "requiredLimitations": [
+    "仅使用回放时刻及以前的AIS证据",
+    "不替代人工航海判断",
+    "至少一船SOG低于1节，低速时COG与会遇形态解释需谨慎"
+  ],
+  "reviewerNotes": "请逐项核对问题、证据ID、来源、数值、结论边界和拒答要求；确认后再将status改为approved。"
+}

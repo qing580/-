@@ -1,0 +1,142 @@
+{
+  "limit": 30,
+  "since": null,
+  "total": 2,
+  "entries": [
+    {
+      "dataset": "public-global-vessel-identity:v4.0",
+      "registryInfoTotalRecords": 0,
+      "registryInfo": [],
+      "registryOwners": [],
+      "combinedSourcesInfo": [
+        {
+          "vesselId": "a56046ba5-5ee6-5d0c-1370-14b2f0568750",
+          "geartypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2025,
+              "yearTo": 2026
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2025,
+              "yearTo": 2026
+            }
+          ]
+        }
+      ],
+      "selfReportedInfo": [
+        {
+          "id": "a56046ba5-5ee6-5d0c-1370-14b2f0568750",
+          "ssvid": "518100291",
+          "shipname": "SSE VALENCIA",
+          "nShipname": "SSEVALENCIA",
+          "flag": "COK",
+          "callsign": null,
+          "imo": null,
+          "messagesCounter": 17954656,
+          "positionsCounter": 2545926,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "NO_MATCH",
+          "transmissionDateFrom": "2025-06-27T23:32:55Z",
+          "transmissionDateTo": "2026-09-13T23:59:51Z"
+        }
+      ],
+      "matchCriteria": [
+        {
+          "reference": "a56046ba5-5ee6-5d0c-1370-14b2f0568750",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.ssvid",
+              "value": "518100291"
+            }
+          ],
+          "period": {
+            "dateFrom": "2025-06-27T23:32:55Z",
+            "dateTo": "2026-09-13T23:59:51Z"
+          },
+          "latestVesselInfo": true
+        }
+      ]
+    },
+    {
+      "dataset": "public-global-vessel-identity:v4.0",
+      "registryInfoTotalRecords": 0,
+      "registryInfo": [],
+      "registryOwners": [],
+      "combinedSourcesInfo": [
+        {
+          "vesselId": "2a9d9eec2-2e75-d579-d2c5-aa92eb416844",
+          "geartypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2019,
+              "yearTo": 2025
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2019,
+              "yearTo": 2025
+            }
+          ]
+        }
+      ],
+      "selfReportedInfo": [
+        {
+          "id": "2a9d9eec2-2e75-d579-d2c5-aa92eb416844",
+          "ssvid": "518100291",
+          "shipname": "SSE VALENCIA",
+          "nShipname": "SSEVALENCIA",
+          "flag": "COK",
+          "callsign": "E5U3227",
+          "imo": null,
+          "messagesCounter": 298053,
+          "positionsCounter": 130083,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "NO_MATCH",
+          "transmissionDateFrom": "2019-03-26T07:47:22Z",
+          "transmissionDateTo": "2025-06-26T15:10:25Z"
+        }
+      ],
+      "matchCriteria": [
+        {
+          "reference": "2a9d9eec2-2e75-d579-d2c5-aa92eb416844",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.ssvid",
+              "value": "518100291"
+            }
+          ],
+          "period": {
+            "dateFrom": "2019-03-26T07:47:22Z",
+            "dateTo": "2025-06-26T15:10:25Z"
+          },
+          "latestVesselInfo": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "query": "518100291",
+    "normalizedQuery": "518100291",
+    "didYouMean": {
+      "shipname": {}
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "status": "draft",
+  "reviewedBy": null,
+  "reviewedAt": null,
+  "expectedConclusionBoundary": "只能说明现有AIS与筛查规则形成需要关注或复核的证据，不认定违法、责任或主观意图。",
+  "expectedEvidenceSummary": {
+    "selectedEventId": "ENC-352003176-636093181",
+    "screeningLevel": "高风险",
+    "screeningConfidence": "中",
+    "distanceNm": 0.5337020641130114,
+    "dcpaNm": 0.5248422046743331,
+    "tcpaMinutes": 0.8068159590395578,
+    "relativeSpeedKt": 7.05267668320089,
+    "method": "constant_velocity_linear_extrapolation",
+    "involvedObservations": [
+      {
+        "id": "CASEOBS-352003176-2026-09-08T04:37:42.495Z",
+        "mmsi": "352003176",
+        "vesselName": "PVT SOLANA",
+        "observedAt": "2026-09-08T04:37:42.495Z",
+        "lat": 1.2134166666666668,
+        "lon": 103.8146,
+        "sogKt": 0.4,
+        "cogDeg": 214,
+        "trueHeadingDeg": 122,
+        "sourceType": "AIS_real_observation"
+      },
+      {
+        "id": "CASEOBS-636093181-2026-09-08T04:39:31.388Z",
+        "mmsi": "636093181",
+        "vesselName": "AL MASHRAB",
+        "observedAt": "2026-09-08T04:39:31.388Z",
+        "lat": 1.207635,
+        "lon": 103.80784666666666,
+        "sogKt": 7.1,
+        "cogDeg": 132.4,
+        "trueHeadingDeg": 131,
+        "sourceType": "AIS_real_observation"
+      }
+    ]
+  },
+  "requiredConclusionTerms": [
+    "会遇",
+    "人工复核"
+  ],
+  "mustMentionEvidenceIds": [
+    "DISTANCE-ENC-352003176-636093181",
+    "CPA-ENC-352003176-636093181",
+    "QUALITY-352003176",
+    "CASEOBS-352003176-2026-09-08T04:37:42.495Z",
+    "CASEOBS-636093181-2026-09-08T04:39:31.388Z"
+  ],
+  "allowedSourceIds": [
+    "KB-0001",
+    "KB-0002"
+  ],
+  "allowedNumericValues": [
+    1.213417,
+    103.8146,
+    0.4,
+    214,
+    2.792417,
+    0.533702,
+    0.524842,
+    0.806816,
+    7.052677,
+    122,
+    1.207635,
+    103.807847,
+    7.1,
+    132.4,
+    131
+  ],
+  "requiresEvidenceRefusal": false,
+  "prohibitedClaims": [
+    "已违法",
+    "违反避碰规则",
+    "应立即转向",
+    "必须立即改向",
+    "碰撞风险分"
+  ],
+  "requiredLimitations": [
+    "仅使用回放时刻及以前的AIS证据",
+    "不替代人工航海判断",
+    "至少一船SOG低于1节，低速时COG与会遇形态解释需谨慎",
+    "关注船30分钟窗口少于2个观测点，不能验证轨迹变化稳定性"
+  ],
+  "reviewerNotes": "请逐项核对问题、证据ID、来源、数值、结论边界和拒答要求；确认后再将status改为approved。"
+}

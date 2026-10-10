@@ -1,0 +1,673 @@
+(function () {
+  'use strict';
+
+  if (!window.ManagementData || !window.EncounterMath || !window.AisVisuals || !window.MaritimeAuditClient || typeof DATA === 'undefined') return;
+
+  const originalEncounterOpen = openVesselDetail;
+  const originalRenderAll = renderAll;
+  const overviewPage = document.getElementById('overviewPage');
+  const detailPage = document.getElementById('detailPage');
+  const app = document.querySelector('.app');
+  const statusOverrides = new Map();
+  const operationLog = [];
+  let currentView = 'overview';
+  let currentEvent = null;
+  const managementMarkerCache = new Map();
+  const managementTrailCache = new Map();
+  let managementVisibleMmsis = new Set();
+  let eventBundle = { snapshots: [], events: [] };
+  let refreshQueued = false;
+  const auditClient = window.MaritimeAuditClient.createClient();
+  let auditRequest = null;
+  let auditLoaded = false;
+  let auditState = { loading: false, error: null, detailError: null, records: [], counts: null, selectedId: null, detail: null, skippedInvalidRows: 0, state: 'not_initialized' };
+
+  function escapeHtml(value) {
+    return String(value ?? '').replace(/[&<>'"]/g, char => ({
+      '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
+    })[char]);
+  }
+
+  function formatTime(value, seconds = false) {
+    const date = new Date(value);
+    if (!Number.isFinite(date.getTime())) return '暂无';
+    return new Intl.DateTimeFormat('zh-CN', {
+      month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit',
+      second: seconds ? '2-digit' : undefined, hour12: false
+    }).format(date);
+  }
+
+  function formatNumber(value, digits = 1, suffix = '') {
+    const numeric = Number(value);
+    return Number.isFinite(numeric) ? `${numeric.toFixed(digits)}${suffix}` : '不可用';
+  }
+
+  function icon(name) {
+    return `<i data-lucide="${name}" aria-hidden="true"></i>`;
+  }
+
+  function createShell() {
+    document.body.classList.add('management-mode');
+    document.body.insertAdjacentHTML('afterbegin', `
+      <aside class="mg-sidebar" aria-label="管理端主导航">
+        <div class="mg-brand"><div class="mg-brand-mark">${icon('radar')}</div><div class="mg-brand-copy"><strong>海上异常监测智能体</strong><span>马六甲海峡实验 · 管理端</span></div></div>
+        <nav class="mg-nav">
+          <div class="mg-nav-label">监测与处置</div>
+          <button class="mg-nav-button active" data-mg-view="overview">${icon('map')}<span>综合态势</span></button>
+          <button class="mg-nav-button" data-mg-view="events">${icon('list-filter')}<span>异常事件中心</span></button>
+          <button class="mg-nav-button" data-mg-view="event-detail">${icon('scan-search')}<span>事件研判</span></button>
+          <button class="mg-nav-button" data-mg-view="vessels">${icon('ship')}<span>船舶档案</span></button>
+          <div class="mg-nav-label">数据与能力</div>
+          <button class="mg-nav-button" data-mg-view="environment">${icon('cloud-sun')}<span>环境监测</span></button>
+          <button class="mg-nav-button" data-mg-view="models">${icon('database-zap')}<span>数据与模型</span></button>
+          <button class="mg-nav-button" data-mg-view="audits">${icon('file-search')}<span>智能体审计</span></button>
+        </nav>
+        <div class="mg-sidebar-foot"><strong>辅助研判系统</strong>不替代 COLREGs 与人工航海判断</div>
+      </aside>
+      <header class="mg-topbar">
+        <div class="mg-page-heading"><strong id="mgPageTitle">综合态势</strong><span id="mgPageSubtitle">马六甲海峡六小时增强 AIS 历史回放</span></div>
+        <div class="mg-kpi"><b id="mgShipCount">0</b><span>当前活跃船舶</span></div>
+        <div class="mg-kpi danger"><b id="mgHighCount">0</b><span>高风险会遇</span></div>
+        <div class="mg-kpi"><b id="mgPendingCount">0</b><span>待确认/核查</span></div>
+        <div class="mg-kpi"><b id="mgQuality">0%</b><span>位置字段有效率</span></div>
+        <div class="mg-system-state"><i></i><span id="mgDataState">历史数据已载入</span></div>
+      </header>
+      <div id="mgToast" class="mg-toast" role="status"></div>`);
+
+    overviewPage.insertAdjacentHTML('beforeend', `
+      <aside id="mgEventRail" class="mg-event-rail" aria-label="优先处置事件">
+        <div class="mg-rail-head"><div><h2>优先处置</h2><span>碰撞风险与行为初筛</span></div><span id="mgRailTime">--</span></div>
+        <div class="mg-rail-note">仅展示 Top 5。点击事件查看计算依据、数据时间和不确定因素。</div>
+        <div id="mgTopEvents" class="mg-event-list"></div>
+        <div class="mg-rail-footer"><button id="mgAllEvents" class="mg-button primary">${icon('arrow-right')}查看全部事件</button></div>
+      </aside>`);
+
+    app.insertAdjacentHTML('beforeend', pagesMarkup());
+    document.getElementById('reviewFilter').hidden = true;
+    document.getElementById('riskFilter').hidden = true;
+    document.getElementById('highRiskBtn').hidden = true;
+    detailPage.classList.add('hidden');
+  }
+
+  function pagesMarkup() {
+    return `
+      <section id="mgEventsPage" class="mg-page" data-page="events">
+        <div class="mg-page-inner">
+          <div class="mg-section-head"><div><h1>异常事件中心</h1><p>从地图告警进入可核查、可流转的事件列表。当前状态操作仅保存在本次演示会话。</p></div><div class="mg-actions"><button class="mg-button" data-route="overview">${icon('map')}返回态势</button></div></div>
+          <section class="mg-card ais-viz-panel"><div class="mg-card-head"><h2>事件时间轴与状态流</h2><span>随回放时间和筛选条件更新</span></div><div class="ais-viz-layout"><div id="mgEventTimelineViz" class="ais-viz-main"></div><aside id="mgEventTimelineEvidence" class="ais-viz-evidence"></aside></div><div id="mgEventTimelineSummary" class="ais-viz-summary"></div></section>
+          <div class="mg-card mg-filterbar"><input id="mgEventSearch" placeholder="搜索事件编号、船名或 MMSI"><select id="mgRiskFilter"><option value="全部">全部风险</option><option value="高风险">高风险</option><option value="中高风险">中高风险</option><option value="中等关注">中等关注</option></select><select id="mgStatusFilter"><option value="全部">全部状态</option><option value="待确认">待确认</option><option value="待核查">待核查</option><option value="已派单">已派单</option><option value="处理中">处理中</option><option value="已确认">已确认</option><option value="已关闭">已关闭</option><option value="误报或证据不足">误报或证据不足</option></select><button id="mgResetStatus" class="mg-button">${icon('rotate-ccw')}重置演示状态</button></div>
+          <div class="mg-card"><div class="mg-card-head"><h2>当前时间片事件</h2><span id="mgEventCount">0 条</span></div><div class="mg-table-wrap"><table class="mg-table"><thead><tr><th>事件编号</th><th>事件类型</th><th>涉及对象</th><th>核心证据</th><th>风险</th><th>可信提示</th><th>状态</th><th>更新时间</th></tr></thead><tbody id="mgEventRows"></tbody></table><div id="mgEventEmpty" class="mg-empty" hidden>当前筛选条件下没有事件。</div></div></div>
+        </div>
+      </section>
+      <section id="mgEventDetailPage" class="mg-page" data-page="event-detail"><div id="mgEventDetail" class="mg-page-inner"></div></section>
+      <section id="mgVesselsPage" class="mg-page" data-page="vessels"><div id="mgVesselDetail" class="mg-page-inner"></div></section>
+      <section id="mgEnvironmentPage" class="mg-page" data-page="environment">
+        <div class="mg-page-inner"><div class="mg-section-head"><div><h1>环境监测</h1><p>环境模块保持真实数据边界，未接入的数据不使用模拟值替代。</p></div></div>
+          <section class="mg-card ais-viz-panel"><div class="mg-card-head"><h2>数据源接入与覆盖状态</h2><span>来源、许可与时间范围需同时满足</span></div><div id="mgEnvironmentViz" class="ais-viz-main"></div></section>
+          <div class="mg-card mg-empty-state"><div class="mg-empty-copy"><div class="mg-empty-icon">${icon('cloud-sun')}</div><h1>马六甲海峡环境数据暂未接入</h1><p>当前页面不显示虚构的台风、风浪、海流、赤潮或油膜结果。接入后，每个图层必须同时显示数据来源、观测时间、空间分辨率和置信度。</p><div class="mg-callout">“叶绿素异常区”不能直接表述为“赤潮区”；遥感油膜暗斑也需要结合风速、云影和人工核查。</div></div><div class="mg-source-list"><div class="mg-source-item"><b>台风路径与预报</b><span>需要预报时次、中心位置、强度和影响半径</span></div><div class="mg-source-item"><b>风、浪、海流</b><span>需要有效时间、网格范围和数据更新时间</span></div><div class="mg-source-item"><b>海温与叶绿素</b><span>需要卫星产品、云量、观测时间和异常基线</span></div><div class="mg-source-item"><b>油膜疑似区</b><span>需要 SAR/光学证据、识别置信度和误报因素</span></div><div class="mg-source-item"><b>航道与敏感设施</b><span>需要交通分离制、锚地、港口和设施矢量数据</span></div><div class="mg-source-item"><b>下一步接入原则</b><span>先完成来源与许可审计，再设计多源时空对齐</span></div></div></div>
+        </div>
+      </section>
+      <section id="mgModelsPage" class="mg-page" data-page="models"><div id="mgModelContent" class="mg-page-inner"></div></section>
+      <section id="mgAuditsPage" class="mg-page" data-page="audits">
+        <div class="mg-page-inner">
+          <div class="mg-section-head"><div><h1>智能体审计</h1><p>追溯用户端问答使用的AIS证据、审核来源、运行模式与最终状态。</p></div><div class="mg-actions"><button id="mgAuditRefresh" class="mg-button">${icon('refresh-cw')}刷新</button><a id="mgAuditExport" class="mg-button primary" download>${icon('download')}导出脱敏记录</a></div></div>
+          <div id="mgAuditStats" class="mg-audit-stats"></div>
+          <div id="mgAuditQuality" class="mg-audit-quality" hidden></div>
+          <div class="mg-card mg-filterbar mg-audit-filter"><input id="mgAuditSearch" aria-label="搜索审计记录" placeholder="搜索审计编号、问题或MMSI"><select id="mgAuditStatus" aria-label="审计状态"><option value="">全部状态</option><option value="success">在线回答成功</option><option value="local_evidence_only">本地证据</option><option value="blocked_by_guard">证据守卫拦截</option><option value="model_error">在线服务降级</option></select><select id="mgAuditMode" aria-label="运行模式"><option value="">全部模式</option><option value="local_evidence">本地证据模式</option><option value="deepseek_online">DeepSeek在线模式</option></select><button id="mgAuditReset" class="mg-button">${icon('rotate-ccw')}重置</button></div>
+          <div class="mg-audit-layout"><section class="mg-card"><div class="mg-card-head"><h2>审计记录</h2><span id="mgAuditCount">0条</span></div><div id="mgAuditList" class="mg-audit-list"></div></section><section class="mg-card"><div class="mg-card-head"><h2>问答追溯详情</h2><span>只读脱敏视图</span></div><div id="mgAuditDetail" class="mg-audit-detail"></div></section></div>
+        </div>
+      </section>`;
+  }
+
+  function auditFilters() {
+    return {
+      q: document.getElementById('mgAuditSearch')?.value || '',
+      status: document.getElementById('mgAuditStatus')?.value || '',
+      mode: document.getElementById('mgAuditMode')?.value || ''
+    };
+  }
+
+  function auditTime(value) {
+    return value ? formatTime(value, true) : '时间不可用';
+  }
+
+  function auditStatusMarkup(status) {
+    const meta = window.MaritimeAuditClient.statusMeta(status);
+    return `<span class="mg-audit-status ${escapeHtml(meta.tone)}">${escapeHtml(meta.label)}</span>`;
+  }
+
+  function auditStatsMarkup() {
+    const counts = auditState.counts || { total: 0, success: 0, localEvidence: 0, blockedOrError: 0 };
+    return [
+      ['file-clock', '记录总数', counts.total],
+      ['badge-check', '在线回答成功', counts.success],
+      ['shield-check', '本地证据', counts.localEvidence],
+      ['shield-alert', '拦截或降级', counts.blockedOrError]
+    ].map(([glyph, label, value]) => `<div class="mg-card mg-audit-stat">${icon(glyph)}<div><span>${escapeHtml(label)}</span><b>${escapeHtml(value)}</b></div></div>`).join('');
+  }
+
+  function auditListMarkup() {
+    if (auditState.loading) return `<div class="mg-audit-state">${icon('loader-circle')}<b>正在读取审计记录</b><span>仅从本机脱敏接口读取</span></div>`;
+    if (auditState.error) return `<div class="mg-audit-state error">${icon('circle-alert')}<b>审计服务不可用</b><span>${escapeHtml(auditState.error)}</span></div>`;
+    if (!auditState.records.length) return `<div class="mg-audit-state">${icon('inbox')}<b>暂无匹配记录</b><span>先在用户端完成一次问答，或调整筛选条件。</span></div>`;
+    return auditState.records.map(record => {
+      const active = record.auditId === auditState.selectedId ? ' active' : '';
+      const mode = window.MaritimeAuditClient.modeMeta(record.mode);
+      return `<button class="mg-audit-item${active}" data-audit-id="${escapeHtml(record.auditId)}"><span class="mg-audit-item-top"><code>${escapeHtml(record.auditId)}</code>${auditStatusMarkup(record.status)}</span><strong>${escapeHtml(record.questionPreview || '问题内容不可用')}</strong><span>${escapeHtml(auditTime(record.createdAt))} · ${escapeHtml(record.mmsi || '无MMSI')}</span><small>${escapeHtml(mode.label)}</small></button>`;
+    }).join('');
+  }
+
+  function tokenText(usage) {
+    if (!usage) return '未发生在线调用';
+    const prompt = usage.promptTokens ?? '不可用';
+    const completion = usage.completionTokens ?? '不可用';
+    const total = usage.totalTokens ?? (Number.isFinite(prompt) && Number.isFinite(completion) ? prompt + completion : '不可用');
+    return `输入 ${prompt} / 输出 ${completion} / 合计 ${total}`;
+  }
+
+  function costText(cost) {
+    return cost && Number.isFinite(cost.estimatedCost) ? `${cost.currency || 'USD'} ${cost.estimatedCost.toFixed(8)}（估算）` : '未发生在线调用';
+  }
+
+  function auditReasonText(record) {
+    const code = record.reason || record.errorCode;
+    return {
+      deepseek_key_not_configured: '未配置在线模型密钥，已按本地证据模式完成',
+      online_mode_not_enabled: '在线模式未启用，已按本地证据模式完成',
+      answer_guard_rejected: '在线回答未通过证据守卫',
+      unknown_error: '在线服务发生未分类错误'
+    }[code] || code || '无';
+  }
+
+  function auditIdsMarkup(label, values) {
+    const list = Array.isArray(values) ? values : [];
+    return `<section class="mg-audit-block"><h3>${escapeHtml(label)}</h3>${list.length ? `<div class="mg-audit-tags">${list.map(value => `<code>${escapeHtml(value)}</code>`).join('')}</div>` : '<p>无记录</p>'}</section>`;
+  }
+
+  function answerMarkup(answer) {
+    if (!answer) return `<section class="mg-audit-block"><h3>最终回答</h3><p>本次为本地证据模式，未调用在线模型，因此没有模型生成回答。</p></section>`;
+    const evidence = (answer.currentEvidence || []).map(item => `<li><code>${escapeHtml(item.evidenceId || '无编号')}</code><span>${escapeHtml(item.statement || '')}</span></li>`).join('');
+    const basis = (answer.applicableBasis || []).map(item => `<li><code>${escapeHtml(item.sourceId || '无来源')}</code><span>${escapeHtml(item.statement || '')}</span></li>`).join('');
+    return `<section class="mg-audit-block"><h3>通过守卫的结构化回答</h3><strong>${escapeHtml(answer.conclusion || '无结论')}</strong>${evidence ? `<h4>当前证据</h4><ul>${evidence}</ul>` : ''}${basis ? `<h4>适用依据</h4><ul>${basis}</ul>` : ''}${(answer.limitations || []).length ? `<h4>局限性</h4><ul>${answer.limitations.map(item => `<li>${escapeHtml(item)}</li>`).join('')}</ul>` : ''}</section>`;
+  }
+
+  function auditDetailMarkup() {
+    if (auditState.loading && !auditState.detail) return `<div class="mg-audit-state">${icon('loader-circle')}<b>正在载入详情</b></div>`;
+    if (auditState.detailError) return `<div class="mg-audit-state error">${icon('circle-alert')}<b>该记录详情暂不可用</b><span>${escapeHtml(auditState.detailError)}</span></div>`;
+    const record = auditState.detail;
+    if (!record) return `<div class="mg-audit-state">${icon('mouse-pointer-click')}<b>请选择一条审计记录</b><span>详情只展示脱敏后的实验复现字段。</span></div>`;
+    const mode = window.MaritimeAuditClient.modeMeta(record.mode);
+    const online = mode.online;
+    return `<div class="mg-audit-detail-head"><div><code>${escapeHtml(record.auditId)}</code><h2>${escapeHtml(record.question || '问题内容不可用')}</h2><span>${escapeHtml(auditTime(record.createdAt))}</span></div>${auditStatusMarkup(record.status)}</div><div class="mg-audit-facts"><div><span>运行模式</span><b>${escapeHtml(mode.label)}</b></div><div><span>MMSI</span><b>${escapeHtml(record.mmsi || '无')}</b></div><div><span>回放时间</span><b>${escapeHtml(record.replayTime || '无')}</b></div><div><span>模型</span><b>${escapeHtml(online ? (record.model || '不可用') : '未发生在线调用')}</b></div><div><span>Token</span><b>${escapeHtml(tokenText(record.usage))}</b></div><div><span>费用</span><b>${escapeHtml(costText(record.cost))}</b></div><div><span>耗时</span><b>${escapeHtml(Number.isFinite(record.latencyMs) ? `${record.latencyMs} ms` : (online ? '不可用' : '未发生在线调用'))}</b></div><div><span>原因/错误</span><b>${escapeHtml(auditReasonText(record))}</b></div></div>${auditIdsMarkup('证据ID', record.evidenceIds)}${auditIdsMarkup('来源ID', record.sourceIds)}${answerMarkup(record.answer)}`;
+  }
+
+  function renderAudits() {
+    const stats = document.getElementById('mgAuditStats');
+    if (!stats) return;
+    stats.innerHTML = auditStatsMarkup();
+    document.getElementById('mgAuditList').innerHTML = auditListMarkup();
+    document.getElementById('mgAuditDetail').innerHTML = auditDetailMarkup();
+    document.getElementById('mgAuditCount').textContent = `${auditState.records.length}条`;
+    const quality = document.getElementById('mgAuditQuality');
+    quality.hidden = !auditState.skippedInvalidRows;
+    quality.textContent = auditState.skippedInvalidRows ? `已跳过 ${auditState.skippedInvalidRows} 行损坏或不完整的审计记录。其余记录仍可正常核查。` : '';
+    document.getElementById('mgAuditExport').href = auditClient.exportUrl(auditFilters());
+    document.querySelectorAll('[data-audit-id]').forEach(button => button.onclick = () => loadAuditDetail(button.dataset.auditId));
+    if (window.lucide) window.lucide.createIcons();
+  }
+
+  async function loadAuditDetail(auditId) {
+    auditState.selectedId = auditId;
+    auditState.detail = null;
+    auditState.detailError = null;
+    renderAudits();
+    try {
+      auditState.detail = await auditClient.detail(auditId);
+      auditState.detailError = null;
+    } catch (error) {
+      auditState.detailError = error.message;
+    }
+    renderAudits();
+  }
+
+  async function loadAudits() {
+    if (auditRequest) auditRequest.abort();
+    auditRequest = new AbortController();
+    auditState = { ...auditState, loading: true, error: null, detailError: null, detail: null };
+    renderAudits();
+    try {
+      const payload = await auditClient.list(auditFilters(), auditRequest.signal);
+      auditLoaded = true;
+      auditState = { ...auditState, loading: false, state: payload.state, records: payload.records || [], counts: payload.counts, skippedInvalidRows: payload.skippedInvalidRows || 0 };
+      const selected = auditState.records.find(item => item.auditId === auditState.selectedId) || auditState.records[0];
+      auditState.selectedId = selected?.auditId || null;
+      renderAudits();
+      if (selected) await loadAuditDetail(selected.auditId);
+    } catch (error) {
+      if (error.name === 'AbortError') return;
+      auditState = { ...auditState, loading: false, error: error.message, detailError: null, records: [], counts: null, detail: null };
+      renderAudits();
+    }
+  }
+
+  function bindAuditControls() {
+    document.getElementById('mgAuditRefresh').onclick = loadAudits;
+    document.getElementById('mgAuditStatus').onchange = loadAudits;
+    document.getElementById('mgAuditMode').onchange = loadAudits;
+    document.getElementById('mgAuditSearch').onkeydown = event => { if (event.key === 'Enter') loadAudits(); };
+    document.getElementById('mgAuditReset').onclick = () => {
+      document.getElementById('mgAuditSearch').value = '';
+      document.getElementById('mgAuditStatus').value = '';
+      document.getElementById('mgAuditMode').value = '';
+      loadAudits();
+    };
+    renderAudits();
+  }
+
+  function currentEvents() {
+    return eventBundle.events.map(event => ({ ...event, status: statusOverrides.get(event.id) || event.status }));
+  }
+
+  function vesselEncounterRisk(mmsi) {
+    return currentEvents().filter(event => event.cpa &&
+      event.vessels.some(vessel => String(vessel.mmsi) === String(mmsi)))
+      .sort((a, b) => b.score - a.score)[0] || null;
+  }
+
+  function managementVesselIcon(vessel) {
+    const event = vesselEncounterRisk(vessel.mmsi);
+    const riskClass = event?.tone === 'critical' ? 'risk-high' : 'risk-low';
+    const selectedIcon = selected && String(selected.mmsi) === String(vessel.mmsi);
+    const color = COLORS[vessel.category] || COLORS['未知'];
+    const html = `<div class="risk-marker ${riskClass} ${selectedIcon ? 'selected' : ''}" title="${event ? escapeHtml(event.level) : escapeHtml(vessel.category)}"><span class="risk-halo"></span><span class="ship-wrap">${shipSvg(vessel.category, color, headingOf(vessel), selectedIcon)}</span></div>`;
+    return L.divIcon({ className: `ship-marker ${selectedIcon ? 'selected' : ''}`, html, iconSize: [48, 34], iconAnchor: [24, 17] });
+  }
+
+  function updateManagementTrail(key, prepared, timeMs) {
+    let trail = managementTrailCache.get(key);
+    const isSelected = selected && String(selected.mmsi) === String(key);
+    const segments = isSelected ? HistoricalAisReplay.recentTrackSegments(prepared, timeMs) : [];
+    if (!segments.length) {
+      if (trail && map.hasLayer(trail)) map.removeLayer(trail);
+      return null;
+    }
+    if (!trail) {
+      trail = L.polyline(segments, {
+        color: COLORS[prepared.source.category] || COLORS['未知'],
+        weight: 1.4, opacity: .5,
+        lineCap: 'round', lineJoin: 'round', interactive: false
+      });
+      managementTrailCache.set(key, trail);
+    } else {
+      trail.setLatLngs(segments);
+    }
+    if (!map.hasLayer(trail)) trail.addTo(map);
+    return trail;
+  }
+
+  function renderManagementMap(fit = false) {
+    clearLayers();
+    const category = document.getElementById('categoryFilter').value;
+    const bounds = [];
+    const nextVisible = new Set();
+    eventBundle.snapshots.filter(item => item.ageMinutes <= 5 && (category === '全部' || item.vessel.category === category)).forEach(item => {
+      const vessel = { ...item.vessel, points: [item.point] };
+      const key = String(vessel.mmsi);
+      const replayState = preparedVessels.has(key) ? HistoricalAisReplay.stateAt(preparedVessels.get(key), currentTime()) : null;
+      const position = replayState ? [replayState.displayPosition.lat, replayState.displayPosition.lon] : [item.point.lat, item.point.lon];
+      const trail = preparedVessels.has(key) ? updateManagementTrail(key, preparedVessels.get(key), currentTime()) : null;
+      if (trail) layers.push(trail);
+      let marker = managementMarkerCache.get(key);
+      if (!marker) {
+        marker = L.marker(position, { icon: managementVesselIcon(vessel), riseOnHover: true });
+        marker.on('click', () => openVesselDetail(key, false));
+        managementMarkerCache.set(key, marker);
+      } else {
+        marker.setLatLng(position).setIcon(managementVesselIcon(vessel));
+      }
+      marker.addTo(map);
+      marker.bindTooltip(`${escapeHtml(vessel.name || '未命名')} · ${escapeHtml(vessel.category)}`, { direction: 'top', offset: [0, -12] });
+      if (replayState) updateMarkerReplayClass(marker, replayState);
+      layers.push(marker);
+      nextVisible.add(key);
+      bounds.push(position);
+    });
+    managementTrailCache.forEach((trail, key) => { if (!nextVisible.has(key) && map.hasLayer(trail)) map.removeLayer(trail); });
+    managementVisibleMmsis = nextVisible;
+    if (fit && bounds.length) map.fitBounds(bounds, { padding: [38, 38] });
+  }
+
+  replayFrameHooks.push(timeMs => {
+    if (currentView !== 'overview') return;
+    managementVisibleMmsis.forEach(key => {
+      const marker = managementMarkerCache.get(key);
+      const prepared = preparedVessels.get(key);
+      if (!marker || !prepared || !map.hasLayer(marker)) return;
+      const replayState = HistoricalAisReplay.stateAt(prepared, timeMs);
+      if (!replayState) return;
+      updateManagementTrail(key, prepared, timeMs);
+      marker.setLatLng([replayState.displayPosition.lat, replayState.displayPosition.lon]);
+      updateMarkerReplayClass(marker, replayState);
+    });
+  });
+
+  function refreshData() {
+    eventBundle = ManagementData.buildEvents(DATA.vessels, currentTime(), EncounterMath);
+    if (currentEvent) currentEvent = currentEvents().find(event => event.id === currentEvent.id) || currentEvent;
+  }
+
+  function refreshKpis() {
+    const quality = ManagementData.dataQuality(DATA.vessels);
+    const events = currentEvents();
+    const freshShips = eventBundle.snapshots.filter(item => item.ageMinutes <= 5).length;
+    const high = events.filter(event => event.level === '高风险').length;
+    const pending = events.filter(event => ['待确认', '待核查', '已派单', '处理中'].includes(event.status)).length;
+    document.getElementById('mgShipCount').textContent = freshShips;
+    document.getElementById('mgHighCount').textContent = high;
+    document.getElementById('mgPendingCount').textContent = pending;
+    document.getElementById('mgQuality').textContent = `${(quality.positionValidity * 100).toFixed(1)}%`;
+    document.getElementById('mgDataState').textContent = `${isPlaying ? '历史回放中' : '历史回放已暂停'} · ${formatTime(currentTime(), true)}`;
+    document.getElementById('liveStatus').textContent = `${isPlaying ? '回放中' : '已暂停'}：${freshShips} 艘活跃 / ${high} 个高风险会遇`;
+  }
+
+  function evidenceText(event) {
+    if (event.cpa) return `DCPA ${formatNumber(event.cpa.dcpa, 2, ' nm')} · TCPA ${formatNumber(event.cpa.tcpa, 1, ' min')}`;
+    return event.metric || '查看初筛依据';
+  }
+
+  function vesselNames(event) {
+    return event.vessels.map(vessel => vessel.name || vessel.mmsi).join(' / ');
+  }
+
+  function renderRail() {
+    const events = currentEvents().slice(0, 5);
+    document.getElementById('mgRailTime').textContent = formatTime(currentTime());
+    const wrap = document.getElementById('mgTopEvents');
+    wrap.innerHTML = events.length ? events.map((event, index) => `
+      <button class="mg-event-item ${event.tone}" data-event-id="${escapeHtml(event.id)}">
+        <span class="mg-event-rank">${index + 1}</span><span class="mg-event-copy"><b>${escapeHtml(event.kind)}</b><span>${escapeHtml(vesselNames(event))}<br>${escapeHtml(evidenceText(event))}</span></span><strong class="mg-event-score">${escapeHtml(event.level)}</strong>
+      </button>`).join('') : '<div class="mg-empty">当前时刻未筛选出中等关注及以上事件。继续播放可观察其他时间片。</div>';
+    wrap.querySelectorAll('[data-event-id]').forEach(button => button.addEventListener('click', () => openEvent(button.dataset.eventId)));
+  }
+
+  function filteredEvents() {
+    const search = document.getElementById('mgEventSearch').value.trim().toLowerCase();
+    const risk = document.getElementById('mgRiskFilter').value;
+    const status = document.getElementById('mgStatusFilter').value;
+    return currentEvents().filter(event => {
+      const haystack = `${event.id} ${event.kind} ${vesselNames(event)} ${event.vessels.map(v => v.mmsi).join(' ')}`.toLowerCase();
+      return (!search || haystack.includes(search)) && (risk === '全部' || event.level === risk) && (status === '全部' || event.status === status);
+    });
+  }
+
+  function renderEventTable() {
+    const allRows = filteredEvents();
+    const rows = allRows.slice(0, 20);
+    const tbody = document.getElementById('mgEventRows');
+    document.getElementById('mgEventCount').textContent = allRows.length > rows.length ? `优先显示 ${rows.length} / ${allRows.length} 条` : `${rows.length} 条`;
+    document.getElementById('mgEventEmpty').hidden = allRows.length > 0;
+    tbody.innerHTML = rows.map(event => `
+      <tr data-event-id="${escapeHtml(event.id)}"><td><b>${escapeHtml(event.id)}</b></td><td>${escapeHtml(event.kind)}</td><td>${escapeHtml(vesselNames(event))}</td><td>${escapeHtml(evidenceText(event))}</td><td><span class="mg-risk-pill ${event.tone}">${escapeHtml(event.level)}</span></td><td>${escapeHtml(event.confidence)}</td><td><span class="mg-status-pill">${escapeHtml(event.status)}</span></td><td>${escapeHtml(formatTime(event.updatedAt))}</td></tr>`).join('');
+    tbody.querySelectorAll('[data-event-id]').forEach(row => row.addEventListener('click', () => openEvent(row.dataset.eventId)));
+    renderEventTimeline(allRows);
+  }
+
+  function renderEventTimeline(events) {
+    const timeline = document.getElementById('mgEventTimelineViz');
+    if (!timeline) return;
+    timeline.innerHTML = AisVisuals.timeline(events.map(event => ({
+      time: formatTime(event.updatedAt),
+      label: `${event.kind} · ${vesselNames(event)}`,
+      detail: `${event.level} · ${event.status}`,
+      tone: event.tone
+    })), { title: '当前筛选事件', limit: 10 });
+    const evidence = document.getElementById('mgEventTimelineEvidence');
+    const summary = document.getElementById('mgEventTimelineSummary');
+    const high = events.filter(event => event.level === '高风险').length;
+    const pending = events.filter(event => ['待确认', '待核查', '已派单', '处理中'].includes(event.status)).length;
+    evidence.innerHTML = `<h3>时间片证据</h3><dl><div><dt>回放时间</dt><dd>${escapeHtml(formatTime(currentTime(), true))}</dd></div><div><dt>筛选结果</dt><dd>${events.length} 条事件</dd></div><div><dt>状态来源</dt><dd>本次演示会话</dd></div><div><dt>数据边界</dt><dd>AIS 与行为规则初筛</dd></div></dl>`;
+    summary.innerHTML = `<div><span>高风险会遇</span><b>${high} 条</b></div><div><span>待确认/核查</span><b>${pending} 条</b></div><div><span>持久化状态</span><b>尚未接入后端</b></div>`;
+  }
+
+  function renderEventDetail() {
+    const events = currentEvents();
+    const event = currentEvent || events[0];
+    const wrap = document.getElementById('mgEventDetail');
+    if (!event) {
+      wrap.innerHTML = `<div class="mg-section-head"><div><h1>事件研判</h1><p>当前时间片暂无可研判事件。</p></div><button class="mg-button" data-route="overview">${icon('map')}返回态势</button></div><div class="mg-card mg-empty">继续播放历史 AIS 数据后再查看事件证据。</div>`;
+      bindRoutes(wrap);
+      return;
+    }
+    currentEvent = event;
+    const cpa = event.cpa;
+    const parts = event.risk?.parts;
+    const vessels = event.vessels;
+    const nextStatus = { '待确认': '待核查', '待核查': '已派单', '已派单': '处理中', '处理中': '已确认', '已确认': '已关闭' }[event.status];
+    const eventVisual = AisVisuals.relativeMotion({
+      title: event.cpa ? '双船相对运动与 CPA' : '行为变化真实轨迹',
+      cpa,
+      vessels: vessels.map((vessel, index) => ({
+        label: vessel.name || vessel.mmsi,
+        color: ['#087f83', '#c6534d'][index % 2],
+        points: vessel.points,
+        options: { cutoffMs: currentTime() }
+      }))
+    });
+    wrap.innerHTML = `
+      <div class="mg-section-head"><div><h1>事件研判与证据链</h1><p>${escapeHtml(event.id)} · 数据时间 ${escapeHtml(formatTime(event.updatedAt, true))}</p></div><div class="mg-actions"><button class="mg-button" data-route="events">${icon('list-filter')}事件中心</button><button class="mg-button" data-route="overview">${icon('map')}综合态势</button></div></div>
+      <section class="mg-card ais-viz-panel"><div class="mg-card-head"><h2>事件运动可视化</h2><span>实线为真实 AIS，虚线为匀速推算</span></div><div class="ais-viz-layout"><div class="ais-viz-main">${eventVisual}</div><aside class="ais-viz-evidence"><h3>研判证据</h3><dl><div><dt>事件对象</dt><dd>${escapeHtml(vesselNames(event))}</dd></div><div><dt>DCPA / TCPA</dt><dd>${cpa ? `${formatNumber(cpa.dcpa, 2, ' nm')} / ${formatNumber(cpa.tcpa, 1, ' min')}` : '不适用'}</dd></div><div><dt>可信提示</dt><dd>${escapeHtml(event.confidence)}</dd></div><div><dt>算法边界</dt><dd>${cpa ? '匀速直线外推' : '阈值行为初筛'}</dd></div></dl></aside></div></section>
+      <div class="mg-detail-grid"><main class="mg-evidence-stack">
+        <section class="mg-card mg-hero"><div><div class="mg-hero-kicker">${escapeHtml(event.kind)} · ${escapeHtml(event.source)}</div><h1>${escapeHtml(vesselNames(event))}</h1><p>${escapeHtml(event.explanation)} 当前结论为辅助研判结果，需要结合航道、作业状态和人工观察进一步确认。</p></div><div class="mg-score">${escapeHtml(event.level)}<small>风险等级</small></div></section>
+        <section class="mg-card"><div class="mg-card-head"><h2>核心运动学证据</h2><span>${escapeHtml(event.encounterShape || '行为变化初筛')}</span></div><div class="mg-metric-grid"><div class="mg-metric-box"><span>最近会遇距离 DCPA</span><b>${cpa ? formatNumber(cpa.dcpa, 2, ' nm') : '不适用'}</b></div><div class="mg-metric-box"><span>最近会遇时间 TCPA</span><b>${cpa ? formatNumber(cpa.tcpa, 1, ' min') : '不适用'}</b></div><div class="mg-metric-box"><span>当前距离 / 行为幅度</span><b>${cpa ? formatNumber(event.distance, 2, ' nm') : escapeHtml(event.metric || '不可用')}</b></div></div></section>
+        <section class="mg-card"><div class="mg-card-head"><h2>算法依据与不确定性</h2><span>版本 CPA-TCPA v1.0 / 行为规则 v0.1</span></div><div class="mg-evidence-body"><dl>
+          <div class="mg-evidence-row"><dt>数据来源</dt><dd>${escapeHtml(event.source)}</dd></div><div class="mg-evidence-row"><dt>船舶对象</dt><dd>${vessels.map(v => `${escapeHtml(v.name || '未命名')}（${escapeHtml(v.mmsi)}，${escapeHtml(v.category)}）`).join('<br>')}</dd></div><div class="mg-evidence-row"><dt>位置</dt><dd>${formatNumber(event.location.lat, 5)}°, ${formatNumber(event.location.lon, 5)}°</dd></div><div class="mg-evidence-row"><dt>可信提示</dt><dd>${escapeHtml(event.confidence)}。${cpa?.label ? escapeHtml(cpa.label) : '阈值用于演示初筛，尚未经过标注测试集验证。'}</dd></div>
+        </dl><div class="mg-callout">风险等级由 DCPA、TCPA、当前距离、相对航向和数据新鲜度综合分级；内部排序值不作为业务结论展示。</div><div class="mg-callout">CPA/TCPA 基于匀速直线外推，只用于风险筛查，不能替代 COLREGs、驾驶台观察和法定避碰决策。</div></div></section>
+      </main><aside class="mg-evidence-stack">
+        <section class="mg-card"><div class="mg-card-head"><h2>处置状态</h2><span>前端演示状态</span></div><div class="mg-evidence-body"><p><span class="mg-status-pill">${escapeHtml(event.status)}</span></p><div class="mg-actions" style="justify-content:flex-start">${nextStatus ? `<button id="mgAdvanceStatus" class="mg-button primary">${icon('arrow-right')}流转为${nextStatus}</button>` : ''}<button id="mgInsufficient" class="mg-button">${icon('circle-help')}证据不足</button><button id="mgCloseEvent" class="mg-button">${icon('check')}关闭事件</button></div><div class="mg-callout">状态变更仅用于演示事件闭环，尚未接入真实用户、权限和后端工单。</div></div></section>
+        <section class="mg-card"><div class="mg-card-head"><h2>建议核查动作</h2><span>智能体解释层</span></div><div class="mg-evidence-body"><ol><li>检查两船后续 AIS 航向和航速是否持续。</li><li>核对附近航道、锚地和作业状态。</li><li>确认 AIS 数据时延与船型字段可靠性。</li><li>必要时调取更多时段数据或开展人工核查。</li></ol></div></section>
+        ${event.kind === '高风险会遇' ? `<button id="mgPlayEncounter" class="mg-button danger">${icon('play')}播放会遇情景演示</button>` : ''}
+      </aside></div>`;
+    bindRoutes(wrap);
+    if (nextStatus) document.getElementById('mgAdvanceStatus').onclick = () => setEventStatus(event, nextStatus);
+    document.getElementById('mgInsufficient').onclick = () => setEventStatus(event, '误报或证据不足');
+    document.getElementById('mgCloseEvent').onclick = () => setEventStatus(event, '已关闭');
+    const play = document.getElementById('mgPlayEncounter');
+    if (play) play.onclick = () => {
+      selected = activeVessels().find(v => String(v.mmsi) === String(event.vessels[0].mmsi)) || selected;
+      originalEncounterOpen(event.vessels[0].mmsi, false);
+    };
+  }
+
+  function renderVesselDetail() {
+    const current = selected && eventBundle.snapshots.find(item => String(item.vessel.mmsi) === String(selected.mmsi));
+    const vessel = current?.vessel || selected || DATA.vessels[0];
+    const point = current?.point || vessel.points[vessel.points.length - 1];
+    const points = vessel.points.filter(item => {
+      const timeMs = Date.parse(item.time);
+      return Number.isFinite(timeMs) && timeMs <= currentTime();
+    });
+    const speeds = points.map(item => Number(item.sog)).filter(value => Number.isFinite(value) && value < 102.3);
+    const related = currentEvents().filter(event => event.vessels.some(item => String(item.mmsi) === String(vessel.mmsi))).slice(0, 5);
+    const vesselTrack = AisVisuals.trackPlot(points, { cutoffMs: currentTime(), title: '最近 10 分钟真实轨迹' });
+    const motionChart = AisVisuals.lineChart([
+      { label: 'SOG', color: '#087f83', points: points.map(item => ({ time: item.time, value: item.sog })) }
+    ], { title: '航速趋势', unit: 'kt' });
+    const courseChart = AisVisuals.lineChart([
+      { label: 'COG', color: '#c79234', points: points.map(item => ({ time: item.time, value: item.cog })) },
+      { label: 'Heading', color: '#596f8b', points: points.map(item => ({ time: item.time, value: item.heading })) }
+    ], { title: '航向趋势', unit: '°', digits: 0 });
+    const wrap = document.getElementById('mgVesselDetail');
+    wrap.innerHTML = `
+      <div class="mg-section-head"><div><h1>船舶档案与行为画像</h1><p>身份、分类来源、当前状态和本批次行为证据分开展示。</p></div><div class="mg-actions"><button class="mg-button" data-route="overview">${icon('map')}返回态势</button>${related[0] ? `<button id="mgRelatedEvent" class="mg-button primary">${icon('scan-search')}查看关联事件</button>` : ''}</div></div>
+      <section class="mg-card ais-viz-panel"><div class="mg-card-head"><h2>轨迹与运动字段</h2><span>长间隔分段，缺失字段保留空缺</span></div><div class="ais-viz-layout"><div class="ais-viz-main">${vesselTrack}</div><aside class="ais-viz-evidence"><h3>分类证据摘要</h3><dl><div><dt>AIS 船型码</dt><dd>${escapeHtml(vessel.vessel_type || '缺失')}</dd></div><div><dt>当前分类</dt><dd>${escapeHtml(vessel.category || '未知')}</dd></div><div><dt>分类来源</dt><dd>${escapeHtml(vessel.source || '未标注')}</dd></div><div><dt>模型状态</dt><dd>${vessel.dl_predicted_category ? '已有模型输出' : '待训练/待验证'}</dd></div></dl></aside></div><div class="mg-columns" style="padding:14px">${motionChart}${courseChart}</div></section>
+      <section class="mg-card mg-vessel-summary"><div class="mg-ship-preview">${shipSvg(vessel.category, COLORS[vessel.category] || COLORS['未知'], 90, true)}</div><div><div class="mg-card-head" style="padding-left:0"><div><h2>${escapeHtml(vessel.name || '未获取船名')}</h2><span>MMSI ${escapeHtml(vessel.mmsi)} · ${escapeHtml(vessel.category)}</span></div><span class="mg-quality-pill ${vessel.category === '未知' ? 'bad' : ''}">${escapeHtml(vessel.source || '分类来源未标注')}</span></div><div class="mg-fact-grid"><div class="mg-fact"><span>IMO</span><b>${escapeHtml(vessel.imo || '缺失')}</b></div><div class="mg-fact"><span>呼号</span><b>${escapeHtml(vessel.call_sign || '缺失')}</b></div><div class="mg-fact"><span>尺寸</span><b>${formatNumber(vessel.ship_length, 0, ' m')} × ${formatNumber(vessel.ship_width, 0, ' m')}</b></div><div class="mg-fact"><span>当前航速</span><b>${formatNumber(point?.sog, 1, ' kt')}</b></div><div class="mg-fact"><span>当前航向</span><b>${formatNumber(point?.cog, 1, '°')}</b></div><div class="mg-fact"><span>位置时间</span><b>${escapeHtml(formatTime(point?.time, true))}</b></div></div></div></section>
+      <div class="mg-columns"><section class="mg-card"><div class="mg-card-head"><h2>分类证据</h2><span>事实与推断分离</span></div><div class="mg-evidence-body"><dl><div class="mg-evidence-row"><dt>AIS 静态船型</dt><dd>${escapeHtml(vessel.category)}（代码 ${escapeHtml(vessel.vessel_type || '缺失')}）</dd></div><div class="mg-evidence-row"><dt>映射依据</dt><dd>${escapeHtml(vessel.reason || '未记录')}</dd></div><div class="mg-evidence-row"><dt>模型推断船型</dt><dd>${vessel.dl_predicted_category ? `${escapeHtml(vessel.dl_predicted_category)}，置信度 ${formatNumber(Number(vessel.dl_confidence) * 100, 1, '%')}` : '待训练/待验证'}</dd></div><div class="mg-evidence-row"><dt>人工核验</dt><dd>${escapeHtml(vessel.need_review || '未完成')}</dd></div></dl><div class="mg-callout">当前同步只使用 AIS vessel_type 映射，不能把它当作深度学习模型准确率结果。</div></div></section>
+      <section class="mg-card"><div class="mg-card-head"><h2>六小时批次画像</h2><span>不形成违法或信用结论</span></div><div class="mg-evidence-body"><dl><div class="mg-evidence-row"><dt>有效轨迹点</dt><dd>${points.length}</dd></div><div class="mg-evidence-row"><dt>活动时间范围</dt><dd>${formatTime(points[0]?.time)} 至 ${formatTime(points[points.length - 1]?.time)}</dd></div><div class="mg-evidence-row"><dt>平均 / 最大航速</dt><dd>${formatNumber(speeds.length ? speeds.reduce((sum, value) => sum + value, 0) / speeds.length : NaN, 1, ' kt')} / ${formatNumber(speeds.length ? Math.max(...speeds) : NaN, 1, ' kt')}</dd></div><div class="mg-evidence-row"><dt>当前关联事件</dt><dd>${related.length} 条</dd></div></dl></div></section></div>`;
+    bindRoutes(wrap);
+    const relatedButton = document.getElementById('mgRelatedEvent');
+    if (relatedButton) relatedButton.onclick = () => openEvent(related[0].id);
+  }
+
+  function renderModels() {
+    const quality = ManagementData.dataQuality(DATA.vessels);
+    const wrap = document.getElementById('mgModelContent');
+    const counts = DATA.vessels.reduce((acc, vessel) => {
+      const category = vessel.category || '未知';
+      acc[category] = (acc[category] || 0) + 1;
+      return acc;
+    }, {});
+    const coverageVisual = AisVisuals.barChart([
+      { label: '位置与时间', value: quality.positionValidity * 100, display: `${(quality.positionValidity * 100).toFixed(1)}%`, color: '#2e967b' },
+      { label: 'SOG + COG', value: quality.motionCoverage * 100, display: `${(quality.motionCoverage * 100).toFixed(1)}%`, color: '#168c91' },
+      { label: '船型已映射', value: quality.classificationCoverage * 100, display: `${(quality.classificationCoverage * 100).toFixed(1)}%`, color: '#c79234' }
+    ], { title: '字段与标签覆盖', note: '来自当前真实批次' });
+    const categoryVisual = AisVisuals.barChart(Object.entries(counts).sort((a, b) => b[1] - a[1]).slice(0, 8).map(([label, value]) => ({ label, value })), { title: '船舶类别分布', note: '未知样本单独保留' });
+    wrap.innerHTML = `
+      <div class="mg-section-head"><div><h1>数据质量与模型管理</h1><p>说明系统为什么得出结果、哪些数据尚缺失，以及当前模型能否被信任。</p></div><button class="mg-button" data-route="overview">${icon('map')}返回态势</button></div>
+      <section class="mg-card ais-viz-panel"><div class="mg-card-head"><h2>当前批次可用性</h2><span>不等同于模型准确率</span></div><div class="ais-viz-layout"><div class="ais-viz-main">${coverageVisual}</div><aside class="ais-viz-evidence">${categoryVisual}</aside></div><div class="ais-viz-summary"><div><span>独立测试集</span><b>尚未形成充分规模</b></div><div><span>准确率展示</span><b>暂不展示</b></div><div><span>下一步</span><b>扩样并按 MMSI 分组验证</b></div></div></section>
+      <div class="mg-quality-grid"><div class="mg-card mg-quality-card"><span>AIS 船舶数</span><b>${quality.vessels}</b><small>六小时增强 AIS 批次中的有效 MMSI</small></div><div class="mg-card mg-quality-card"><span>有效位置记录</span><b>${quality.valid.toLocaleString()}</b><small>位置与时间字段通过基础合法性检查</small></div><div class="mg-card mg-quality-card"><span>船型已映射</span><b>${(quality.classificationCoverage * 100).toFixed(1)}%</b><small>来源为 AIS 静态船型码，不代表模型准确率</small></div><div class="mg-card mg-quality-card"><span>运动字段覆盖</span><b>${(quality.motionCoverage * 100).toFixed(1)}%</b><small>位置、SOG、COG 同时满足计算格式要求</small></div><div class="mg-card mg-quality-card"><span>环境数据</span><b>未接入</b><small>当前不生成环境风险结论</small></div><div class="mg-card mg-quality-card"><span>人工真值集</span><b>未完成</b><small>分类准确率暂不能正式报告</small></div></div>
+      <div class="mg-columns"><section class="mg-card"><div class="mg-card-head"><h2>算法与模型版本</h2><span>当前演示</span></div><div class="mg-evidence-body"><dl><div class="mg-evidence-row"><dt>CPA/TCPA</dt><dd>v1.0 · 匀速直线外推 · 已有单元测试</dd></div><div class="mg-evidence-row"><dt>会遇风险分级</dt><dd>综合 DCPA、TCPA、距离、航向与数据新鲜度，只展示等级和证据</dd></div><div class="mg-evidence-row"><dt>行为事件</dt><dd>v0.1 · 阈值初筛 · 尚未用标注集验证</dd></div><div class="mg-evidence-row"><dt>船型深度学习</dt><dd>待训练/待验证，本页面不展示虚假预测</dd></div><div class="mg-evidence-row"><dt>智能体解释层</dt><dd>前端规则化报告原型，尚未接入在线大模型服务</dd></div></dl></div></section><section class="mg-card"><div class="mg-card-head"><h2>已知局限</h2><span>答辩时应主动说明</span></div><div class="mg-evidence-body"><ul><li>六小时数据不足以代表长期季节性和全部船舶行为。</li><li>AIS 静态船型码可能缺失或填报错误。</li><li>低速目标的 COG 容易抖动，CPA/TCPA 可能不可用。</li><li>风险分级规则仍需专家判断和标注事件验证。</li><li>没有环境数据时，不能判断强风浪是否解释异常行为。</li></ul></div></section></div>`;
+    bindRoutes(wrap);
+  }
+
+  function renderManagementEnvironment() {
+    const wrap = document.getElementById('mgEnvironmentViz');
+    if (!wrap) return;
+    wrap.innerHTML = AisVisuals.statusMatrix([
+      { label: '台风路径与预报', status: '未接入', tone: 'missing', detail: '来源与许可待审计' },
+      { label: '风、浪、海流', status: '未接入', tone: 'missing', detail: '时间和网格范围待确定' },
+      { label: '海温与叶绿素', status: '未接入', tone: 'missing', detail: '卫星产品与云量信息待接入' },
+      { label: '油膜疑似区', status: '未接入', tone: 'missing', detail: '需要 SAR/光学与人工核查' },
+      { label: '航道与设施矢量', status: '未接入', tone: 'missing', detail: '许可和版本待确认' },
+      { label: 'AIS 船舶动态', status: '历史批次可用', tone: 'ready', detail: '当前只支持船舶态势分析' }
+    ]);
+  }
+
+  function setEventStatus(event, status) {
+    statusOverrides.set(event.id, status);
+    operationLog.push({ eventId: event.id, status, time: new Date().toISOString() });
+    currentEvent = { ...event, status };
+    toast(`事件 ${event.id} 已流转为“${status}”`);
+    refreshManagement();
+    renderEventDetail();
+  }
+
+  function resetStatuses() {
+    statusOverrides.clear();
+    operationLog.length = 0;
+    toast('演示状态已重置');
+    refreshManagement();
+  }
+
+  function toast(message) {
+    const node = document.getElementById('mgToast');
+    node.textContent = message;
+    node.classList.add('show');
+    window.setTimeout(() => node.classList.remove('show'), 2200);
+  }
+
+  function openEvent(id) {
+    currentEvent = currentEvents().find(event => event.id === id) || currentEvent;
+    route('event-detail');
+  }
+
+  function pageMeta(view) {
+    return {
+      overview: ['综合态势', '马六甲海峡六小时增强 AIS 历史回放'],
+      events: ['异常事件中心', '事件发现、核查与处置状态闭环'],
+      'event-detail': ['事件研判', '运动学证据、数据质量与不确定性'],
+      vessels: ['船舶档案', '身份、船型来源与行为画像'],
+      environment: ['环境监测', '多源环境数据接入状态'],
+      models: ['数据与模型', '数据质量、算法版本与适用边界'],
+      audits: ['智能体审计', '问答证据、审核来源与运行状态追溯']
+    }[view] || ['管理端', '海上异常监测智能体'];
+  }
+
+  function route(view) {
+    currentView = view;
+    const isOverview = view === 'overview';
+    overviewPage.classList.toggle('hidden', !isOverview);
+    detailPage.classList.add('hidden');
+    document.querySelectorAll('.mg-page').forEach(page => page.classList.toggle('active', page.dataset.page === view));
+    document.querySelectorAll('.mg-nav-button').forEach(button => button.classList.toggle('active', button.dataset.mgView === view));
+    const [title, subtitle] = pageMeta(view);
+    document.getElementById('mgPageTitle').textContent = title;
+    document.getElementById('mgPageSubtitle').textContent = subtitle;
+    if (view === 'events') renderEventTable();
+    if (view === 'event-detail') renderEventDetail();
+    if (view === 'vessels') renderVesselDetail();
+    if (view === 'environment') renderManagementEnvironment();
+    if (view === 'models') renderModels();
+    if (view === 'audits') {
+      renderAudits();
+      if (!auditLoaded && !auditState.loading) loadAudits();
+    }
+    if (isOverview) window.setTimeout(() => map.invalidateSize(), 50);
+    try { history.replaceState(null, '', `#${view}`); } catch (_) { /* Local-file history may be restricted. */ }
+    if (window.lucide) window.lucide.createIcons();
+  }
+
+  function bindRoutes(root = document) {
+    root.querySelectorAll('[data-route]').forEach(button => button.onclick = () => route(button.dataset.route));
+    if (window.lucide) window.lucide.createIcons();
+  }
+
+  function refreshManagement() {
+    refreshData();
+    refreshKpis();
+    renderRail();
+    if (currentView === 'overview') renderManagementMap(false);
+    if (currentView === 'events') renderEventTable();
+    if (currentView === 'event-detail') renderEventDetail();
+    if (currentView === 'vessels') renderVesselDetail();
+    if (currentView === 'models') renderModels();
+    if (currentView === 'audits') renderAudits();
+    if (window.lucide) window.lucide.createIcons();
+  }
+
+  function queueManagementRefresh() {
+    if (refreshQueued) return;
+    refreshQueued = true;
+    window.requestAnimationFrame(() => {
+      refreshQueued = false;
+      refreshManagement();
+    });
+  }
+
+  createShell();
+  bindAuditControls();
+  vesselIcon = managementVesselIcon;
+  renderMap = renderManagementMap;
+  renderAll = function (...args) {
+    currentTime();
+    renderTimeline(true);
+    queueManagementRefresh();
+  };
+  openVesselDetail = function (mmsi) {
+    const snapshot = activeVessels().find(vessel => String(vessel.mmsi) === String(mmsi));
+    selected = snapshot || DATA.vessels.find(vessel => String(vessel.mmsi) === String(mmsi)) || selected;
+    route('vessels');
+  };
+  showOverviewPage = function () { route('overview'); };
+  document.getElementById('backBtn').onclick = () => route('overview');
+  const encounterBack = document.getElementById('encBack');
+  const encounterExit = document.getElementById('encExit');
+  if (encounterBack) encounterBack.onclick = () => route('overview');
+  if (encounterExit) encounterExit.addEventListener('click', () => route('event-detail'));
+  document.querySelectorAll('.mg-nav-button').forEach(button => button.onclick = () => route(button.dataset.mgView));
+  document.getElementById('mgAllEvents').onclick = () => route('events');
+  document.getElementById('mgEventSearch').oninput = renderEventTable;
+  document.getElementById('mgRiskFilter').onchange = renderEventTable;
+  document.getElementById('mgStatusFilter').onchange = renderEventTable;
+  document.getElementById('mgResetStatus').onclick = resetStatuses;
+  bindRoutes();
+
+  if (currentStep === 0 && timeSteps.length > 4) {
+    currentStep = Math.floor((timeSteps.length - 1) * 0.58);
+    refreshData();
+    originalRenderAll(true);
+  }
+  refreshManagement();
+  const requested = location.hash.replace('#', '');
+  route(['overview', 'events', 'event-detail', 'vessels', 'environment', 'models', 'audits'].includes(requested) ? requested : 'overview');
+})();

@@ -1,0 +1,92 @@
+﻿param(
+    [int]$Port = 8765
+)
+
+$ErrorActionPreference = "Stop"
+$demoRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
+$pageSegments = @("海上异常监测智能体.html")
+$encodedPage = ($pageSegments | ForEach-Object { [Uri]::EscapeDataString($_) }) -join "/"
+
+$nodeCandidates = @(
+    "C:\Users\卿之ya\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\bin\node.exe"
+)
+$nodeCommand = Get-Command node -ErrorAction SilentlyContinue
+if ($nodeCommand) {
+    $nodeCandidates += $nodeCommand.Source
+}
+$node = $nodeCandidates | Where-Object { Test-Path -LiteralPath $_ } | Select-Object -First 1
+if (-not $node) {
+    throw "未找到可用的 Node.js。请先按项目环境说明恢复 Node.js 运行时。"
+}
+
+$projectRoot = Split-Path -Parent (Split-Path -Parent $demoRoot)
+$serverScript = Join-Path $projectRoot "源代码\智能问答服务\server.cjs"
+if (-not (Test-Path -LiteralPath $serverScript)) {
+    throw "未找到智能问答本地服务：$serverScript"
+}
+
+function Test-LocalPortFree {
+    param([int]$CandidatePort)
+    $listener = [Net.Sockets.TcpListener]::new([Net.IPAddress]::Loopback, $CandidatePort)
+    try {
+        $listener.Start()
+        return $true
+    }
+    catch {
+        return $false
+    }
+    finally {
+        $listener.Stop()
+    }
+}
+
+$selectedPort = $null
+foreach ($candidate in $Port..($Port + 20)) {
+    if (Test-LocalPortFree -CandidatePort $candidate) {
+        $selectedPort = $candidate
+        break
+    }
+}
+if (-not $selectedPort) {
+    throw "端口 $Port 至 $($Port + 20) 均被占用。"
+}
+
+$server = Start-Process -FilePath $node `
+    -ArgumentList @($serverScript, "--port", $selectedPort) `
+    -WorkingDirectory (Split-Path -Parent $serverScript) `
+    -WindowStyle Hidden `
+    -PassThru
+
+$rootUrl = "http://127.0.0.1:$selectedPort/"
+$pageUrl = "$rootUrl$encodedPage"
+$ready = $false
+try {
+    for ($attempt = 0; $attempt -lt 20; $attempt += 1) {
+        if ($server.HasExited) {
+            throw "智能问答本地服务启动失败，退出码：$($server.ExitCode)。"
+        }
+        try {
+            Invoke-WebRequest -Uri "${rootUrl}api/health" -UseBasicParsing -TimeoutSec 1 | Out-Null
+            $ready = $true
+            break
+        }
+        catch {
+            Start-Sleep -Milliseconds 250
+        }
+    }
+    if (-not $ready) {
+        throw "智能问答本地服务未在预期时间内响应。"
+    }
+
+    $health = Invoke-RestMethod -Uri "${rootUrl}api/health" -TimeoutSec 2
+    Write-Host "海上异常监测智能体已启动：$pageUrl" -ForegroundColor Green
+    Write-Host "本地服务版本：$($health.serviceVersion)；模式：$($health.mode)" -ForegroundColor Cyan
+    Write-Host "请保留此窗口。按 Ctrl+C 可停止本地服务。" -ForegroundColor Yellow
+    Start-Process $pageUrl
+    Wait-Process -Id $server.Id
+}
+finally {
+    if ($server -and -not $server.HasExited) {
+        Stop-Process -Id $server.Id -Force
+    }
+}

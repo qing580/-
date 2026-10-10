@@ -1,0 +1,87 @@
+{
+  "status": "draft",
+  "reviewedBy": null,
+  "reviewedAt": null,
+  "expectedConclusionBoundary": "只能说明现有AIS与筛查规则形成需要关注或复核的证据，不认定违法、责任或主观意图。",
+  "expectedEvidenceSummary": {
+    "selectedEventId": "ENC-351916000-311001666",
+    "screeningLevel": "中高风险",
+    "screeningConfidence": "中",
+    "distanceNm": 0.9027554338227167,
+    "dcpaNm": 0.7029650095422134,
+    "tcpaMinutes": 1.8502134035917484,
+    "relativeSpeedKt": 18.33604915029326,
+    "method": "constant_velocity_linear_extrapolation",
+    "involvedObservations": [
+      {
+        "id": "CASEOBS-311001666-2026-09-08T04:58:41.686Z",
+        "mmsi": "311001666",
+        "vesselName": "STAR VOYAGER",
+        "observedAt": "2026-09-08T04:58:41.686Z",
+        "lat": 1.1832466666666666,
+        "lon": 103.81296333333333,
+        "sogKt": 11.2,
+        "cogDeg": 216.5,
+        "trueHeadingDeg": 213,
+        "sourceType": "AIS_real_observation"
+      },
+      {
+        "id": "CASEOBS-351916000-2026-09-08T05:00:28.314Z",
+        "mmsi": "351916000",
+        "vesselName": "TREASURE STAR",
+        "observedAt": "2026-09-08T05:00:28.314Z",
+        "lat": 1.1682516666666667,
+        "lon": 103.81406999999999,
+        "sogKt": 7.6,
+        "cogDeg": 62.5,
+        "trueHeadingDeg": 62,
+        "sourceType": "AIS_real_observation"
+      }
+    ]
+  },
+  "requiredConclusionTerms": [
+    "会遇",
+    "人工复核"
+  ],
+  "mustMentionEvidenceIds": [
+    "DISTANCE-ENC-351916000-311001666",
+    "CPA-ENC-351916000-311001666",
+    "QUALITY-311001666",
+    "CASEOBS-311001666-2026-09-08T04:58:41.686Z",
+    "CASEOBS-351916000-2026-09-08T05:00:28.314Z"
+  ],
+  "allowedSourceIds": [
+    "KB-0001",
+    "KB-0002"
+  ],
+  "allowedNumericValues": [
+    1.183247,
+    103.812963,
+    11.2,
+    216.5,
+    1.8059,
+    0.902755,
+    0.702965,
+    1.850213,
+    18.336049,
+    213,
+    1.168252,
+    103.81407,
+    7.6,
+    62.5,
+    62
+  ],
+  "requiresEvidenceRefusal": false,
+  "prohibitedClaims": [
+    "已违法",
+    "违反避碰规则",
+    "应立即转向",
+    "必须立即改向",
+    "碰撞风险分"
+  ],
+  "requiredLimitations": [
+    "仅使用回放时刻及以前的AIS证据",
+    "不替代人工航海判断"
+  ],
+  "reviewerNotes": "请逐项核对问题、证据ID、来源、数值、结论边界和拒答要求；确认后再将status改为approved。"
+}

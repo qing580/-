@@ -1,0 +1,100 @@
+{
+  "source": "C:\\Users\\卿之ya\\Documents\\ChatGPT\\大创\\analysis\\AIS累计审计_2026-09-15\\马六甲增强AIS累计合并.csv",
+  "labeled_vessels": {
+    "其他": 137,
+    "油轮": 385,
+    "货船": 350,
+    "客船": 19,
+    "渔船": 1
+  },
+  "cargo_tanker_labeled_vessels": 735,
+  "longest_segment_points": {
+    "min": 0,
+    "p25": 5,
+    "median": 13,
+    "p75": 25,
+    "p90": 39,
+    "max": 250
+  },
+  "all_segment_points": {
+    "min": 1,
+    "p25": 1,
+    "median": 2,
+    "p75": 4,
+    "p90": 11,
+    "max": 250
+  },
+  "within_segment_interval_seconds": {
+    "min": 0.245947,
+    "p25": 70.099203,
+    "median": 159.24916,
+    "p75": 248.683929,
+    "p90": 364.015838,
+    "max": 599.93844
+  },
+  "window_policy": "max gap 600 seconds; 50% overlap; no cross-vessel or cross-gap windows",
+  "windows": {
+    "16": {
+      "count": 1116,
+      "vessels": 321,
+      "by_label": {
+        "油轮": 666,
+        "货船": 450
+      }
+    },
+    "32": {
+      "count": 273,
+      "vessels": 130,
+      "by_label": {
+        "油轮": 182,
+        "货船": 91
+      }
+    },
+    "64": {
+      "count": 41,
+      "vessels": 17,
+      "by_label": {
+        "货船": 10,
+        "油轮": 31
+      }
+    },
+    "128": {
+      "count": 4,
+      "vessels": 3,
+      "by_label": {
+        "货船": 2,
+        "油轮": 2
+      }
+    }
+  },
+  "required_fields": {
+    "direct": [
+      "mmsi",
+      "received_at",
+      "lat",
+      "lon",
+      "sog",
+      "cog"
+    ],
+    "available_optional": [
+      "true_heading",
+      "rate_of_turn",
+      "navigational_status",
+      "ship_length",
+      "ship_width",
+      "draught"
+    ],
+    "derived": [
+      "delta_t",
+      "acceleration",
+      "course_change",
+      "distance",
+      "turn_rate"
+    ]
+  },
+  "readiness": {
+    "original_five_class_replication": "not_ready",
+    "cargo_tanker_two_class_prototype": "ready_with_constraints",
+    "paper_grade_deep_model_claim": "not_ready_without label verification and independent evaluation"
+  }
+}

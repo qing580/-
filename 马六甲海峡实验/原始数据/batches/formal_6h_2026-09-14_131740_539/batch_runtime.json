@@ -1,0 +1,47 @@
+{
+  "collector_version": "malacca_ais_reusable_v2_2026-09-09",
+  "batch_id": "formal_6h_2026-09-14_131740_539",
+  "region_id": "malacca_southeast_singapore_strait",
+  "bbox": [
+    [
+      1.0,
+      103.0
+    ],
+    [
+      3.5,
+      104.5
+    ]
+  ],
+  "message_types": [
+    "PositionReport",
+    "ShipStaticData",
+    "StandardClassBPositionReport",
+    "ExtendedClassBPositionReport",
+    "StaticDataReport"
+  ],
+  "target_hours": 6.0,
+  "started_at_utc": "2026-09-14T05:17:40.944476+00:00",
+  "planned_stop_at_utc": "2026-09-14T11:17:40.944476+00:00",
+  "status": "completed",
+  "ended_at_utc": "2026-09-14T11:17:41.909879+00:00",
+  "elapsed_seconds": 21600.965403,
+  "rows": 8100,
+  "parsed_rows": 8099,
+  "control_rows": 1,
+  "nonparsed_rows": 0,
+  "reconnect_count": 0,
+  "message_counts": {
+    "SubscriptionConfirmation": 1,
+    "PositionReport": 7013,
+    "ShipStaticData": 1064,
+    "StaticDataReport": 12,
+    "StandardClassBPositionReport": 10
+  },
+  "files": {
+    "normalized_events_csv": "C:\\Users\\卿之ya\\Desktop\\马六甲海峡实验\\原始数据\\batches\\formal_6h_2026-09-14_131740_539\\normalized_events.csv",
+    "raw_events_jsonl": "C:\\Users\\卿之ya\\Desktop\\马六甲海峡实验\\原始数据\\batches\\formal_6h_2026-09-14_131740_539\\raw_events.jsonl",
+    "connection_events_csv": "C:\\Users\\卿之ya\\Desktop\\马六甲海峡实验\\原始数据\\batches\\formal_6h_2026-09-14_131740_539\\connection_events.csv",
+    "normalized_events_sha256": "318C655AEE1B6EAD492A9753953E3ED06FE88BE76A7F2BDEE25537FA6D24A56B",
+    "raw_events_sha256": "AEBEF38F196121F61BF370A30E0619D667E43B986C703AF6D2D3C970946EDC3C"
+  }
+}

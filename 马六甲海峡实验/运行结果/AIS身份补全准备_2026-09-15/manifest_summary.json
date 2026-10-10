@@ -1,0 +1,39 @@
+{
+  "input_files": [
+    "C:\\Users\\卿之ya\\Documents\\ChatGPT\\大创\\analysis\\AIS累计审计_2026-09-15\\马六甲增强AIS累计合并.csv"
+  ],
+  "bbox": [
+    1.0,
+    103.0,
+    3.5,
+    104.5
+  ],
+  "input_rows_by_file": {
+    "马六甲增强AIS累计合并.csv": 57029
+  },
+  "blank_mmsi_rows": 51,
+  "invalid_mmsi_values": {
+    "5631101": 866
+  },
+  "invalid_mmsi_rows": 866,
+  "unique_valid_mmsi": 1499,
+  "valid_unique_imo_vessels": 866,
+  "valid_unique_imo_coverage_pct": 57.77,
+  "imo_status_vessel_counts": {
+    "invalid_only": 2,
+    "missing": 631,
+    "valid_unique": 866
+  },
+  "identity_conflict_vessels": 1,
+  "region_anomaly_vessels": 0,
+  "no_valid_position_vessels": 16,
+  "ais_rough_category_vessel_counts": {
+    "cargo_unspecified": 350,
+    "fishing": 1,
+    "other": 136,
+    "passenger": 19,
+    "tanker": 385,
+    "unknown": 608
+  },
+  "status": "inventory_only_not_external_label_validation"
+}

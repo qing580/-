@@ -1,0 +1,240 @@
+{
+  "benchmarkId": "malacca-agent-benchmark-v1",
+  "generatorVersion": "1.0.0",
+  "generatedAt": "2026-09-22T12:52:04.213Z",
+  "status": "draft",
+  "dataset": {
+    "file": "malacca_enhanced_ais_6h_demo_data.json",
+    "sha256": "6a7b2545df683f5e894e0fa0622d80c72dd46866e1c343d6efb49a5b783c5ec5",
+    "timeRange": {
+      "start": "2026-09-08T04:35:30.040Z",
+      "end": "2026-09-08T10:35:19.979Z"
+    }
+  },
+  "selectionSummary": {
+    "sampledEveryMinutes": 5,
+    "encounterOccurrences": 9720,
+    "behaviorOccurrences": 107,
+    "note": "候选数已经按同一事件过程20分钟窗口去重，不能解释为真实异常发生率。"
+  },
+  "cases": [
+    {
+      "caseId": "CASE-NORMAL-001",
+      "family": "normal",
+      "subtype": "无当前关联事件",
+      "question": "当前回放时刻是否存在与关注船相关的明确异常事件？",
+      "mmsi": "563105900",
+      "vesselName": "PSA MARVEL CS05",
+      "involvedMmsis": [
+        "563105900"
+      ],
+      "replayTime": "2026-09-08T05:05:30.040Z",
+      "eventId": null,
+      "screeningLevel": "未形成事件",
+      "screeningMetric": null,
+      "dcpaNm": null,
+      "tcpaMinutes": null,
+      "annotationStatus": "draft"
+    },
+    {
+      "caseId": "CASE-NORMAL-002",
+      "family": "normal",
+      "subtype": "无当前关联事件",
+      "question": "当前回放时刻是否存在与关注船相关的明确异常事件？",
+      "mmsi": "352002967",
+      "vesselName": "LEO MARIS",
+      "involvedMmsis": [
+        "352002967"
+      ],
+      "replayTime": "2026-09-08T06:05:30.040Z",
+      "eventId": null,
+      "screeningLevel": "未形成事件",
+      "screeningMetric": null,
+      "dcpaNm": null,
+      "tcpaMinutes": null,
+      "annotationStatus": "draft"
+    },
+    {
+      "caseId": "CASE-ENCOUNTER-001",
+      "family": "encounter",
+      "subtype": "高风险会遇",
+      "question": "请解释当前关注船附近的主要会遇异常及其AIS证据。",
+      "mmsi": "352003176",
+      "vesselName": "PVT SOLANA",
+      "involvedMmsis": [
+        "352003176",
+        "636093181"
+      ],
+      "replayTime": "2026-09-08T04:40:30.040Z",
+      "eventId": "ENC-352003176-636093181",
+      "screeningLevel": "高风险",
+      "screeningMetric": null,
+      "dcpaNm": 0.5248422046743331,
+      "tcpaMinutes": 0.8068159590395578,
+      "annotationStatus": "approved"
+    },
+    {
+      "caseId": "CASE-ENCOUNTER-002",
+      "family": "encounter",
+      "subtype": "高风险会遇",
+      "question": "请解释当前关注船附近的主要会遇异常及其AIS证据。",
+      "mmsi": "352006129",
+      "vesselName": "DAI VINH",
+      "involvedMmsis": [
+        "352006129",
+        "563024220"
+      ],
+      "replayTime": "2026-09-08T05:00:30.040Z",
+      "eventId": "ENC-352006129-563024220",
+      "screeningLevel": "高风险",
+      "screeningMetric": null,
+      "dcpaNm": 0.07899868828784068,
+      "tcpaMinutes": 1.0662947642698866,
+      "annotationStatus": "draft"
+    },
+    {
+      "caseId": "CASE-ENCOUNTER-003",
+      "family": "encounter",
+      "subtype": "会遇风险初筛",
+      "question": "请解释当前关注船附近的主要会遇异常及其AIS证据。",
+      "mmsi": "305034400",
+      "vesselName": "ARAGUA",
+      "involvedMmsis": [
+        "305034400",
+        "477229100"
+      ],
+      "replayTime": "2026-09-08T04:40:30.040Z",
+      "eventId": "ENC-305034400-477229100",
+      "screeningLevel": "中高风险",
+      "screeningMetric": null,
+      "dcpaNm": 0.030019554414095213,
+      "tcpaMinutes": 63.347443391139,
+      "annotationStatus": "draft"
+    },
+    {
+      "caseId": "CASE-ENCOUNTER-004",
+      "family": "encounter",
+      "subtype": "会遇风险初筛",
+      "question": "请解释当前关注船附近的主要会遇异常及其AIS证据。",
+      "mmsi": "311001666",
+      "vesselName": "TREASURE STAR",
+      "involvedMmsis": [
+        "311001666",
+        "351916000"
+      ],
+      "replayTime": "2026-09-08T05:00:30.040Z",
+      "eventId": "ENC-351916000-311001666",
+      "screeningLevel": "中高风险",
+      "screeningMetric": null,
+      "dcpaNm": 0.7029650095422134,
+      "tcpaMinutes": 1.8502134035917484,
+      "annotationStatus": "draft"
+    },
+    {
+      "caseId": "CASE-BEHAVIOR-001",
+      "family": "behavior",
+      "subtype": "异常转向初筛",
+      "question": "当前船舶是否出现需要复核的异常转向，证据和局限性是什么？",
+      "mmsi": "563221200",
+      "vesselName": "MARTA COSULICH",
+      "involvedMmsis": [
+        "563221200"
+      ],
+      "replayTime": "2026-09-08T04:50:30.040Z",
+      "eventId": "TURN-563221200",
+      "screeningLevel": "中高风险",
+      "screeningMetric": "108.0° / 4.7分钟",
+      "dcpaNm": null,
+      "tcpaMinutes": null,
+      "annotationStatus": "draft"
+    },
+    {
+      "caseId": "CASE-BEHAVIOR-002",
+      "family": "behavior",
+      "subtype": "异常减速初筛",
+      "question": "当前船舶是否出现需要复核的异常减速，证据和局限性是什么？",
+      "mmsi": "563086090",
+      "vesselName": "PILOT 16",
+      "involvedMmsis": [
+        "563086090"
+      ],
+      "replayTime": "2026-09-08T04:45:30.040Z",
+      "eventId": "SLOW-563086090",
+      "screeningLevel": "高风险",
+      "screeningMetric": "22.7 -> 0.4节",
+      "dcpaNm": null,
+      "tcpaMinutes": null,
+      "annotationStatus": "draft"
+    },
+    {
+      "caseId": "CASE-INSUFFICIENT-001",
+      "family": "insufficient",
+      "subtype": "运动字段缺失",
+      "question": "当前AIS证据是否足以判断船舶运动或异常状态？",
+      "mmsi": "205493000",
+      "vesselName": "MINERAL MAURITIUS",
+      "involvedMmsis": [
+        "205493000"
+      ],
+      "replayTime": "2026-09-08T07:36:18.278Z",
+      "eventId": null,
+      "screeningLevel": "证据不足",
+      "screeningMetric": null,
+      "dcpaNm": null,
+      "tcpaMinutes": null,
+      "annotationStatus": "draft"
+    },
+    {
+      "caseId": "CASE-INSUFFICIENT-002",
+      "family": "insufficient",
+      "subtype": "观测超过5分钟",
+      "question": "当前AIS证据是否足以判断船舶运动或异常状态？",
+      "mmsi": "205493000",
+      "vesselName": "MINERAL MAURITIUS",
+      "involvedMmsis": [
+        "205493000"
+      ],
+      "replayTime": "2026-09-08T04:45:12.011Z",
+      "eventId": null,
+      "screeningLevel": "证据不足",
+      "screeningMetric": null,
+      "dcpaNm": null,
+      "tcpaMinutes": null,
+      "annotationStatus": "draft"
+    },
+    {
+      "caseId": "CASE-INSUFFICIENT-003",
+      "family": "insufficient",
+      "subtype": "回放时刻前无有效观测",
+      "question": "当前AIS证据是否足以判断船舶运动或异常状态？",
+      "mmsi": "205664000",
+      "vesselName": "WINDCAT HAARLEM",
+      "involvedMmsis": [
+        "205664000"
+      ],
+      "replayTime": "2026-09-08T04:39:23.034Z",
+      "eventId": null,
+      "screeningLevel": "证据不足",
+      "screeningMetric": null,
+      "dcpaNm": null,
+      "tcpaMinutes": null,
+      "annotationStatus": "draft"
+    },
+    {
+      "caseId": "CASE-KNOWLEDGE-001",
+      "family": "knowledge",
+      "subtype": "AIS使用限制",
+      "question": "AIS能否作为唯一避碰依据？请说明限制和需要结合的信息。",
+      "mmsi": null,
+      "vesselName": null,
+      "involvedMmsis": [],
+      "replayTime": null,
+      "eventId": null,
+      "screeningLevel": "专业知识",
+      "screeningMetric": null,
+      "dcpaNm": null,
+      "tcpaMinutes": null,
+      "annotationStatus": "draft"
+    }
+  ]
+}

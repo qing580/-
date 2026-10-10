@@ -1,0 +1,732 @@
+{
+  "class_order": [
+    "货船",
+    "油轮"
+  ],
+  "splits": {
+    "train": 261,
+    "valid": 87,
+    "test": 87
+  },
+  "A_old_track|多数类|验证": {
+    "report": {
+      "货船": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1_score": 0,
+        "support": 42
+      },
+      "油轮": {
+        "precision": 0.5172413793103449,
+        "recall": 1.0,
+        "f1_score": 0.6818181818181819,
+        "support": 45
+      }
+    },
+    "confusion": [
+      [
+        0,
+        42
+      ],
+      [
+        0,
+        45
+      ]
+    ]
+  },
+  "A_old_track|多数类|测试": {
+    "report": {
+      "货船": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1_score": 0,
+        "support": 42
+      },
+      "油轮": {
+        "precision": 0.5172413793103449,
+        "recall": 1.0,
+        "f1_score": 0.6818181818181819,
+        "support": 45
+      }
+    },
+    "confusion": [
+      [
+        0,
+        42
+      ],
+      [
+        0,
+        45
+      ]
+    ]
+  },
+  "A_old_track|最近质心|验证": {
+    "report": {
+      "货船": {
+        "precision": 0.5,
+        "recall": 0.6428571428571429,
+        "f1_score": 0.5625000000000001,
+        "support": 42
+      },
+      "油轮": {
+        "precision": 0.5454545454545454,
+        "recall": 0.4,
+        "f1_score": 0.4615384615384615,
+        "support": 45
+      }
+    },
+    "confusion": [
+      [
+        27,
+        15
+      ],
+      [
+        27,
+        18
+      ]
+    ]
+  },
+  "A_old_track|最近质心|测试": {
+    "report": {
+      "货船": {
+        "precision": 0.5476190476190477,
+        "recall": 0.5476190476190477,
+        "f1_score": 0.5476190476190477,
+        "support": 42
+      },
+      "油轮": {
+        "precision": 0.5777777777777777,
+        "recall": 0.5777777777777777,
+        "f1_score": 0.5777777777777777,
+        "support": 45
+      }
+    },
+    "confusion": [
+      [
+        23,
+        19
+      ],
+      [
+        19,
+        26
+      ]
+    ]
+  },
+  "A_old_track|高斯朴素贝叶斯|验证": {
+    "report": {
+      "货船": {
+        "precision": 0.5094339622641509,
+        "recall": 0.6428571428571429,
+        "f1_score": 0.568421052631579,
+        "support": 42
+      },
+      "油轮": {
+        "precision": 0.5588235294117647,
+        "recall": 0.4222222222222222,
+        "f1_score": 0.48101265822784806,
+        "support": 45
+      }
+    },
+    "confusion": [
+      [
+        27,
+        15
+      ],
+      [
+        26,
+        19
+      ]
+    ]
+  },
+  "A_old_track|高斯朴素贝叶斯|测试": {
+    "report": {
+      "货船": {
+        "precision": 0.5555555555555556,
+        "recall": 0.5952380952380952,
+        "f1_score": 0.574712643678161,
+        "support": 42
+      },
+      "油轮": {
+        "precision": 0.5952380952380952,
+        "recall": 0.5555555555555556,
+        "f1_score": 0.574712643678161,
+        "support": 45
+      }
+    },
+    "confusion": [
+      [
+        25,
+        17
+      ],
+      [
+        20,
+        25
+      ]
+    ]
+  },
+  "A_old_track|逻辑回归|验证": {
+    "report": {
+      "货船": {
+        "precision": 0.6,
+        "recall": 0.5,
+        "f1_score": 0.5454545454545454,
+        "support": 42
+      },
+      "油轮": {
+        "precision": 0.5961538461538461,
+        "recall": 0.6888888888888889,
+        "f1_score": 0.6391752577319588,
+        "support": 45
+      }
+    },
+    "confusion": [
+      [
+        21,
+        21
+      ],
+      [
+        14,
+        31
+      ]
+    ]
+  },
+  "A_old_track|逻辑回归|测试": {
+    "report": {
+      "货船": {
+        "precision": 0.5675675675675675,
+        "recall": 0.5,
+        "f1_score": 0.5316455696202531,
+        "support": 42
+      },
+      "油轮": {
+        "precision": 0.58,
+        "recall": 0.6444444444444445,
+        "f1_score": 0.6105263157894737,
+        "support": 45
+      }
+    },
+    "confusion": [
+      [
+        21,
+        21
+      ],
+      [
+        16,
+        29
+      ]
+    ]
+  },
+  "B_heading_turn_segment|多数类|验证": {
+    "report": {
+      "货船": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1_score": 0,
+        "support": 42
+      },
+      "油轮": {
+        "precision": 0.5172413793103449,
+        "recall": 1.0,
+        "f1_score": 0.6818181818181819,
+        "support": 45
+      }
+    },
+    "confusion": [
+      [
+        0,
+        42
+      ],
+      [
+        0,
+        45
+      ]
+    ]
+  },
+  "B_heading_turn_segment|多数类|测试": {
+    "report": {
+      "货船": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1_score": 0,
+        "support": 42
+      },
+      "油轮": {
+        "precision": 0.5172413793103449,
+        "recall": 1.0,
+        "f1_score": 0.6818181818181819,
+        "support": 45
+      }
+    },
+    "confusion": [
+      [
+        0,
+        42
+      ],
+      [
+        0,
+        45
+      ]
+    ]
+  },
+  "B_heading_turn_segment|最近质心|验证": {
+    "report": {
+      "货船": {
+        "precision": 0.4583333333333333,
+        "recall": 0.5238095238095238,
+        "f1_score": 0.4888888888888889,
+        "support": 42
+      },
+      "油轮": {
+        "precision": 0.48717948717948717,
+        "recall": 0.4222222222222222,
+        "f1_score": 0.4523809523809524,
+        "support": 45
+      }
+    },
+    "confusion": [
+      [
+        22,
+        20
+      ],
+      [
+        26,
+        19
+      ]
+    ]
+  },
+  "B_heading_turn_segment|最近质心|测试": {
+    "report": {
+      "货船": {
+        "precision": 0.5555555555555556,
+        "recall": 0.5952380952380952,
+        "f1_score": 0.574712643678161,
+        "support": 42
+      },
+      "油轮": {
+        "precision": 0.5952380952380952,
+        "recall": 0.5555555555555556,
+        "f1_score": 0.574712643678161,
+        "support": 45
+      }
+    },
+    "confusion": [
+      [
+        25,
+        17
+      ],
+      [
+        20,
+        25
+      ]
+    ]
+  },
+  "B_heading_turn_segment|高斯朴素贝叶斯|验证": {
+    "report": {
+      "货船": {
+        "precision": 0.46296296296296297,
+        "recall": 0.5952380952380952,
+        "f1_score": 0.5208333333333334,
+        "support": 42
+      },
+      "油轮": {
+        "precision": 0.48484848484848486,
+        "recall": 0.35555555555555557,
+        "f1_score": 0.41025641025641024,
+        "support": 45
+      }
+    },
+    "confusion": [
+      [
+        25,
+        17
+      ],
+      [
+        29,
+        16
+      ]
+    ]
+  },
+  "B_heading_turn_segment|高斯朴素贝叶斯|测试": {
+    "report": {
+      "货船": {
+        "precision": 0.5490196078431373,
+        "recall": 0.6666666666666666,
+        "f1_score": 0.6021505376344086,
+        "support": 42
+      },
+      "油轮": {
+        "precision": 0.6111111111111112,
+        "recall": 0.4888888888888889,
+        "f1_score": 0.5432098765432098,
+        "support": 45
+      }
+    },
+    "confusion": [
+      [
+        28,
+        14
+      ],
+      [
+        23,
+        22
+      ]
+    ]
+  },
+  "B_heading_turn_segment|逻辑回归|验证": {
+    "report": {
+      "货船": {
+        "precision": 0.6,
+        "recall": 0.6428571428571429,
+        "f1_score": 0.6206896551724138,
+        "support": 42
+      },
+      "油轮": {
+        "precision": 0.6428571428571429,
+        "recall": 0.6,
+        "f1_score": 0.6206896551724138,
+        "support": 45
+      }
+    },
+    "confusion": [
+      [
+        27,
+        15
+      ],
+      [
+        18,
+        27
+      ]
+    ]
+  },
+  "B_heading_turn_segment|逻辑回归|测试": {
+    "report": {
+      "货船": {
+        "precision": 0.6170212765957447,
+        "recall": 0.6904761904761905,
+        "f1_score": 0.651685393258427,
+        "support": 42
+      },
+      "油轮": {
+        "precision": 0.675,
+        "recall": 0.6,
+        "f1_score": 0.6352941176470589,
+        "support": 45
+      }
+    },
+    "confusion": [
+      [
+        29,
+        13
+      ],
+      [
+        18,
+        27
+      ]
+    ]
+  },
+  "C_dynamic_static_spatial|多数类|验证": {
+    "report": {
+      "货船": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1_score": 0,
+        "support": 42
+      },
+      "油轮": {
+        "precision": 0.5172413793103449,
+        "recall": 1.0,
+        "f1_score": 0.6818181818181819,
+        "support": 45
+      }
+    },
+    "confusion": [
+      [
+        0,
+        42
+      ],
+      [
+        0,
+        45
+      ]
+    ]
+  },
+  "C_dynamic_static_spatial|多数类|测试": {
+    "report": {
+      "货船": {
+        "precision": 0,
+        "recall": 0.0,
+        "f1_score": 0,
+        "support": 42
+      },
+      "油轮": {
+        "precision": 0.5172413793103449,
+        "recall": 1.0,
+        "f1_score": 0.6818181818181819,
+        "support": 45
+      }
+    },
+    "confusion": [
+      [
+        0,
+        42
+      ],
+      [
+        0,
+        45
+      ]
+    ]
+  },
+  "C_dynamic_static_spatial|最近质心|验证": {
+    "report": {
+      "货船": {
+        "precision": 0.6304347826086957,
+        "recall": 0.6904761904761905,
+        "f1_score": 0.6590909090909092,
+        "support": 42
+      },
+      "油轮": {
+        "precision": 0.6829268292682927,
+        "recall": 0.6222222222222222,
+        "f1_score": 0.6511627906976744,
+        "support": 45
+      }
+    },
+    "confusion": [
+      [
+        29,
+        13
+      ],
+      [
+        17,
+        28
+      ]
+    ]
+  },
+  "C_dynamic_static_spatial|最近质心|测试": {
+    "report": {
+      "货船": {
+        "precision": 0.6428571428571429,
+        "recall": 0.6428571428571429,
+        "f1_score": 0.6428571428571429,
+        "support": 42
+      },
+      "油轮": {
+        "precision": 0.6666666666666666,
+        "recall": 0.6666666666666666,
+        "f1_score": 0.6666666666666666,
+        "support": 45
+      }
+    },
+    "confusion": [
+      [
+        27,
+        15
+      ],
+      [
+        15,
+        30
+      ]
+    ]
+  },
+  "C_dynamic_static_spatial|高斯朴素贝叶斯|验证": {
+    "report": {
+      "货船": {
+        "precision": 0.5172413793103449,
+        "recall": 0.7142857142857143,
+        "f1_score": 0.6000000000000001,
+        "support": 42
+      },
+      "油轮": {
+        "precision": 0.5862068965517241,
+        "recall": 0.37777777777777777,
+        "f1_score": 0.45945945945945943,
+        "support": 45
+      }
+    },
+    "confusion": [
+      [
+        30,
+        12
+      ],
+      [
+        28,
+        17
+      ]
+    ]
+  },
+  "C_dynamic_static_spatial|高斯朴素贝叶斯|测试": {
+    "report": {
+      "货船": {
+        "precision": 0.6,
+        "recall": 0.7142857142857143,
+        "f1_score": 0.6521739130434783,
+        "support": 42
+      },
+      "油轮": {
+        "precision": 0.6756756756756757,
+        "recall": 0.5555555555555556,
+        "f1_score": 0.6097560975609757,
+        "support": 45
+      }
+    },
+    "confusion": [
+      [
+        30,
+        12
+      ],
+      [
+        20,
+        25
+      ]
+    ]
+  },
+  "C_dynamic_static_spatial|逻辑回归|验证": {
+    "report": {
+      "货船": {
+        "precision": 0.6274509803921569,
+        "recall": 0.7619047619047619,
+        "f1_score": 0.6881720430107526,
+        "support": 42
+      },
+      "油轮": {
+        "precision": 0.7222222222222222,
+        "recall": 0.5777777777777777,
+        "f1_score": 0.6419753086419753,
+        "support": 45
+      }
+    },
+    "confusion": [
+      [
+        32,
+        10
+      ],
+      [
+        19,
+        26
+      ]
+    ]
+  },
+  "C_dynamic_static_spatial|逻辑回归|测试": {
+    "report": {
+      "货船": {
+        "precision": 0.7272727272727273,
+        "recall": 0.7619047619047619,
+        "f1_score": 0.7441860465116279,
+        "support": 42
+      },
+      "油轮": {
+        "precision": 0.7674418604651163,
+        "recall": 0.7333333333333333,
+        "f1_score": 0.7499999999999999,
+        "support": 45
+      }
+    },
+    "confusion": [
+      [
+        32,
+        10
+      ],
+      [
+        12,
+        33
+      ]
+    ]
+  },
+  "source_sha256": "569bf9f99af9adfcd25601ad73900bd0e540ba5225d0f672d4bafb9411b6c71d",
+  "rows": 57029,
+  "ships": 1500,
+  "categories": {
+    "货船": 350,
+    "其他编码": 47,
+    "未知": 608,
+    "油轮": 382,
+    "帆船或娱乐船": 18,
+    "拖带或港口服务": 54,
+    "客船": 19,
+    "编码冲突": 3,
+    "渔船": 1,
+    "高速船": 18
+  },
+  "eligible": {
+    "货船": 208,
+    "油轮": 227
+  },
+  "feature_sets": {
+    "A_old_track": [
+      "speed_mean",
+      "speed_sd",
+      "speed_median",
+      "speed_p90",
+      "low_speed_fraction",
+      "speed_change_per_min",
+      "turn_per_min",
+      "path_m"
+    ],
+    "B_heading_turn_segment": [
+      "speed_mean",
+      "speed_sd",
+      "speed_median",
+      "speed_p90",
+      "low_speed_fraction",
+      "speed_change_per_min",
+      "turn_per_min",
+      "path_m",
+      "obs_minutes",
+      "points_per_hour",
+      "segment_count",
+      "moving_fraction",
+      "stop_fraction",
+      "turn_p90",
+      "turn_max",
+      "large_turn_rate",
+      "cog_sin_mean",
+      "cog_cos_mean",
+      "cog_concentration",
+      "heading_sin_mean",
+      "heading_cos_mean",
+      "heading_concentration",
+      "rot_abs_mean",
+      "rot_abs_p90",
+      "nav_anchor_fraction"
+    ],
+    "C_dynamic_static_spatial": [
+      "speed_mean",
+      "speed_sd",
+      "speed_median",
+      "speed_p90",
+      "low_speed_fraction",
+      "speed_change_per_min",
+      "turn_per_min",
+      "path_m",
+      "obs_minutes",
+      "points_per_hour",
+      "segment_count",
+      "moving_fraction",
+      "stop_fraction",
+      "turn_p90",
+      "turn_max",
+      "large_turn_rate",
+      "cog_sin_mean",
+      "cog_cos_mean",
+      "cog_concentration",
+      "heading_sin_mean",
+      "heading_cos_mean",
+      "heading_concentration",
+      "rot_abs_mean",
+      "rot_abs_p90",
+      "nav_anchor_fraction",
+      "lat_mean",
+      "lon_mean",
+      "lat_sd",
+      "lon_sd",
+      "lat_range",
+      "lon_range",
+      "east_fraction",
+      "north_fraction",
+      "ship_length",
+      "ship_width",
+      "draught"
+    ]
+  },
+  "repeated_split_runs": 30
+}

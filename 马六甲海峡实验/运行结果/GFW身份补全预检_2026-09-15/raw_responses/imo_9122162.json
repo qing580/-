@@ -1,0 +1,181 @@
+{
+  "limit": 30,
+  "since": null,
+  "total": 2,
+  "entries": [
+    {
+      "dataset": "public-global-vessel-identity:v4.0",
+      "registryInfoTotalRecords": 1,
+      "registryInfo": [
+        {
+          "id": "9e8de75cd5eec74212a91ed1ed13765c",
+          "sourceCode": [
+            "IMO"
+          ],
+          "ssvid": "564885000",
+          "flag": "SGP",
+          "shipname": "OCEANFLYTE",
+          "nShipname": "OCEANFLYTE",
+          "callsign": "9V5253",
+          "imo": "9122162",
+          "latestVesselInfo": true,
+          "transmissionDateFrom": "2012-01-14T10:09:02Z",
+          "transmissionDateTo": "2026-07-31T23:59:09Z",
+          "geartypes": [
+            "PASSENGER"
+          ],
+          "lengthM": null,
+          "tonnageGt": 223,
+          "vesselInfoReference": "066ba7c69f7e364f2bfa5fc6ed34539f",
+          "extraFields": []
+        }
+      ],
+      "registryOwners": [],
+      "combinedSourcesInfo": [
+        {
+          "vesselId": "3feff5624-43b4-262c-91bd-e6c30a12ca40",
+          "geartypes": [
+            {
+              "name": "PASSENGER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2012,
+              "yearTo": 2026
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "PASSENGER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2012,
+              "yearTo": 2026
+            }
+          ]
+        }
+      ],
+      "selfReportedInfo": [
+        {
+          "id": "3feff5624-43b4-262c-91bd-e6c30a12ca40",
+          "ssvid": "564885000",
+          "shipname": "OCEAN FLYTE",
+          "nShipname": "OCEANFLYTE",
+          "flag": "SGP",
+          "callsign": "9V5253",
+          "imo": "9122162",
+          "messagesCounter": 14219172,
+          "positionsCounter": 3888183,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "SEVERAL_FIELDS",
+          "transmissionDateFrom": "2012-01-14T05:59:29Z",
+          "transmissionDateTo": "2026-09-13T23:59:36Z"
+        }
+      ],
+      "matchCriteria": [
+        {
+          "reference": "3feff5624-43b4-262c-91bd-e6c30a12ca40",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.imo",
+              "value": "9122162"
+            }
+          ],
+          "period": {
+            "dateFrom": "2012-01-14T05:59:29Z",
+            "dateTo": "2026-09-13T23:59:36Z"
+          },
+          "latestVesselInfo": true
+        },
+        {
+          "reference": "066ba7c69f7e364f2bfa5fc6ed34539f",
+          "property": "registryInfo.vesselInfoReference",
+          "source": "registryInfo",
+          "matches": [
+            {
+              "property": "registryInfo.imo",
+              "value": "9122162"
+            }
+          ],
+          "period": {
+            "dateFrom": "2012-01-14T10:09:02Z",
+            "dateTo": "2026-07-31T23:59:09Z"
+          },
+          "latestVesselInfo": true
+        }
+      ]
+    },
+    {
+      "dataset": "public-global-vessel-identity:v4.0",
+      "registryInfoTotalRecords": 0,
+      "registryInfo": [],
+      "registryOwners": [],
+      "combinedSourcesInfo": [
+        {
+          "vesselId": "d157be98a-ab47-0e9a-f7c4-608172d36da5",
+          "geartypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2024,
+              "yearTo": 2024
+            }
+          ],
+          "shiptypes": [
+            {
+              "name": "OTHER",
+              "source": "COMBINATION_OF_REGISTRY_AND_AIS_INFERRED_NN_INFO",
+              "yearFrom": 2024,
+              "yearTo": 2024
+            }
+          ]
+        }
+      ],
+      "selfReportedInfo": [
+        {
+          "id": "d157be98a-ab47-0e9a-f7c4-608172d36da5",
+          "ssvid": "564885064",
+          "shipname": "OCEAN FLYTE!",
+          "nShipname": "OCEAN0FMYTE",
+          "flag": "SGP",
+          "callsign": "9V5253",
+          "imo": "9122162",
+          "messagesCounter": 41,
+          "positionsCounter": 37,
+          "sourceCode": [
+            "AIS"
+          ],
+          "matchFields": "NO_MATCH",
+          "transmissionDateFrom": "2024-02-12T08:30:24Z",
+          "transmissionDateTo": "2024-02-15T08:30:41Z"
+        }
+      ],
+      "matchCriteria": [
+        {
+          "reference": "d157be98a-ab47-0e9a-f7c4-608172d36da5",
+          "property": "selfReportedInfo.id",
+          "source": "selfReportedInfo",
+          "matches": [
+            {
+              "property": "selfReportedInfo.imo",
+              "value": "9122162"
+            }
+          ],
+          "period": {
+            "dateFrom": "2024-02-12T08:30:24Z",
+            "dateTo": "2024-02-15T08:30:41Z"
+          },
+          "latestVesselInfo": true
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "query": "9122162",
+    "normalizedQuery": "9122162",
+    "didYouMean": {
+      "shipname": {}
+    }
+  }
+}
